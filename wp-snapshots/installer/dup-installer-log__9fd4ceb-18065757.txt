@@ -1,0 +1,648 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 11:35:40
+* VERSION: 1.3.34
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.4.6                                 |7.2.29-1+ubuntu16.04.1+deb.sury.org+1
+OS__________________: WINNT                                 |Linux
+CREATED_____________: 2020-06-18 06:57:57
+WP VERSION__________: 5.3.3
+DUP VERSION_________: 1.3.34
+DB__________________: 5.6.46
+DB TABLES___________: 47
+DB ROWS_____________: 873
+DB FILE SIZE________: 891.47KB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.2.29-1+ubuntu16.04.1+deb.sury.org+1 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.18 (Ubuntu)
+DOC ROOT____________: "/var/www/hbook.com/public_html/web"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://hbook.com/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1204
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "/var/www/hbook.com/public_html/web/20200618_campingbrainland_[HASH]_20200618065757_archive.zip"
+SIZE________________: 21.04MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/hbook.com/public_html/web/dup-installer/lib/snaplib/class.snaplib.u.io.php|LINE:479]
+Permissions setting on file '/var/www/hbook.com/public_html/web/20200618_campingbrainland_[HASH]_20200618065757_archive.zip' failed
+[PHP ERR][WARN] MSG:chmod(): Operation not permitted [CODE:2|FILE:/var/www/hbook.com/public_html/web/dup-installer/lib/snaplib/class.snaplib.u.io.php|LINE:479]
+Permissions setting on file '/var/www/hbook.com/public_html/web/installer.php' failed
+
+STEP-1 COMPLETE @ 11:35:41 - RUNTIME: 0.9189 sec.
+[PHP ERR][ISSUE] MSG:PHP Startup: Unable to load dynamic library 'openssl' (tried: /usr/lib/php/20170718/openssl (/usr/lib/php/20170718/openssl: cannot open shared object file: No such file or directory), /usr/lib/php/20170718/openssl.so (/usr/lib/php/20170718/openssl.so: cannot open shared object file: No such file or directory)) [CODE:32|FILE:Unknown|LINE:0]
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 11:35:58
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.27 -- Build Server: 5.6.46
+FILE SIZE:	dup-database__[HASH].sql (676.28KB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/var/www/hbook.com/public_html/web/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:/var/www/hbook.com/public_html/web/dup-installer/ctrls/ctrl.s2.dbinstall.php|LINE:386]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	923
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_hb_accom_blocked: (0)
+wp_hb_accom_num_name: (2)
+wp_hb_booking_rules: (3)
+wp_hb_booking_rules_accom: (3)
+wp_hb_booking_rules_seasons: (9)
+wp_hb_coupons: (0)
+wp_hb_coupons_accom: (0)
+wp_hb_coupons_rules: (0)
+wp_hb_coupons_seasons: (0)
+wp_hb_customers: (9)
+wp_hb_discounts: (0)
+wp_hb_discounts_accom: (0)
+wp_hb_discounts_rules: (0)
+wp_hb_discounts_seasons: (0)
+wp_hb_document_templates: (1)
+wp_hb_email_templates: (3)
+wp_hb_email_templates_accom: (3)
+wp_hb_fees: (2)
+wp_hb_fees_accom: (2)
+wp_hb_fields: (11)
+wp_hb_fields_choices: (0)
+wp_hb_ical: (0)
+wp_hb_options: (0)
+wp_hb_options_accom: (0)
+wp_hb_options_choices: (0)
+wp_hb_rates: (3)
+wp_hb_rates_accom: (5)
+wp_hb_rates_rules: (0)
+wp_hb_rates_seasons: (5)
+wp_hb_resa: (16)
+wp_hb_seasons: (3)
+wp_hb_seasons_dates: (3)
+wp_hb_strings: (430)
+wp_hb_sync_errors: (0)
+wp_links: (0)
+wp_options: (231)
+wp_postmeta: (47)
+wp_posts: (23)
+wp_term_relationships: (2)
+wp_term_taxonomy: (2)
+wp_termmeta: (0)
+wp_terms: (2)
+wp_usermeta: (23)
+wp_users: (1)
+Removed '29' cache/transient rows
+
+INSERT DATA RUNTIME: 0.2666 sec.
+STEP-2 COMPLETE @ 11:35:58 - RUNTIME: 0.2746 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+htaccess ark file don' exists
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 11:36:01
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Camping Brainland"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "H:/root/home/emarin1949-001/www/campingdemo"
+path_new______________: "/var/www/hbook.com/public_html/web"
+siteurl_______________: "http://hbook.com"
+url_old_______________: "http://campingdemo.brainland.net"
+url_new_______________: "http://hbook.com"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_accom_blocked"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_accom_num_name"____________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_booking_rules"_____________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_booking_rules_accom"_______________________[ROWS:     3][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_booking_rules_seasons"_____________________[ROWS:     9][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_coupons"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_coupons_accom"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_coupons_rules"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_coupons_seasons"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_customers"_________________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_discounts"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_discounts_accom"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_discounts_rules"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_discounts_seasons"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_document_templates"________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_email_templates"___________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_email_templates_accom"_____________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_fees"______________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_fees_accom"________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_fields"____________________________________[ROWS:    11][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_fields_choices"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_ical"______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_options"___________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_options_accom"_____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_options_choices"___________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_rates"_____________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_rates_accom"_______________________________[ROWS:     5][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_rates_rules"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_rates_seasons"_____________________________[ROWS:     5][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_hb_resa"______________________________________[ROWS:    16][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_seasons"___________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_seasons_dates"_____________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_strings"___________________________________[ROWS:   430][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_hb_sync_errors"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   231][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:    47][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:    23][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    23][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"H:/root/home/emarin1949-001/www/campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  2:"H:\/root\/home\/emarin1949-001\/www\/campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  3:"H%3A%2Froot%2Fhome%2Femarin1949-001%2Fwww%2Fcampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  4:"H:\root\home\emarin1949-001\www\campingdemo" =====> "/var/www/hbook.com/public_html/web"
+	SEARCH  5:"H:\\root\\home\\emarin1949-001\\www\\campingdemo" => "\/var\/www\/hbook.com\/public_html\/web"
+	SEARCH  6:"H%3A%5Croot%5Chome%5Cemarin1949-001%5Cwww%5Ccampingdemo" => "%2Fvar%2Fwww%2Fhbook.com%2Fpublic_html%2Fweb"
+	SEARCH  7:"//campingdemo.brainland.net" =====================> "//hbook.com"
+	SEARCH  8:"\/\/campingdemo.brainland.net" ===================> "\/\/hbook.com"
+	SEARCH  9:"%2F%2Fcampingdemo.brainland.net" =================> "%2F%2Fhbook.com"
+	SEARCH 10:"https://hbook.com" ===============================> "http://hbook.com"
+	SEARCH 11:"https:\/\/hbook.com" =============================> "http:\/\/hbook.com"
+	SEARCH 12:"https%3A%2F%2Fhbook.com" =========================> "http%3A%2F%2Fhbook.com"
+--------------------------------------
+SCANNED:	Tables:47 	|	 Rows:822 	|	 Cells:3973 
+UPDATED:	Tables:4 	|	 Rows:37 	|	 Cells:45 
+ERRORS:		0 
+RUNTIME:	0.055900 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""hbook""
+	UPDATE DB_USER ""root""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Existing Microsoft IIS 'web.config.orig' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+[PHP ERR][WARN] MSG:file_get_contents(/var/www/hbook.com/public_html/web/dup-installer/dup-orig-htaccess__[HASH].txt): failed to open stream: No such file or directory [CODE:2|FILE:/var/www/hbook.com/public_html/web/dup-installer/classes/class.s3.func.php|LINE:1236]
+[PHP ERR][WARN] MSG:file_get_contents(/var/www/hbook.com/public_html/web/.htaccess): failed to open stream: No such file or directory [CODE:2|FILE:/var/www/hbook.com/public_html/web/dup-installer/classes/class.s3.func.php|LINE:1237]
+
+STEP-3 COMPLETE @ 11:36:02 - RUNTIME: 0.0740 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================

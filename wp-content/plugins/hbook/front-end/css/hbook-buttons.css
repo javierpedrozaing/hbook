@@ -1,0 +1,5 @@
+.hbook-wrapper input[type="submit"] {
+	border: none !important;
+	cursor: pointer;
+	transition: background 0.4s;
+}

@@ -1,0 +1,5170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HBook\n"
+"POT-Creation-Date: 2020-02-11 18:25+0100\n"
+"PO-Revision-Date: 2020-02-11 18:26+0100\n"
+"Last-Translator: Maestrel <contact@maestrel.com>\n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: accom-post-type/accom-post-type.php:15 admin-pages/pages/fees/fees.php:106
+#: admin-pages/pages/ical/ical.php:135 admin-pages/pages/options/options.php:75
+#: admin-pages/pages/rates/rates.php:191 admin-pages/pages/rates/rates.php:233
+#: admin-pages/pages/rates/rates.php:414
+#: admin-pages/pages/reservations/blocked-accom-display.php:69
+#: admin-pages/pages/rules/rules.php:68 admin-pages/pages/rules/rules.php:124
+#: admin-pages/pages/rules/rules.php:180 admin-pages/pages/rules/rules.php:236
+#: admin-pages/pages/rules/rules.php:299 blocks/blocks.php:53
+#: blocks/blocks.php:59 utils/strings-utils.php:96 utils/utils.php:2870
+msgid "Accommodation"
+msgstr "Cameră"
+
+#: accom-post-type/accom-post-type.php:16
+msgid "All Accommodation"
+msgstr "Toate spaţiile de cazare"
+
+#: accom-post-type/accom-post-type.php:17
+msgid "Add New Accommodation"
+msgstr "Adauga cameră nouă"
+
+#: accom-post-type/accom-post-type.php:18
+msgid "Edit Accommodation"
+msgstr "Editaţi camera"
+
+#: accom-post-type/accom-post-type.php:19
+msgid "New Accommodation"
+msgstr "Cameră nouă"
+
+#: accom-post-type/accom-post-type.php:20
+msgid "View Accommodation post"
+msgstr "Afisează camera"
+
+#: accom-post-type/accom-post-type.php:21
+msgid "Search Accommodation"
+msgstr "Căutați o cameră"
+
+#: accom-post-type/accom-post-type.php:22
+msgid "No accommodation found."
+msgstr "Nu s-au găsit camere."
+
+#: accom-post-type/accom-post-type.php:23
+msgid "No accommodation post found in trash."
+msgstr "Nu a fost găsită nicio cameră în coșul de gunoi."
+
+#: accom-post-type/accom-post-type.php:42
+msgid "Accommodation settings"
+msgstr "Setări cameră"
+
+#: accom-post-type/accom-post-type.php:58
+msgid "Number of accommodation of this type:"
+msgstr "Numărul de camere de acest tip:"
+
+#: accom-post-type/accom-post-type.php:63
+msgid "Edit accommodation numbering"
+msgstr "Editarea numerotării camerelor"
+
+#: accom-post-type/accom-post-type.php:75 admin-pages/admin-page.php:53
+#: admin-pages/admin-page.php:55 admin-pages/admin-page.php:57
+#: admin-pages/pages/customers/customers.php:79
+#: admin-pages/pages/reservations/blocked-accom-display.php:84
+#: admin-pages/pages/reservations/resa-display.php:546 hbook.php:360
+msgid "Delete"
+msgstr "Șterge"
+
+#: accom-post-type/accom-post-type.php:83
+#, fuzzy
+#| msgid "Paypal settings"
+msgid "Occupancy settings"
+msgstr "Setări PayPal"
+
+#: accom-post-type/accom-post-type.php:86
+msgid "Normal occupancy:"
+msgstr "Capacitate normală:"
+
+#: accom-post-type/accom-post-type.php:88
+msgid "Extra people might pay a fee as defined in the \"Rates page\"."
+msgstr "Persoanele în plus pot plăti o taxă definită în pagina \"preţ\"."
+
+#: accom-post-type/accom-post-type.php:93
+msgid "Maximum occupancy:"
+msgstr "Capacitate maximă:"
+
+#: accom-post-type/accom-post-type.php:97
+msgid "Minimum occupancy:"
+msgstr "Capacitate minimă:"
+
+#: accom-post-type/accom-post-type.php:105
+#, fuzzy
+#| msgid "Reservations"
+msgid "Descriptions"
+msgstr "Rezervări"
+
+#: accom-post-type/accom-post-type.php:107
+msgid "Description displayed in search results:"
+msgstr "Descriere afişată în rezultatele căutării:"
+
+#: accom-post-type/accom-post-type.php:111
+msgid "Description displayed in Accommodation list:"
+msgstr "Descriere afişată în lista spaţiilor de cazare:"
+
+#: accom-post-type/accom-post-type.php:117
+msgid "Accommodation short name:"
+msgstr "Numele scurt al camerei:"
+
+#: accom-post-type/accom-post-type.php:119
+msgid "If set this name will be used in the calendar of the Reservations page."
+msgstr ""
+"Dacă se setează acest nume va fi utilizat în calendarul paginii de rezervări."
+
+#: accom-post-type/accom-post-type.php:127
+#, fuzzy
+#| msgid "Displayed?"
+msgid "Display options"
+msgstr "Afişare?"
+
+#: accom-post-type/accom-post-type.php:131
+#, fuzzy
+#| msgid "Accommodation display"
+msgid "Accommodation display:"
+msgstr "Afisare cameră"
+
+#: accom-post-type/accom-post-type.php:143
+msgid "Use this post to display the accommodation"
+msgstr "Utilizaţi această postare pentru a afişa camera"
+
+#: accom-post-type/accom-post-type.php:151
+msgid "Use another post or page to display the accommodation"
+msgstr "Utilizaţi altă postare sau pagină pentru a afişa camera"
+
+#: accom-post-type/accom-post-type.php:155
+#, fuzzy
+#| msgid "Enter the ID of the page used for displaying the accommodation:"
+msgid "ID of the page used for displaying the accommodation:"
+msgstr "Introduceţi ID-ul paginii utilizate pentru afişarea camerei:"
+
+#: accom-post-type/accom-post-type.php:166
+#, fuzzy
+#| msgid "Accommodation display"
+msgid "Accommodation display template:"
+msgstr "Afisare cameră"
+
+#: accom-post-type/accom-post-type.php:169
+msgid "Post"
+msgstr "Articol"
+
+#: accom-post-type/accom-post-type.php:170
+msgid "Page"
+msgstr "Pagină"
+
+#: accom-post-type/accom-post-type.php:188
+msgid "Starting price:"
+msgstr "Preţul de pornire:"
+
+#: accom-post-type/accom-post-type.php:200
+#, fuzzy
+#| msgid "Accommodation blocked"
+msgid "Automatic blockings"
+msgstr "Cameră blocată"
+
+#: accom-post-type/accom-post-type.php:203
+#, fuzzy
+#| msgid "Expiration date"
+msgid "Preparation time:"
+msgstr "Data de expirare"
+
+#: accom-post-type/accom-post-type.php:205
+msgid ""
+"Enter the number of nights that should be blocked before and after a "
+"reservation."
+msgstr ""
+
+#: accom-post-type/accom-post-type.php:211
+msgid ""
+"Accommodation that need to be blocked when this type of accommodation is "
+"booked:"
+msgstr ""
+"Cameră care trebuie să fie blocată atunci când acest tip de cameră este "
+"rezervat:"
+
+#: accom-post-type/accom-post-type.php:213
+msgid ""
+"Enter accommodation id. Separate multiple values with comma. You can "
+"indicate the number of accommodation that should be blocked between "
+"parentheses."
+msgstr ""
+"Introduceţi ID-ul camerei. Separaţi mai multe valori cu virgulă. Puteţi "
+"indica numărul de unităţi de cazare care ar trebui să fie blocate între "
+"paranteze."
+
+#: accom-post-type/accom-post-type.php:335
+msgid "Accommodation id: "
+msgstr "ID cameră: "
+
+#: admin-pages/admin-ajax-actions.php:22
+msgid "Your session has expired. Please refresh the page."
+msgstr "Sesiunea a expirat. Vă rugăm să reîmprospătaţi pagina."
+
+#: admin-pages/admin-ajax-actions.php:457
+#: front-end/front-end-ajax-actions.php:66
+#, php-format
+msgid "The %s (%s) is no longer available."
+msgstr "%s ( %s) nu mai este disponibil."
+
+#: admin-pages/admin-ajax-actions.php:680
+msgid "from"
+msgstr "de la"
+
+#: admin-pages/admin-ajax-actions.php:680
+msgid "to"
+msgstr "catre"
+
+#: admin-pages/admin-page.php:17 admin-pages/admin-page.php:98
+#: admin-pages/pages/emails/emails.php:18 admin-pages/pages/rates/rates.php:429
+#: admin-pages/pages/reservations/blocked-accom-display.php:28
+#: admin-pages/pages/reservations/resa-display.php:134
+#: admin-pages/pages/reservations/reservations.php:56 blocks/blocks.php:97
+#: front-end/booking-form/search-form.php:133
+msgid "All"
+msgstr "Toate"
+
+#: admin-pages/admin-page.php:18 admin-pages/pages/customers/customers.php:87
+#: admin-pages/pages/customers/customers.php:93
+#: admin-pages/pages/ical/ical.php:198
+#: admin-pages/pages/reservations/resa-display.php:244
+#: admin-pages/pages/reservations/resa-display.php:265
+#: admin-pages/pages/reservations/resa-display.php:299
+#: admin-pages/pages/reservations/resa-display.php:323
+#: admin-pages/pages/reservations/resa-display.php:344
+#: admin-pages/pages/reservations/resa-display.php:364
+#: admin-pages/pages/reservations/resa-display.php:370
+#: admin-pages/pages/reservations/resa-display.php:390
+#: admin-pages/pages/reservations/resa-display.php:414
+#: admin-pages/pages/reservations/resa-display.php:438
+#: admin-pages/pages/reservations/resa-display.php:515
+msgid "Save"
+msgstr "Salvează"
+
+#: admin-pages/admin-page.php:19 admin-pages/pages/text/text.php:115
+#: utils/options-utils.php:1203
+msgid "Saving..."
+msgstr "Se salvează..."
+
+#: admin-pages/admin-page.php:20
+#, php-format
+msgid "Delete '%setting_name'?"
+msgstr "Ștergeți ' %setting_name '?"
+
+#: admin-pages/admin-page.php:21
+msgid "Confirm deletion?"
+msgstr "Confirmare ştergere?"
+
+#: admin-pages/admin-page.php:22
+msgid "It seems some changes have not been saved."
+msgstr "Se pare că unele schimbări nu au fost salvate."
+
+#: admin-pages/admin-page.php:23
+msgid "No accommodation selected"
+msgstr "Nicio cameră nu a fost selectată"
+
+#: admin-pages/admin-page.php:41
+msgid "Add season dates"
+msgstr "Adăugaţi datele perioadei"
+
+#: admin-pages/admin-page.php:44
+msgid "Add option choice"
+msgstr "Adăugare alegere opţională"
+
+#: admin-pages/admin-page.php:51 admin-pages/pages/customers/customers.php:78
+#: admin-pages/pages/reservations/resa-display.php:233
+#: admin-pages/pages/reservations/resa-display.php:257
+#: admin-pages/pages/reservations/resa-display.php:278
+#: admin-pages/pages/reservations/resa-display.php:316
+#: admin-pages/pages/reservations/resa-display.php:339
+#: admin-pages/pages/reservations/resa-display.php:354
+msgid "Edit"
+msgstr "Editează"
+
+#: admin-pages/admin-page.php:61 admin-pages/pages/customers/customers.php:82
+#: admin-pages/pages/reservations/blocked-accom-display.php:87
+msgid "Deleting..."
+msgstr "Se șterge..."
+
+#: admin-pages/admin-page.php:69 admin-pages/admin-page.php:71
+#: admin-pages/admin-page.php:73 admin-pages/admin-page.php:75
+#: admin-pages/pages/customers/customers.php:89
+#: admin-pages/pages/customers/customers.php:95
+#: admin-pages/pages/customers/customers.php:149
+#: admin-pages/pages/ical/ical.php:184 admin-pages/pages/ical/ical.php:199
+#: admin-pages/pages/reservations/resa-display.php:246
+#: admin-pages/pages/reservations/resa-display.php:266
+#: admin-pages/pages/reservations/resa-display.php:301
+#: admin-pages/pages/reservations/resa-display.php:325
+#: admin-pages/pages/reservations/resa-display.php:346
+#: admin-pages/pages/reservations/resa-display.php:366
+#: admin-pages/pages/reservations/resa-display.php:372
+#: admin-pages/pages/reservations/resa-display.php:392
+#: admin-pages/pages/reservations/resa-display.php:416
+#: admin-pages/pages/reservations/resa-display.php:440
+#: admin-pages/pages/reservations/resa-display.php:453
+#: admin-pages/pages/reservations/resa-display.php:463
+#: admin-pages/pages/reservations/resa-display.php:517
+#: admin-pages/pages/reservations/resa-display.php:529
+#: admin-pages/pages/reservations/resa-display.php:559
+#: admin-pages/pages/reservations/resa-display.php:588
+#: admin-pages/pages/reservations/resa-exporter-display.php:152
+msgid "Cancel"
+msgstr "Anulează"
+
+#: admin-pages/admin-page.php:89 admin-pages/admin-page.php:109
+#: admin-pages/pages/customers/customers.php:127
+#: admin-pages/pages/rates/rates.php:452
+#: admin-pages/pages/reservations/resa-exporter-display.php:65
+#: admin-pages/pages/reservations/resa-exporter-display.php:94
+msgid "Select all"
+msgstr "Selectează tot"
+
+#: admin-pages/admin-page.php:90 admin-pages/admin-page.php:113
+#: admin-pages/pages/customers/customers.php:128
+#: admin-pages/pages/rates/rates.php:439 admin-pages/pages/rates/rates.php:453
+#: admin-pages/pages/reservations/resa-exporter-display.php:66
+#: admin-pages/pages/reservations/resa-exporter-display.php:95
+msgid "Unselect all"
+msgstr "Debifaţi toate"
+
+#: admin-pages/admin-page.php:119
+#: admin-pages/pages/reservations/resa-display.php:474
+#: admin-pages/pages/reservations/resa-display.php:496
+#: front-end/booking-form/details-form.php:133
+msgid "Amount type:"
+msgstr "Tip de sumă:"
+
+#: admin-pages/admin-page.php:120
+#: admin-pages/pages/reservations/resa-display.php:481
+#: admin-pages/pages/reservations/resa-display.php:503
+#: front-end/booking-form/details-form.php:137 utils/options-utils.php:128
+msgid "Fixed"
+msgstr "Fixat"
+
+#: admin-pages/admin-page.php:121 front-end/booking-form/details-form.php:144
+#: utils/options-utils.php:126
+msgid "Percentage"
+msgstr "Procentaj"
+
+#: admin-pages/admin-page.php:137
+msgid "Remove field"
+msgstr "Sterge câmp"
+
+#: admin-pages/admin-page.php:146
+msgid "Edit field name"
+msgstr "Editaţi numele câmpului"
+
+#: admin-pages/admin-page.php:147 admin-pages/admin-page.php:201
+msgid "OK"
+msgstr "OK"
+
+#: admin-pages/admin-page.php:151 utils/utils.php:2940
+msgid "Text"
+msgstr "Text"
+
+#: admin-pages/admin-page.php:152 admin-pages/pages/customers/customers.php:23
+#: admin-pages/pages/customers/customers.php:65
+#: admin-pages/pages/details/details.php:17
+#: admin-pages/pages/reservations/resa-display.php:530
+#: admin-pages/pages/reservations/resa-exporter-display.php:133
+#: admin-pages/pages/reservations/reservations.php:73
+msgid "Email"
+msgstr "E-mail"
+
+#: admin-pages/admin-page.php:153
+msgid "Number"
+msgstr "Număr"
+
+#: admin-pages/admin-page.php:154
+msgid "Text area"
+msgstr "Zonă de Text"
+
+#: admin-pages/admin-page.php:155 admin-pages/pages/emails/emails.php:163
+msgid "Select"
+msgstr "Selectează"
+
+#: admin-pages/admin-page.php:156
+msgid "Radio buttons"
+msgstr "Butoane"
+
+#: admin-pages/admin-page.php:157
+msgid "Check boxes"
+msgstr "Căsuţe de bifat"
+
+#: admin-pages/admin-page.php:158 utils/strings-utils.php:81
+#: utils/strings-utils.php:93
+msgid "Title"
+msgstr "Titlu"
+
+#: admin-pages/admin-page.php:159
+msgid "Sub-title"
+msgstr "Sub-titlu"
+
+#: admin-pages/admin-page.php:160
+msgid "Explanation"
+msgstr "Explicație"
+
+#: admin-pages/admin-page.php:161
+msgid "Separator"
+msgstr "Separator"
+
+#: admin-pages/admin-page.php:162
+msgid "Column break"
+msgstr "Sfârşit de coloană"
+
+#: admin-pages/admin-page.php:170
+msgid "Displayed?"
+msgstr "Afişare?"
+
+#: admin-pages/admin-page.php:172 admin-pages/admin-page.php:181
+#: admin-pages/pages/fees/fees.php:182 admin-pages/pages/options/options.php:10
+#: admin-pages/pages/options/options.php:122
+#: admin-pages/pages/options/options.php:146
+#: admin-pages/pages/payment/payment.php:52
+#: admin-pages/pages/rates/rates.php:54 admin-pages/pages/rates/rates.php:386
+#: admin-pages/pages/rules/rules.php:23 payment/stripe/stripe.php:63
+#: payment/stripe/stripe.php:72 utils/options-utils.php:24
+#: utils/options-utils.php:45 utils/options-utils.php:55
+#: utils/options-utils.php:65 utils/options-utils.php:75
+#: utils/options-utils.php:92 utils/options-utils.php:102
+#: utils/options-utils.php:143 utils/options-utils.php:301
+#: utils/options-utils.php:343 utils/options-utils.php:352
+#: utils/options-utils.php:437 utils/options-utils.php:447
+#: utils/options-utils.php:490 utils/options-utils.php:534
+#: utils/options-utils.php:544 utils/options-utils.php:565
+#: utils/options-utils.php:574 utils/options-utils.php:595
+#: utils/options-utils.php:610 utils/options-utils.php:620
+#: utils/options-utils.php:629 utils/options-utils.php:662
+#: utils/options-utils.php:671 utils/options-utils.php:701
+#: utils/options-utils.php:711 utils/options-utils.php:721
+#: utils/options-utils.php:739 utils/options-utils.php:749
+#: utils/options-utils.php:758 utils/options-utils.php:767
+#: utils/options-utils.php:788 utils/options-utils.php:797
+#: utils/options-utils.php:806 utils/options-utils.php:824
+msgid "Yes"
+msgstr "Da"
+
+#: admin-pages/admin-page.php:175 admin-pages/admin-page.php:184
+#: admin-pages/pages/fees/fees.php:180 admin-pages/pages/options/options.php:11
+#: admin-pages/pages/options/options.php:124
+#: admin-pages/pages/options/options.php:144
+#: admin-pages/pages/payment/payment.php:53
+#: admin-pages/pages/rates/rates.php:55 admin-pages/pages/rates/rates.php:388
+#: admin-pages/pages/rules/rules.php:24 payment/stripe/stripe.php:64
+#: payment/stripe/stripe.php:73 utils/options-utils.php:25
+#: utils/options-utils.php:46 utils/options-utils.php:56
+#: utils/options-utils.php:66 utils/options-utils.php:76
+#: utils/options-utils.php:93 utils/options-utils.php:103
+#: utils/options-utils.php:144 utils/options-utils.php:302
+#: utils/options-utils.php:344 utils/options-utils.php:353
+#: utils/options-utils.php:438 utils/options-utils.php:448
+#: utils/options-utils.php:491 utils/options-utils.php:535
+#: utils/options-utils.php:545 utils/options-utils.php:566
+#: utils/options-utils.php:575 utils/options-utils.php:596
+#: utils/options-utils.php:611 utils/options-utils.php:621
+#: utils/options-utils.php:630 utils/options-utils.php:663
+#: utils/options-utils.php:672 utils/options-utils.php:702
+#: utils/options-utils.php:712 utils/options-utils.php:722
+#: utils/options-utils.php:740 utils/options-utils.php:750
+#: utils/options-utils.php:759 utils/options-utils.php:768
+#: utils/options-utils.php:789 utils/options-utils.php:798
+#: utils/options-utils.php:807 utils/options-utils.php:825
+msgid "No"
+msgstr "Nu"
+
+#: admin-pages/admin-page.php:179
+msgid "Required?"
+msgstr "Necesar?"
+
+#: admin-pages/admin-page.php:188
+msgid "Field type:"
+msgstr "Tipul de câmp:"
+
+#: admin-pages/admin-page.php:194
+msgid "Choices:"
+msgstr "Alegeri:"
+
+#: admin-pages/admin-page.php:195
+msgid "Add a choice"
+msgstr "Adăugați o opțiune"
+
+#: admin-pages/admin-page.php:200
+msgid "Edit choice"
+msgstr "Editarea opţiunii"
+
+#: admin-pages/admin-page.php:202
+msgid "Remove choice"
+msgstr "Înlăturarea opţiunii"
+
+#: admin-pages/admin-page.php:211
+msgid "Data about?"
+msgstr "Date despre?"
+
+#: admin-pages/admin-page.php:213
+#: admin-pages/pages/reservations/resa-display.php:208
+msgid "Customer"
+msgstr "Client"
+
+#: admin-pages/admin-page.php:216
+msgid "Booking"
+msgstr "Rezervare"
+
+#: admin-pages/admin-page.php:219
+msgid "Column width:"
+msgstr "Lățime coloană:"
+
+#: admin-pages/admin-page.php:221
+msgid "Full"
+msgstr "Complet"
+
+#: admin-pages/admin-page.php:222
+msgid "One half"
+msgstr "O jumătate"
+
+#: admin-pages/admin-page.php:223
+msgid "One third"
+msgstr "O treime"
+
+#: admin-pages/admin-page.php:237
+msgid "HBook settings"
+msgstr "Setări"
+
+#: admin-pages/pages/appearance/appearance.php:7
+#: admin-pages/pages/forms/forms.php:7 admin-pages/pages/misc/misc.php:7
+#: admin-pages/pages/payment/payment.php:11
+msgid "Settings have been saved."
+msgstr "Setările au fost salvate."
+
+#: admin-pages/pages/appearance/appearance.php:20 utils/utils.php:2935
+msgid "Appearance"
+msgstr "Aspect"
+
+#: admin-pages/pages/customers/customers.php:17
+msgid "Delete customer?"
+msgstr "Ștergeți clientul?"
+
+#: admin-pages/pages/customers/customers.php:18
+#: admin-pages/pages/reservations/reservations.php:53
+msgid "Please select the data you want to export."
+msgstr "Vă rugăm să selectaţi datele pe care doriţi să le exportaţi."
+
+#: admin-pages/pages/customers/customers.php:19
+#, fuzzy
+#| msgid "New reservation"
+msgid "1 reservation"
+msgstr "Rezervare nouă"
+
+#: admin-pages/pages/customers/customers.php:20
+#: admin-pages/pages/reservations/reservations.php:46
+#, fuzzy, php-format
+#| msgid "Reservations"
+msgid "%s reservations"
+msgstr "Rezervări"
+
+#: admin-pages/pages/customers/customers.php:21
+#: admin-pages/pages/customers/customers.php:63
+#: admin-pages/pages/details/details.php:15
+#: admin-pages/pages/reservations/resa-exporter-display.php:131
+#: admin-pages/pages/reservations/reservations.php:71
+msgid "First name"
+msgstr "Prenume"
+
+#: admin-pages/pages/customers/customers.php:22
+#: admin-pages/pages/customers/customers.php:64
+#: admin-pages/pages/details/details.php:16
+#: admin-pages/pages/reservations/resa-exporter-display.php:132
+#: admin-pages/pages/reservations/reservations.php:72
+msgid "Last name"
+msgstr "Nume"
+
+#: admin-pages/pages/customers/customers.php:37 utils/utils.php:2930
+msgid "Customers"
+msgstr "Clienți"
+
+#: admin-pages/pages/customers/customers.php:43
+msgid "Customer list"
+msgstr "Listă clienți"
+
+#: admin-pages/pages/customers/customers.php:48
+msgid "There is no customers."
+msgstr "Nu există clienţi."
+
+#: admin-pages/pages/customers/customers.php:54
+#: admin-pages/pages/reservations/resa-display.php:388
+#: front-end/booking-form/details-form.php:422
+msgid "Search a customer..."
+msgstr "Căutați un client..."
+
+#: admin-pages/pages/customers/customers.php:62
+#: admin-pages/pages/reservations/resa-display.php:196 utils/utils.php:2653
+#: utils/utils.php:2657
+msgid "Id"
+msgstr "ID"
+
+#: admin-pages/pages/customers/customers.php:66
+msgid "Other informations"
+msgstr "Alte informatii"
+
+#: admin-pages/pages/customers/customers.php:67
+#: admin-pages/pages/documents/documents.php:61
+#: admin-pages/pages/emails/emails.php:116 admin-pages/pages/fees/fees.php:107
+#: admin-pages/pages/options/options.php:76
+#: admin-pages/pages/rates/rates.php:195 admin-pages/pages/rates/rates.php:241
+#: admin-pages/pages/rates/rates.php:420
+#: admin-pages/pages/reservations/blocked-accom-display.php:73
+#: admin-pages/pages/rules/rules.php:70 admin-pages/pages/rules/rules.php:126
+#: admin-pages/pages/rules/rules.php:182 admin-pages/pages/rules/rules.php:238
+#: admin-pages/pages/rules/rules.php:301
+#: admin-pages/pages/seasons/seasons.php:43
+msgid "Actions"
+msgstr "Acțiuni"
+
+#: admin-pages/pages/customers/customers.php:86
+#: admin-pages/pages/reservations/resa-display.php:363
+msgid "Customer details"
+msgstr "Detalii Client"
+
+#: admin-pages/pages/customers/customers.php:88
+#: admin-pages/pages/customers/customers.php:94
+#: admin-pages/pages/reservations/resa-display.php:245
+#: admin-pages/pages/reservations/resa-display.php:300
+#: admin-pages/pages/reservations/resa-display.php:324
+#: admin-pages/pages/reservations/resa-display.php:345
+#: admin-pages/pages/reservations/resa-display.php:365
+#: admin-pages/pages/reservations/resa-display.php:371
+#: admin-pages/pages/reservations/resa-display.php:391
+#: admin-pages/pages/reservations/resa-display.php:415
+#: admin-pages/pages/reservations/resa-display.php:439
+#: admin-pages/pages/reservations/resa-display.php:516
+msgid "Saving"
+msgstr "Salvez"
+
+#: admin-pages/pages/customers/customers.php:115
+msgid "Export customers"
+msgstr "Export clienti"
+
+#: admin-pages/pages/customers/customers.php:124
+#: admin-pages/pages/reservations/resa-exporter-display.php:91
+msgid "Select data to be exported:"
+msgstr "Selectaţi datele de exportat:"
+
+#: admin-pages/pages/customers/customers.php:147
+#: admin-pages/pages/reservations/resa-exporter-display.php:150
+msgid "Download file"
+msgstr "Descarcă fișier"
+
+#: admin-pages/pages/customers/customers.php:178
+#: admin-pages/pages/reservations/resa-display.php:607
+#, php-format
+msgid "Viewing page %s of %s"
+msgstr "Vizualizarea paginii %s din %s"
+
+#: admin-pages/pages/details/details.php:7
+#, fuzzy
+#| msgid "Forms settings have been saved."
+msgid "The Details form settings have been saved."
+msgstr "Setările formularelor au fost salvate."
+
+#: admin-pages/pages/details/details.php:8
+msgid "New field"
+msgstr "Câmp nou"
+
+#: admin-pages/pages/details/details.php:9
+#, php-format
+msgid "Remove '%field_name'?"
+msgstr "Eliminați '% field_name '?"
+
+#: admin-pages/pages/details/details.php:10
+msgid "Remove field?"
+msgstr "Eliminare câmp?"
+
+#: admin-pages/pages/details/details.php:11
+msgid "(This will also erase all data associated to this field.)"
+msgstr ""
+"(acest lucru va șterge, de asemenea, toate datele asociate acestui câmp.)"
+
+#: admin-pages/pages/details/details.php:12
+msgid "New choice"
+msgstr "Nouă alegere"
+
+#: admin-pages/pages/details/details.php:13
+#, php-format
+msgid "Remove '%choice_name'?"
+msgstr "Eliminați '% choice_name '?"
+
+#: admin-pages/pages/details/details.php:14
+#, fuzzy
+#| msgid "Default form title"
+msgid "Form title"
+msgstr "Titlu implicit de formular"
+
+#: admin-pages/pages/details/details.php:31
+#, fuzzy
+#| msgid "Customer details form"
+msgid "Customer and booking details form"
+msgstr "Formular detalii client"
+
+#: admin-pages/pages/details/details.php:38
+#, fuzzy
+#| msgid "Customize the Customer details form."
+msgid "Customize the Details form."
+msgstr "Personalizaţi formularul detalii client."
+
+#: admin-pages/pages/details/details.php:39
+msgid ""
+"You can add new fields, change fields settings and Drag and Drop fields to "
+"reorder them."
+msgstr ""
+
+#: admin-pages/pages/details/details.php:45
+#: admin-pages/pages/details/details.php:50
+msgid "Add a field"
+msgstr "Adăugați un câmp"
+
+#: admin-pages/pages/documents/documents.php:9
+#, fuzzy
+#| msgid "For language"
+msgid "Admin language"
+msgstr "Pentru limba"
+
+#: admin-pages/pages/documents/documents.php:20
+#, fuzzy
+#| msgid "New email template"
+msgid "New document template"
+msgstr "Model nou de e-mail"
+
+#: admin-pages/pages/documents/documents.php:34
+#, fuzzy
+#| msgid "Email templates"
+msgid "Document templates"
+msgstr "Modele de e-mail"
+
+#: admin-pages/pages/documents/documents.php:35
+#: admin-pages/pages/documents/documents.php:101
+#, fuzzy
+#| msgid "Add new email template"
+msgid "Add new document template"
+msgstr "Adăugare șablon de e-mail nou"
+
+#: admin-pages/pages/documents/documents.php:44
+#, fuzzy
+#| msgid "No email templates set yet."
+msgid "No document templates set yet."
+msgstr "Nu au fost încă configurate modele de e-mail."
+
+#: admin-pages/pages/documents/documents.php:58
+#: admin-pages/pages/emails/emails.php:109
+#: admin-pages/pages/rules/rules.php:293
+msgid "Name"
+msgstr "Nume"
+
+#: admin-pages/pages/documents/documents.php:59
+#, fuzzy
+#| msgid "Templates..."
+msgid "Template"
+msgstr "Şabloane..."
+
+#: admin-pages/pages/documents/documents.php:60
+#: admin-pages/pages/langfiles/langfiles.php:82
+msgid "Language"
+msgstr "Limbă"
+
+#: admin-pages/pages/documents/documents.php:106
+#: admin-pages/pages/emails/emails.php:206
+msgid "You can use the following variables:"
+msgstr "Aveţi posibilitatea să utilizaţi următoarele variabile:"
+
+#: admin-pages/pages/emails/emails.php:40
+msgid "New reservation (from customers)"
+msgstr "Rezervare nouă (de la clienţi)"
+
+#: admin-pages/pages/emails/emails.php:44
+msgid "New reservation (from admin)"
+msgstr "Rezervare nouă (de la admin)"
+
+#: admin-pages/pages/emails/emails.php:48
+#: database-actions/database-creation.php:169
+#: database-actions/database-creation.php:615
+msgid "Reservation confirmation"
+msgstr "Confirmarea rezervării"
+
+#: admin-pages/pages/emails/emails.php:52
+msgid "Reservation cancellation"
+msgstr "Anularea rezervării"
+
+#: admin-pages/pages/emails/emails.php:59
+msgid "New email template"
+msgstr "Model nou de e-mail"
+
+#: admin-pages/pages/emails/emails.php:60
+msgid "This e-mail address does not seem valid."
+msgstr "Această adresă de e-mail nu pare validă."
+
+#: admin-pages/pages/emails/emails.php:61
+msgid "Please seperate multiple e-mail addresses with commas."
+msgstr "Vă rugăm să separaţi mai multe adrese de e-mail cu virgule."
+
+#: admin-pages/pages/emails/emails.php:62
+msgid "Please use a complete e-mail address eg. Your Name <email@domain.com>"
+msgstr ""
+"Vă rugăm să folosiţi o adresă de e-mail completă. De exemplu: Numele "
+"dumneavoastră <email@domeniu.com>"
+
+#: admin-pages/pages/emails/emails.php:63
+#: admin-pages/pages/reservations/reservations.php:79
+#, fuzzy
+#| msgid "Select a check-in date"
+msgid "Select attachments"
+msgstr "Selectaţi o dată de sosire"
+
+#: admin-pages/pages/emails/emails.php:64
+#: admin-pages/pages/reservations/reservations.php:80
+#, fuzzy
+#| msgid "Remove blocked dates?"
+msgid "Remove all attachments?"
+msgstr "Eliminați datele blocate?"
+
+#: admin-pages/pages/emails/emails.php:65
+msgid "Not automatically sent"
+msgstr "Nu se trimite automat"
+
+#: admin-pages/pages/emails/emails.php:66
+#: admin-pages/pages/emails/emails.php:150
+#, fuzzy
+#| msgid "Message"
+msgid "Message:"
+msgstr "Mesaj"
+
+#: admin-pages/pages/emails/emails.php:67
+#: admin-pages/pages/emails/emails.php:153
+#, fuzzy
+#| msgid "Format"
+msgid "Format:"
+msgstr "Format"
+
+#: admin-pages/pages/emails/emails.php:68
+#: admin-pages/pages/emails/emails.php:161
+msgid "Attachments:"
+msgstr ""
+
+#: admin-pages/pages/emails/emails.php:85
+msgid "Email templates"
+msgstr "Modele de e-mail"
+
+#: admin-pages/pages/emails/emails.php:86
+#: admin-pages/pages/emails/emails.php:200
+msgid "Add new email template"
+msgstr "Adăugare șablon de e-mail nou"
+
+#: admin-pages/pages/emails/emails.php:95
+msgid "No email templates set yet."
+msgstr "Nu au fost încă configurate modele de e-mail."
+
+#: admin-pages/pages/emails/emails.php:110
+msgid "Addresses"
+msgstr "Adrese"
+
+#: admin-pages/pages/emails/emails.php:111
+#: admin-pages/pages/reservations/resa-display.php:569
+msgid "Subject"
+msgstr "Subiect"
+
+#: admin-pages/pages/emails/emails.php:112
+#: admin-pages/pages/reservations/resa-display.php:571
+#: utils/strings-utils.php:82
+msgid "Message"
+msgstr "Mesaj"
+
+#: admin-pages/pages/emails/emails.php:113
+msgid "Send on"
+msgstr "Trimite pe"
+
+#: admin-pages/pages/emails/emails.php:114
+#, fuzzy
+#| msgid "Current accom.:"
+msgid "For accom."
+msgstr "Camera curentă:"
+
+#: admin-pages/pages/emails/emails.php:115
+msgid "For language"
+msgstr "Pentru limba"
+
+#: admin-pages/pages/emails/emails.php:124
+#: admin-pages/pages/emails/emails.php:141
+msgid "To:"
+msgstr "La:"
+
+#: admin-pages/pages/emails/emails.php:125
+#: admin-pages/pages/emails/emails.php:143
+msgid "Reply-to:"
+msgstr "Răspuns la:"
+
+#: admin-pages/pages/emails/emails.php:126
+#: admin-pages/pages/emails/emails.php:145
+msgid "From:"
+msgstr "De la:"
+
+#: admin-pages/pages/emails/emails.php:155
+msgid "TEXT"
+msgstr "Text"
+
+#: admin-pages/pages/emails/emails.php:158
+msgid "HTML"
+msgstr "HTML"
+
+#: admin-pages/pages/emails/emails.php:164
+#, fuzzy
+#| msgid "Remove field"
+msgid "Remove all"
+msgstr "Sterge câmp"
+
+#: admin-pages/pages/emails/emails.php:204
+msgid ""
+"\"To address\", \"Reply-To address\", \"From address\", \"Subject\" and "
+"\"Message\" fields:"
+msgstr ""
+"câmpurile \"către adresa\", \"adresa de răspuns\", \"de la adresa\", "
+"\"subiect\" şi \"mesaj\":"
+
+#: admin-pages/pages/emails/emails.php:210
+msgid "\"To address\" field:"
+msgstr "câmpul \"către adresa\":"
+
+#: admin-pages/pages/emails/emails.php:214
+#, php-format
+msgid ""
+"If the field is blank the email address of the WordPress administrator (%s) "
+"will be used."
+msgstr ""
+"În cazul în care câmpul este necompletat adresa de e-mail a "
+"administratorului WordPress ( %s) va fi utilizată."
+
+#: admin-pages/pages/emails/emails.php:222
+#, php-format
+msgid "Separate multiple e-mail addresses with commas, for example: %s"
+msgstr ""
+"Separaţi mai multe adrese de poştă electronică cu virgule, de exemplu: %s"
+
+#: admin-pages/pages/emails/emails.php:223
+msgid "email-1@domain.com,email-2@domain.com"
+msgstr "email-1@domeniu.com, email-2@domeniu.com"
+
+#: admin-pages/pages/emails/emails.php:229
+msgid "\"Reply-To address\", \"From address\" fields:"
+msgstr "Câmpurilw \"adresa de răspuns\", \"de la adresa\":"
+
+#: admin-pages/pages/emails/emails.php:233
+#, php-format
+msgid ""
+"Insert a complete e-mail address (a name followed by an email address "
+"wrapped between %s and %s, for example: %s"
+msgstr ""
+"Introdu o adresă completă de poştă electronică (un nume urmat de o adresă de "
+"e-mail inclusăă între %s şi %s, de exemplu: %s"
+
+#: admin-pages/pages/emails/emails.php:236
+msgid "Your Name <your.email@domain.com>"
+msgstr "Numele tău <numele.tău@domeniu.com>"
+
+#: admin-pages/pages/emails/emails.php:241
+msgid "\"From address\" fields:"
+msgstr "Câmpul \"de la adresa\":"
+
+#: admin-pages/pages/emails/emails.php:252
+#, php-format
+msgid "If the field is blank %s will be used."
+msgstr "Dacă acest câmp este necompletat %s va fi utilizat."
+
+#: admin-pages/pages/fees/fees.php:12 admin-pages/pages/options/options.php:21
+msgid "Per person"
+msgstr "Pe persoană"
+
+#: admin-pages/pages/fees/fees.php:16 admin-pages/pages/options/options.php:25
+msgid "Per person / per day"
+msgstr "Pe persoana / pe zi"
+
+#: admin-pages/pages/fees/fees.php:20 admin-pages/pages/options/options.php:33
+msgid "Per accommodation / per day"
+msgstr "Pe cameră / pe zi"
+
+#: admin-pages/pages/fees/fees.php:24 admin-pages/pages/options/options.php:29
+msgid "Per accommodation"
+msgstr "Per cameră"
+
+#: admin-pages/pages/fees/fees.php:28
+#, fuzzy
+#| msgid "Booking"
+msgid "Per booking"
+msgstr "Rezervare"
+
+#: admin-pages/pages/fees/fees.php:34
+#, fuzzy
+#| msgid "Per accommodation"
+msgid "Percentage (on Accommodation)"
+msgstr "Per cameră"
+
+#: admin-pages/pages/fees/fees.php:35 admin-pages/pages/rates/rates.php:56
+#: utils/strings-utils.php:98
+msgid "Accommodation price"
+msgstr "Preţul camerei"
+
+#: admin-pages/pages/fees/fees.php:39
+msgid "Percentage (on Extra Services)"
+msgstr ""
+
+#: admin-pages/pages/fees/fees.php:40
+#, fuzzy
+#| msgid "Extra services"
+msgid "Extra Services price"
+msgstr "Servicii suplimentare"
+
+#: admin-pages/pages/fees/fees.php:44
+#, fuzzy
+#| msgid "Percentage"
+msgid "Percentage (global)"
+msgstr "Procentaj"
+
+#: admin-pages/pages/fees/fees.php:45 admin-pages/pages/rates/rates.php:57
+#, fuzzy
+#| msgid "Total price"
+msgid "Global price"
+msgstr "Preț total"
+
+#: admin-pages/pages/fees/fees.php:51
+#, fuzzy
+#| msgid "New field"
+msgid "New fee"
+msgstr "Câmp nou"
+
+#: admin-pages/pages/fees/fees.php:52 admin-pages/pages/options/options.php:12
+#: admin-pages/pages/rates/rates.php:44
+msgid "Invalid amount."
+msgstr "Sumă nevalidă."
+
+#: admin-pages/pages/fees/fees.php:53 admin-pages/pages/fees/fees.php:200
+#: admin-pages/pages/options/options.php:13
+#: admin-pages/pages/options/options.php:170
+#: admin-pages/pages/options/options.php:210
+#: admin-pages/pages/reservations/resa-display.php:283
+#: admin-pages/pages/reservations/reservations.php:42
+#: front-end/booking-form/search-form.php:175
+#: front-end/booking-form/search-form.php:179
+msgid "Adults:"
+msgstr "Adulţi:"
+
+#: admin-pages/pages/fees/fees.php:54 admin-pages/pages/fees/fees.php:204
+#: admin-pages/pages/options/options.php:14
+#: admin-pages/pages/options/options.php:174
+#: admin-pages/pages/options/options.php:214
+#: admin-pages/pages/reservations/resa-display.php:286
+#: admin-pages/pages/reservations/reservations.php:43
+#: front-end/booking-form/search-form.php:176
+#: front-end/booking-form/search-form.php:180
+msgid "Children:"
+msgstr "Copii:"
+
+#: admin-pages/pages/fees/fees.php:55 admin-pages/pages/fees/fees.php:209
+#, fuzzy
+#| msgid "Minimum occupancy:"
+msgid "Minimum amount:"
+msgstr "Capacitate minimă:"
+
+#: admin-pages/pages/fees/fees.php:56 admin-pages/pages/fees/fees.php:211
+#, fuzzy
+#| msgid "Maximum occupancy:"
+msgid "Maximum amount:"
+msgstr "Capacitate maximă:"
+
+#: admin-pages/pages/fees/fees.php:57
+#, fuzzy
+#| msgid "Accommodation price"
+msgid "Included in Accommodation price"
+msgstr "Preţul camerei"
+
+#: admin-pages/pages/fees/fees.php:58
+#, fuzzy
+#| msgid "Total extra services price"
+msgid "Included in Extra Services price"
+msgstr "Pret total servicii suplimentare"
+
+#: admin-pages/pages/fees/fees.php:59
+#, fuzzy
+#| msgid "Invalid price."
+msgid "Included in prices"
+msgstr "Preţ incorect."
+
+#: admin-pages/pages/fees/fees.php:60
+#, fuzzy
+#| msgid "Accommodation price"
+msgid "Added to Accommodation price"
+msgstr "Preţul camerei"
+
+#: admin-pages/pages/fees/fees.php:61
+#, fuzzy
+#| msgid "Total extra services price"
+msgid "Added to Extra Services price"
+msgstr "Pret total servicii suplimentare"
+
+#: admin-pages/pages/fees/fees.php:62
+#, fuzzy
+#| msgid "Invalid price."
+msgid "Added to prices"
+msgstr "Preţ incorect."
+
+#: admin-pages/pages/fees/fees.php:63 admin-pages/pages/fees/fees.php:187
+msgid "Added to final price"
+msgstr ""
+
+#: admin-pages/pages/fees/fees.php:64 admin-pages/pages/fees/fees.php:217
+#: utils/options-utils.php:127 utils/strings-utils.php:94 utils/utils.php:2623
+msgid "Number of nights"
+msgstr "Număr de nopți"
+
+#: admin-pages/pages/fees/fees.php:65 admin-pages/pages/fees/fees.php:219
+#, fuzzy
+#| msgid "Number of children:"
+msgid "Number of adults and children"
+msgstr "- Numărul de copii:"
+
+#: admin-pages/pages/fees/fees.php:66 admin-pages/pages/fees/fees.php:221
+#, fuzzy
+#| msgid "Number of adults:"
+msgid "Number of adults"
+msgstr "- Numărul de adulţi:"
+
+#: admin-pages/pages/fees/fees.php:67 admin-pages/pages/fees/fees.php:223
+#, fuzzy
+#| msgid "Number of children:"
+msgid "Number of children"
+msgstr "- Numărul de copii:"
+
+#: admin-pages/pages/fees/fees.php:86 utils/utils.php:2895
+msgid "Fees"
+msgstr "Taxe"
+
+#: admin-pages/pages/fees/fees.php:87 admin-pages/pages/fees/fees.php:117
+#, fuzzy
+#| msgid "Add new fee"
+msgid "Add new fee"
+msgstr "Adăugare taxă nouă"
+
+#: admin-pages/pages/fees/fees.php:96
+#, fuzzy
+#| msgid "No fees have been created yet."
+msgid "No fees have been created yet."
+msgstr "Nu au fost create taxe încă."
+
+#: admin-pages/pages/fees/fees.php:103
+#, fuzzy
+#| msgid "Fee name"
+msgid "Fee name"
+msgstr "Numele taxei"
+
+#: admin-pages/pages/fees/fees.php:104 admin-pages/pages/options/options.php:73
+msgid "Type"
+msgstr "Tip"
+
+#: admin-pages/pages/fees/fees.php:105 admin-pages/pages/options/options.php:74
+#: admin-pages/pages/rates/rates.php:194 admin-pages/pages/rates/rates.php:240
+#: admin-pages/pages/rates/rates.php:419
+msgid "Amount"
+msgstr "Suma"
+
+#: admin-pages/pages/fees/fees.php:145 admin-pages/pages/fees/fees.php:185
+msgid "Fee is:"
+msgstr ""
+
+#: admin-pages/pages/fees/fees.php:162
+msgid "Fee applies on:"
+msgstr ""
+
+#: admin-pages/pages/fees/fees.php:178
+msgid "Apply on Accommodation per person per night price?"
+msgstr ""
+
+#: admin-pages/pages/fees/fees.php:197
+#, fuzzy
+#| msgid "Percentage"
+msgid "Percentage:"
+msgstr "Procentaj"
+
+#: admin-pages/pages/fees/fees.php:215
+#, fuzzy
+#| msgid "Multiple choice"
+msgid "Multiply per:"
+msgstr "Alegere multiplă"
+
+#: admin-pages/pages/forms/forms.php:20
+#, fuzzy
+#| msgid "Accommodation selection"
+msgid "Search form and Accommodation selection"
+msgstr "Selecţia camerei"
+
+#: admin-pages/pages/forms/forms.php:25 utils/utils.php:2900
+msgid "Search form"
+msgstr "Formular de căutare"
+
+#: admin-pages/pages/forms/forms.php:38 admin-pages/pages/text/text.php:25
+msgid "Accommodation selection"
+msgstr "Selecţia camerei"
+
+#: admin-pages/pages/help/help.php:16 utils/utils.php:2960 utils/utils.php:2973
+msgid "Help"
+msgstr "Ajutor"
+
+#: admin-pages/pages/help/help.php:22
+msgid "If you need help using HBook plugin here are some useful ressources."
+msgstr "Dacă aveţi nevoie de ajutor, aici sunt unele ressources utile."
+
+#: admin-pages/pages/help/help.php:34
+msgid ""
+"Before setting up the plugin you should have a look at its documentation. "
+"You will find all the basic information you need to use HBook."
+msgstr ""
+"Înainte de a configura plugin-ul ar trebui să aveţi o privire la "
+"documentaţia sa. Veţi găsi toate informaţiile de bază de care aveţi nevoie "
+"pentru a+l utiliza."
+
+#: admin-pages/pages/help/help.php:35
+msgid "Go to the documentation"
+msgstr "Accesați documentația"
+
+#: admin-pages/pages/help/help.php:39
+msgid ""
+"If you need to solve a specific issue you can try to enter your question in "
+"the search engine of our knowledge base and you might directly find the "
+"answer."
+msgstr ""
+"Dacă aveţi nevoie pentru a rezolva o anumită problemă, puteţi încerca să "
+"introduceţi întrebarea dumneavoastră în motorul de căutare a bazei noastre "
+"de informaţii şi s-ar putea găsi în mod direct răspunsul."
+
+#: admin-pages/pages/help/help.php:40
+msgid "Go to the knowledgebase"
+msgstr "Mergi la baza de cunoştinţe"
+
+#: admin-pages/pages/help/help.php:44
+msgid ""
+"If you can not find the answer you are looking for in the documentation or "
+"in the knowledgebase, feel free to send us a message via our contact form."
+msgstr ""
+"Dacă nu puteţi găsi răspunsul pe care îl căutaţi în documentaţie sau în baza "
+"de informaţii, nu ezitaţi să ne trimiteţi un mesaj prin intermediul "
+"formularului nostru de contact."
+
+#: admin-pages/pages/help/help.php:45
+msgid "Go to the contact support form"
+msgstr "Accesați formularul de asistență pentru contact"
+
+#: admin-pages/pages/ical/ical.php:12
+msgid "Stop synchronizing with this calendar?"
+msgstr "Oprirea sincronizării cu acest calendar?"
+
+#: admin-pages/pages/ical/ical.php:13
+msgid ""
+"The frequency is not valid. Value should not be lower than 5 minutes (300s)."
+msgstr ""
+
+#: admin-pages/pages/ical/ical.php:24
+#, fuzzy
+#| msgid "Ical synchronization and import/export"
+msgid "ICal synchronization and import/export"
+msgstr "Sincronizare iCal şi import/export"
+
+#: admin-pages/pages/ical/ical.php:31
+#, php-format
+msgid ""
+"For iCal synchronization to work properly, we strongly recommend that %s is "
+"used as your main calendar."
+msgstr ""
+"Pentru sincronizarea iCal pentru a funcționa corect, recomandăm insistent ca "
+"%s să fie utilizat ca şi calendar principal."
+
+#: admin-pages/pages/ical/ical.php:32
+#, php-format
+msgid ""
+"If there are dates that you need to block, you should set these unavailable "
+"dates using %s and not add them manually in the external calendars."
+msgstr ""
+"Dacă există date pe care trebuie să le blocați, trebuie să setați aceste "
+"date indisponibile utilizând %s și să nu le adăugați manual în calendarele "
+"externe."
+
+#: admin-pages/pages/ical/ical.php:32
+msgid "Reservations->Block accommodation"
+msgstr "Rezervari-> Blocare cameră"
+
+#: admin-pages/pages/ical/ical.php:33
+msgid ""
+"With the synchronization, they will be set automatically as unavailable in "
+"your other calendars."
+msgstr ""
+"La sincronizare, acestea vor fi setate automat ca indisponibile în alte "
+"calendare."
+
+#: admin-pages/pages/ical/ical.php:75
+#, php-format
+msgid ""
+"There seems to be a problem : %s Check that you have entered a valid URL."
+msgstr ""
+"Se pare că există o problemă: %s verificaţi dacă aţi introdus un URL valid."
+
+#: admin-pages/pages/ical/ical.php:112
+msgid ""
+"At least one accommodation must be created in order to set iCal "
+"synchronization."
+msgstr ""
+"Trebuie să se creeze cel puțin o unitate de cazare pentru a stabili "
+"sincronizarea ical."
+
+#: admin-pages/pages/ical/ical.php:119
+msgid "Update calendars"
+msgstr "Actualizarea calendarelor"
+
+#: admin-pages/pages/ical/ical.php:124
+msgid "Last synchronized on: "
+msgstr "Ultima sincronizare la: "
+
+#: admin-pages/pages/ical/ical.php:134 utils/utils.php:2624
+msgid "Accommodation type"
+msgstr "Tipul de cameră"
+
+#: admin-pages/pages/ical/ical.php:136
+msgid "Export"
+msgstr "Export"
+
+#: admin-pages/pages/ical/ical.php:137
+msgid "Import file"
+msgstr "Import fișier"
+
+#: admin-pages/pages/ical/ical.php:138
+msgid "Synchronize calendars"
+msgstr "Sincronizarea calendarelor"
+
+#: admin-pages/pages/ical/ical.php:170
+msgid "Download .ics file"
+msgstr "Descarcă fișier .ics"
+
+#: admin-pages/pages/ical/ical.php:172
+msgid "Get url"
+msgstr "Obțineți URL"
+
+#: admin-pages/pages/ical/ical.php:175
+msgid "Import a calendar file"
+msgstr "Importul unui fişier calendaristic"
+
+#: admin-pages/pages/ical/ical.php:177 admin-pages/pages/ical/ical.php:189
+msgid "Calendar name: "
+msgstr "Numele calendarului: "
+
+#: admin-pages/pages/ical/ical.php:183
+#: admin-pages/pages/langfiles/langfiles.php:105
+msgid "Import"
+msgstr "Import"
+
+#: admin-pages/pages/ical/ical.php:187
+msgid "New calendar"
+msgstr "Calendar nou"
+
+#: admin-pages/pages/ical/ical.php:190
+msgid "Enter calendar URL: "
+msgstr "Introduceţi URL-ul calendarului: "
+
+#: admin-pages/pages/ical/ical.php:197
+#: admin-pages/pages/reservations/resa-display.php:313
+msgid "Add"
+msgstr "Adaugă"
+
+#: admin-pages/pages/ical/ical.php:239
+msgid "Get url of the calendar containing all HBook calendars in one"
+msgstr ""
+
+#: admin-pages/pages/langfiles/langfiles.php:10
+msgid "Select a language."
+msgstr "Selectați o limbă."
+
+#: admin-pages/pages/langfiles/langfiles.php:11
+#: admin-pages/pages/misc/misc.php:9
+msgid "Choose a file to import."
+msgstr "Alegeți un fișier de importat."
+
+#: admin-pages/pages/langfiles/langfiles.php:22
+#, fuzzy
+#| msgid "Languages (Import / Export language files)"
+msgid "Languages - Import / Export for front-end strings"
+msgstr "Limbi (import/export fişiere lingvistice)"
+
+#: admin-pages/pages/langfiles/langfiles.php:26
+#, php-format
+msgid ""
+"HBook includes front-end translation files for many languages and they can "
+"be found in the folder %s."
+msgstr ""
+
+#: admin-pages/pages/langfiles/langfiles.php:27
+#, php-format
+msgid ""
+"You will see the imported strings in %s where you can edit front-end strings "
+"for all languages."
+msgstr ""
+
+#: admin-pages/pages/langfiles/langfiles.php:51
+msgid "The language file is not valid."
+msgstr "Fișierul lingvistic nu este valid."
+
+#: admin-pages/pages/langfiles/langfiles.php:72
+#, php-format
+msgid "The import was successful (%d strings have been imported)."
+msgstr ""
+"Importul s-a efectuat cu succes (%d siruri de caractere au fost importate)."
+
+#: admin-pages/pages/langfiles/langfiles.php:79
+msgid "Import a file"
+msgstr "Importul unui fişier"
+
+#: admin-pages/pages/langfiles/langfiles.php:113
+msgid "Export a file"
+msgstr "Exportul unui fişier"
+
+#: admin-pages/pages/licence/licence.php:7
+msgid "Remove purchase code for this website?"
+msgstr "Eliminați codul de achiziție pentru acest site web?"
+
+#: admin-pages/pages/licence/licence.php:18 utils/utils.php:2955
+#: utils/utils.php:2968
+msgid "Licence"
+msgstr "Licenţă"
+
+#: admin-pages/pages/licence/licence.php:23
+msgid "Where can I find my purchase code?"
+msgstr "Unde pot găsi codul de cumpărare?"
+
+#: admin-pages/pages/licence/licence.php:25
+msgid "Activate your HBook licence"
+msgstr ""
+
+#: admin-pages/pages/licence/licence.php:33
+#, php-format
+msgid ""
+"To activate your licence, you will need a validation code. Click on this "
+"link: https://maestrel.com/hbook-licence-validation. Follow the steps to "
+"obtain your validation code and paste it below. Check %s for step by step "
+"guidance."
+msgstr ""
+"Pentru a activa licenţa, veţi avea nevoie de un cod de validare. Faceţi clic "
+"pe acest link: https://maestrel.com/hbook-licence-validation. Urmaţi paşii "
+"pentru a obţine codul de validare şi lipiţi-l de mai jos. Verificaţi %s "
+"pentru instrucţiuni pas cu pas."
+
+#: admin-pages/pages/licence/licence.php:43
+msgid "this article of the knowledgebase"
+msgstr "acest articol al bazei de informaţii"
+
+#: admin-pages/pages/licence/licence.php:50
+#: admin-pages/pages/licence/licence.php:154
+#, php-format
+msgid ""
+"The code you entered is not valid. Please try again. You can also contact %s "
+"if you need further help."
+msgstr ""
+"Codul introdus nu este valid. Vă rugăm să încercaţi din nou. De asemenea, "
+"puteţi contacta %s dacă aveţi nevoie de ajutor suplimentar."
+
+#: admin-pages/pages/licence/licence.php:51
+#: admin-pages/pages/licence/licence.php:147
+#: admin-pages/pages/licence/licence.php:155
+#, fuzzy
+#| msgid "Maestrel support"
+msgid "Maestrel support"
+msgstr "Suport"
+
+#: admin-pages/pages/licence/licence.php:63
+msgid "Your website url:"
+msgstr "URL-ul site-ului:"
+
+#: admin-pages/pages/licence/licence.php:67
+msgid "Enter validation code"
+msgstr "Introduceţi codul de validare"
+
+#: admin-pages/pages/licence/licence.php:83
+#: admin-pages/pages/licence/licence.php:178
+msgid "Enter your purchase code"
+msgstr "Introdu codul de achiziție"
+
+#: admin-pages/pages/licence/licence.php:85
+#: admin-pages/pages/licence/licence.php:181
+msgid "Verify purchase code"
+msgstr "Verificare cod de achiziție"
+
+#: admin-pages/pages/licence/licence.php:93
+#: admin-pages/pages/licence/licence.php:189
+msgid "Your purchase code is valid."
+msgstr "Codul de achiziție este valid."
+
+#: admin-pages/pages/licence/licence.php:95
+#: admin-pages/pages/licence/licence.php:191
+msgid "Your purchase code is not valid."
+msgstr "Codul de achiziție nu este valid."
+
+#: admin-pages/pages/licence/licence.php:97
+#: admin-pages/pages/licence/licence.php:193
+msgid "This purchase code is already in use."
+msgstr "Acest cod de cumpărare este deja în uz."
+
+#: admin-pages/pages/licence/licence.php:99
+#: admin-pages/pages/licence/licence.php:195
+msgid "The purchase code has been removed."
+msgstr "Codul de cumpărare a fost eliminat."
+
+#: admin-pages/pages/licence/licence.php:102
+#: admin-pages/pages/licence/licence.php:198
+msgid "This purchase code has not been verified."
+msgstr "Acest cod de cumpărare nu a fost verificat."
+
+#: admin-pages/pages/licence/licence.php:116
+#: admin-pages/pages/licence/licence.php:212
+msgid "Remove purchase code for this website."
+msgstr "Eliminați codul de achiziție pentru acest site web."
+
+#: admin-pages/pages/licence/licence.php:132
+#, fuzzy, php-format
+#| msgid "Activate %s:"
+msgid "Activate your %s licence"
+msgstr "Activează %s:"
+
+#: admin-pages/pages/licence/licence.php:146
+#, php-format
+msgid ""
+"There seems to be an error when we try to validate your licence for this add-"
+"on. Would you please contact %s so we can assist you with that?"
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:8
+msgid "The date is not valid (use a yyyy-mm-dd format)."
+msgstr "Data nu este validă (utilizaţi un format AAAA-mm-DD)."
+
+#: admin-pages/pages/misc/misc.php:10
+msgid ""
+"Importing a setting file will delete all current HBook settings (including "
+"Accommodation Posts and Reservations). Do you want to continue?"
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:23
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: admin-pages/pages/misc/misc.php:113
+#, php-format
+msgid "Usual setting: first day is %s and date format is %s"
+msgstr "Setarea uzuală: prima zi este %s şi formatul datei este %s"
+
+#: admin-pages/pages/misc/misc.php:126
+msgid "First day of the week"
+msgstr "Prima zi a săptămânii"
+
+#: admin-pages/pages/misc/misc.php:138
+msgid "Date format"
+msgstr "Formatul datei"
+
+#: admin-pages/pages/misc/misc.php:170
+#, fuzzy
+#| msgid "Import a file"
+msgid "Import settings file"
+msgstr "Importul unui fişier"
+
+#: admin-pages/pages/misc/misc.php:174
+msgid ""
+"Importing all settings may take several minutes. Please do not refresh or "
+"exit this page before completion."
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:177
+#, fuzzy
+#| msgid "Download .ics file"
+msgid "Download settings file"
+msgstr "Descarcă fișier .ics"
+
+#: admin-pages/pages/misc/misc.php:200 admin-pages/pages/misc/misc.php:225
+msgid "Settings could not be imported."
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:202
+#, php-format
+msgid "The file %s is not a correct HBook settings file."
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:229
+msgid ""
+"The following posts/pages/attachments prevented HBook from importing the "
+"settings:"
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:238
+msgid ""
+"You can either delete these posts/pages/attachments (which is the "
+"recommanded method) or start importing again with the \"Modify Accommodation "
+"Post ID\" option activated."
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:243
+msgid ""
+"Modify Accommodation Post ID when importing (you may have to update HBook "
+"shortcodes accordingly)."
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:299
+#, fuzzy
+#| msgid "Forms settings have been saved."
+msgid "HBook settings have been imported."
+msgstr "Setările formularelor au fost salvate."
+
+#: admin-pages/pages/misc/misc.php:303
+msgid "Please take note that the following Accommodation Post have new IDs:"
+msgstr ""
+
+#: admin-pages/pages/misc/misc.php:312
+msgid "You may have to update HBook shortcodes accordingly."
+msgstr ""
+
+#: admin-pages/pages/options/options.php:8
+msgid "New extra"
+msgstr "Nou serviciu suplimentar"
+
+#: admin-pages/pages/options/options.php:9
+msgid "New extra choice"
+msgstr "Noua alegere a serviciului suplimentar"
+
+#: admin-pages/pages/options/options.php:37
+msgid "Quantity"
+msgstr "Cantitate"
+
+#: admin-pages/pages/options/options.php:41
+msgid "Quantity per day"
+msgstr "Cantitate pe zi"
+
+#: admin-pages/pages/options/options.php:54 utils/utils.php:2890
+msgid "Extra services"
+msgstr "Servicii suplimentare"
+
+#: admin-pages/pages/options/options.php:55
+#: admin-pages/pages/options/options.php:86
+msgid "Add new extra"
+msgstr "Adauga nou serviciu suplimentar"
+
+#: admin-pages/pages/options/options.php:64
+msgid "No extra services have been created yet."
+msgstr "Nu s-au creat încă servicii suplimentare."
+
+#: admin-pages/pages/options/options.php:71
+msgid "Extra name"
+msgstr "Numele serviciului suplimentar"
+
+#: admin-pages/pages/options/options.php:72
+msgid "Multiple choice"
+msgstr "Alegere multiplă"
+
+#: admin-pages/pages/options/options.php:125
+msgid "Save to add choices."
+msgstr "Salvare pentru a adăuga alegeri."
+
+#: admin-pages/pages/options/options.php:142
+msgid "Set a maximum quantity?"
+msgstr "Setaţi o cantitate maximă?"
+
+#: admin-pages/pages/options/options.php:148
+msgid "Yes, per person"
+msgstr "Da, pe persoană"
+
+#: admin-pages/pages/options/options.php:152
+msgid "Maximum quantity"
+msgstr "Cantitate maximă"
+
+#: admin-pages/pages/options/options.php:153
+msgid "(per adult)"
+msgstr "(pe adult)"
+
+#: admin-pages/pages/options/options.php:158
+msgid "Maximum quantity (per child):"
+msgstr "Cantitate maximă (pe copil):"
+
+#: admin-pages/pages/payment/payment.php:12
+msgid "The deposit is not valid. Enter a number only."
+msgstr "Depozitul nu este valid. Introduceţi numai un număr."
+
+#: admin-pages/pages/payment/payment.php:13
+msgid "The security bond is not valid. Enter a number only."
+msgstr "Legătura de securitate nu este validă. Introduceţi numai un număr."
+
+#: admin-pages/pages/payment/payment.php:27 utils/utils.php:2910
+msgid "Payment"
+msgstr "Plata"
+
+#: admin-pages/pages/payment/payment.php:34
+msgid "Active payment gateways"
+msgstr "Gateway-uri de plată active"
+
+#: admin-pages/pages/payment/payment.php:35
+#, php-format
+msgid ""
+"Stripe and PayPal gateways are included. We have developed add-ons to "
+"integrate other payment gateways for HBook: %s view available payment "
+"gateways %s."
+msgstr ""
+
+#: admin-pages/pages/payment/payment.php:49
+#, php-format
+msgid "Activate %s:"
+msgstr "Activează %s:"
+
+#: admin-pages/pages/rates/rates.php:27
+msgid "accommodation"
+msgstr "cameră"
+
+#: admin-pages/pages/rates/rates.php:28
+msgid "Accommodation rates"
+msgstr "Tarife cazare"
+
+#: admin-pages/pages/rates/rates.php:32
+msgid "extra adults"
+msgstr "adulți suplimentari"
+
+#: admin-pages/pages/rates/rates.php:33
+msgid "Price per adult above normal occupancy"
+msgstr "Pret per adult peste capacitatea normală a camerei"
+
+#: admin-pages/pages/rates/rates.php:37
+msgid "extra children"
+msgstr "copii suplimentari"
+
+#: admin-pages/pages/rates/rates.php:38
+msgid "Price per child above normal occupancy"
+msgstr "Preţ pe copil peste capacitatea normală a camerei"
+
+#: admin-pages/pages/rates/rates.php:45 admin-pages/pages/rules/rules.php:25
+msgid "No seasons selected"
+msgstr "Nu s-au selectat perioade"
+
+#: admin-pages/pages/rates/rates.php:47
+msgid "No discounts selected"
+msgstr "Nu s-au selectat reduceri"
+
+#: admin-pages/pages/rates/rates.php:48
+msgid "per night"
+msgstr "pe noapte"
+
+#: admin-pages/pages/rates/rates.php:49
+#, php-format
+msgid "for a %s-night stay"
+msgstr "pentru o %s noapte de cazare"
+
+#: admin-pages/pages/rates/rates.php:50
+msgid "Unset"
+msgstr "Renunţă"
+
+#: admin-pages/pages/rates/rates.php:51
+msgid "nights and more"
+msgstr "nopţi şi mai mult"
+
+#: admin-pages/pages/rates/rates.php:52
+msgid "No maximum"
+msgstr ""
+
+#: admin-pages/pages/rates/rates.php:53
+msgid "No date limit"
+msgstr ""
+
+#: admin-pages/pages/rates/rates.php:77 blocks/blocks.php:55
+#: utils/utils.php:2885
+msgid "Rates"
+msgstr "Preţuri"
+
+#: admin-pages/pages/rates/rates.php:91
+#, php-format
+msgid "It seems Polylang is not set properly. Please read %s"
+msgstr "Se pare că Polylang nu este setat corect. Vă rugăm să citiţi %s"
+
+#: admin-pages/pages/rates/rates.php:93
+msgid "HBook documentation about setting up Polylang and HBook"
+msgstr "Documentaţia despre configurarea Polylang"
+
+#: admin-pages/pages/rates/rates.php:100
+#, php-format
+msgid "It seems WPML is not set properly. Please read %s"
+msgstr "Se pare WPML nu este setat în mod corespunzător. Vă rugăm să citiţi %s"
+
+#: admin-pages/pages/rates/rates.php:102
+msgid "HBook documentation about setting up WPML and HBook"
+msgstr "Documentaţia despre configurarea WPML"
+
+#: admin-pages/pages/rates/rates.php:107
+msgid ""
+"At least one accommodation which uses the default website language must be "
+"created in order to set rates."
+msgstr ""
+"Cel puțin o unitate de cazare care utilizează limba implicită pentru site-ul "
+"web trebuie creată pentru a stabili preţurile."
+
+#: admin-pages/pages/rates/rates.php:111
+msgid ""
+"At least one accommodation and one season must be created in order to set "
+"rates."
+msgstr ""
+"Cel puţin o unitate de cazare şi o periodă trebuie să fie create pentru a "
+"stabili preţurile."
+
+#: admin-pages/pages/rates/rates.php:113
+msgid "At least one accommodation must be created in order to set rates."
+msgstr ""
+"Trebuie să se creeze cel puțin o unitate de cazare pentru a stabili "
+"preţurile."
+
+#: admin-pages/pages/rates/rates.php:117
+msgid "At least one one season must be created in order to set rates."
+msgstr "Cel puţin o perioadă să fie creată pentru a stabili preţurile."
+
+#: admin-pages/pages/rates/rates.php:125 admin-pages/pages/rates/rates.php:148
+msgid "Add rate"
+msgstr "Adăugare preţ"
+
+#: admin-pages/pages/rates/rates.php:131
+#, php-format
+msgid "No %s rates have been defined yet."
+msgstr "Nu s-au definit încă preţurile %s."
+
+#: admin-pages/pages/rates/rates.php:159 admin-pages/pages/rates/rates.php:190
+msgid "Discounts"
+msgstr "Reduceri"
+
+#: admin-pages/pages/rates/rates.php:161 admin-pages/pages/rates/rates.php:207
+msgid "Add discount rate"
+msgstr "Adăugare marţă de reducere"
+
+#: admin-pages/pages/rates/rates.php:171
+#, php-format
+msgid ""
+"No discount rules have been defined yet. You can define a discount rule on "
+"the %s."
+msgstr ""
+"Nu s-au definit încă reguli de reducere. Aveţi posibilitatea să definiţi o "
+"regulă de reducere pe %s."
+
+#: admin-pages/pages/rates/rates.php:173
+msgid "Booking rules page"
+msgstr "Pagina reguli rezervare"
+
+#: admin-pages/pages/rates/rates.php:182
+msgid "No discount rates have been defined yet."
+msgstr "Nu au fost definite marjele de discount încă."
+
+#: admin-pages/pages/rates/rates.php:192 admin-pages/pages/rates/rates.php:234
+#: admin-pages/pages/rates/rates.php:415 admin-pages/pages/rules/rules.php:69
+#: admin-pages/pages/rules/rules.php:125 admin-pages/pages/rules/rules.php:181
+#: admin-pages/pages/rules/rules.php:237 admin-pages/pages/rules/rules.php:300
+#: admin-pages/pages/seasons/seasons.php:22 utils/utils.php:2875
+msgid "Seasons"
+msgstr "Perioade"
+
+#: admin-pages/pages/rates/rates.php:193
+msgid "Applies on"
+msgstr ""
+
+#: admin-pages/pages/rates/rates.php:218 admin-pages/pages/text/text.php:41
+msgid "Coupons"
+msgstr "Cupoane"
+
+#: admin-pages/pages/rates/rates.php:219 admin-pages/pages/rates/rates.php:253
+msgid "Add coupon"
+msgstr "Adaugă cupon"
+
+#: admin-pages/pages/rates/rates.php:224
+msgid "No coupons have been defined yet."
+msgstr "Nu au fost definite cupoane încă."
+
+#: admin-pages/pages/rates/rates.php:232
+msgid "Code"
+msgstr "Cod"
+
+#: admin-pages/pages/rates/rates.php:235
+msgid "Rule"
+msgstr "Regulă"
+
+#: admin-pages/pages/rates/rates.php:236
+#, fuzzy
+#| msgid "Discount"
+msgid "Use count"
+msgstr "Reducere"
+
+#: admin-pages/pages/rates/rates.php:237
+msgid "Max use"
+msgstr ""
+
+#: admin-pages/pages/rates/rates.php:238
+#, fuzzy
+#| msgid "Date format"
+msgid "Date limit"
+msgstr "Formatul datei"
+
+#: admin-pages/pages/rates/rates.php:239
+#, fuzzy
+#| msgid "Multiple choice"
+msgid "Multiple use per customer"
+msgstr "Alegere multiplă"
+
+#: admin-pages/pages/rates/rates.php:317
+msgid "for"
+msgstr "pentru"
+
+#: admin-pages/pages/rates/rates.php:319
+msgid "night(s)"
+msgstr "noapte (nopți)"
+
+#: admin-pages/pages/rates/rates.php:362 blocks/blocks.php:121
+#: utils/options-utils.php:125
+msgid "None"
+msgstr "Nespecificat"
+
+#: admin-pages/pages/rates/rates.php:417
+msgid "Special rates"
+msgstr "Tarife speciale"
+
+#: admin-pages/pages/reservations/admin-add-resa.php:18
+msgid "Add a reservation"
+msgstr "Adaugaă o rezervare"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:16
+msgid "Block accommodation"
+msgstr "Blocarea camerei"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:26
+#: front-end/booking-form/search-form.php:139
+#: front-end/booking-form/search-form.php:147
+msgid "Accommodation type:"
+msgstr "Tipul de cameră:"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:35
+#: front-end/booking-form/available-accom.php:524
+msgid "Accommodation number:"
+msgstr "Numărul camerei:"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:39
+msgid "Start date:"
+msgstr "Data de început:"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:43
+msgid "End date:"
+msgstr "Data de sfârșit:"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:47
+#: admin-pages/pages/reservations/reservations.php:49
+#: front-end/booking-form/details-form.php:446
+msgid "Comment:"
+msgstr "Comentariu:"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:51
+msgid "Block"
+msgstr "Blocare"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:60
+msgid "There are no blocked accommodation at the moment"
+msgstr "Nu există camere blocate în acest moment"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:64
+msgid "Blocked accommodation"
+msgstr "Cameră blocată"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:70
+#: admin-pages/pages/seasons/seasons.php:40
+msgid "Start date"
+msgstr "Dată început"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:71
+#: admin-pages/pages/seasons/seasons.php:41
+msgid "End date"
+msgstr "Dată sfârșit"
+
+#: admin-pages/pages/reservations/blocked-accom-display.php:72
+#: admin-pages/pages/reservations/resa-display.php:207 utils/utils.php:2636
+msgid "Comment"
+msgstr "Comentariu"
+
+#: admin-pages/pages/reservations/resa-display.php:29
+msgid "Calendar"
+msgstr "Calendar"
+
+#: admin-pages/pages/reservations/resa-display.php:32
+msgid "All accommodations"
+msgstr "Toate spaţiile de cazare"
+
+#: admin-pages/pages/reservations/resa-display.php:61
+msgid "Reservation details"
+msgstr "Detaliile rezervării"
+
+#: admin-pages/pages/reservations/resa-display.php:64
+msgid "Click on a number in the calendar to view the reservation details"
+msgstr ""
+"Faceţi clic pe un număr din calendar pentru a vizualiza detaliile rezervării"
+
+#: admin-pages/pages/reservations/resa-display.php:69
+msgid "Hide"
+msgstr "Ascunde"
+
+#: admin-pages/pages/reservations/resa-display.php:95
+msgid "Reservation list"
+msgstr "Lista de rezervari"
+
+#: admin-pages/pages/reservations/resa-display.php:98
+msgid "No reservations yet."
+msgstr "Nicio rezervare încă."
+
+#: admin-pages/pages/reservations/resa-display.php:105
+msgid "No filter"
+msgstr "Niciun filtru"
+
+#: admin-pages/pages/reservations/resa-display.php:106
+msgid "Filter by Customer"
+msgstr "Filtrare după client"
+
+#: admin-pages/pages/reservations/resa-display.php:107
+msgid "Filter by Check-in date"
+msgstr "Filtreaza dupa data de sosire"
+
+#: admin-pages/pages/reservations/resa-display.php:108
+msgid "Filter by Check-out date"
+msgstr "Filtreaza dupa data de plecare"
+
+#: admin-pages/pages/reservations/resa-display.php:109
+msgid "Filter by Check-in and check-out dates"
+msgstr "Filtreaza dupa datele de sosire şi plecare"
+
+#: admin-pages/pages/reservations/resa-display.php:110
+msgid "Filter by Active reservations"
+msgstr "Filtrare după rezervări active"
+
+#: admin-pages/pages/reservations/resa-display.php:111
+msgid "Filter by Accommodation"
+msgstr "Filtreaza dupa camere"
+
+#: admin-pages/pages/reservations/resa-display.php:112
+msgid "Filter by Status"
+msgstr "Filtrare după stare"
+
+#: admin-pages/pages/reservations/resa-display.php:115
+msgid "Sort by Received date &larr;"
+msgstr "Sortare după data primirii &larr;"
+
+#: admin-pages/pages/reservations/resa-display.php:116
+msgid "Sort by Received date &rarr;"
+msgstr "Sortare după data primirii &rarr;"
+
+#: admin-pages/pages/reservations/resa-display.php:117
+msgid "Sort by Check-in date &larr;"
+msgstr "Sortare după data de sosire &larr;"
+
+#: admin-pages/pages/reservations/resa-display.php:118
+msgid "Sort by Check-in date &rarr;"
+msgstr "Sortare după data de sosire &rarr;"
+
+#: admin-pages/pages/reservations/resa-display.php:122
+msgid "Enter customer name or email"
+msgstr "Introduceți numele e-mail-ul clientului"
+
+#: admin-pages/pages/reservations/resa-display.php:126
+#: admin-pages/pages/reservations/reservations.php:25
+#: utils/options-utils.php:368 utils/options-utils.php:377
+#: utils/options-utils.php:386
+msgid "Confirmed"
+msgstr "Confirmat"
+
+#: admin-pages/pages/reservations/resa-display.php:127
+#: admin-pages/pages/reservations/reservations.php:26
+msgid "Cancelled"
+msgstr "Anulat"
+
+#: admin-pages/pages/reservations/resa-display.php:128
+#: admin-pages/pages/reservations/reservations.php:24
+msgid "Pending"
+msgstr "În așteptare"
+
+#: admin-pages/pages/reservations/resa-display.php:129
+#: admin-pages/pages/reservations/reservations.php:23
+#: utils/options-utils.php:367 utils/options-utils.php:376
+#: utils/options-utils.php:385
+msgid "New"
+msgstr "Nou"
+
+#: admin-pages/pages/reservations/resa-display.php:155
+msgid "Between"
+msgstr "Între"
+
+#: admin-pages/pages/reservations/resa-display.php:157
+#: admin-pages/pages/reservations/resa-exporter-display.php:35
+#: admin-pages/pages/reservations/resa-exporter-display.php:42
+#: admin-pages/pages/reservations/resa-exporter-display.php:49
+msgid "and"
+msgstr "și"
+
+#: admin-pages/pages/reservations/resa-display.php:197 utils/utils.php:2635
+msgid "Status"
+msgstr "Stare"
+
+#: admin-pages/pages/reservations/resa-display.php:198
+msgid "Check-in / Check-out"
+msgstr "Sosire / Plecare"
+
+#: admin-pages/pages/reservations/resa-display.php:200
+msgid "Accom. type"
+msgstr "Tipul camerei"
+
+#: admin-pages/pages/reservations/resa-display.php:201
+msgid "(number)"
+msgstr "(numărul)"
+
+#: admin-pages/pages/reservations/resa-display.php:203
+msgid "Information"
+msgstr "Informații"
+
+#: admin-pages/pages/reservations/resa-display.php:205
+#, fuzzy
+#| msgid "extra adults"
+msgid "Extras"
+msgstr "adulți suplimentari"
+
+#: admin-pages/pages/reservations/resa-display.php:209
+msgid "Price / Payment"
+msgstr "Preţul / plata"
+
+#: admin-pages/pages/reservations/resa-display.php:210 utils/utils.php:2637
+msgid "Received on"
+msgstr "Primit pe"
+
+#: admin-pages/pages/reservations/resa-display.php:228
+#: admin-pages/pages/reservations/resa-display.php:242
+msgid "night"
+msgstr "noapte"
+
+#: admin-pages/pages/reservations/resa-display.php:229
+#: admin-pages/pages/reservations/resa-display.php:243
+#: admin-pages/pages/rules/rules.php:194 admin-pages/pages/rules/rules.php:203
+#: admin-pages/pages/rules/rules.php:250 admin-pages/pages/rules/rules.php:259
+#: admin-pages/pages/rules/rules.php:321 admin-pages/pages/rules/rules.php:329
+#: admin-pages/pages/rules/rules.php:423 admin-pages/pages/rules/rules.php:427
+msgid "nights"
+msgstr "nopti"
+
+#: admin-pages/pages/reservations/resa-display.php:235
+msgid "Check-in:"
+msgstr "Sosire:"
+
+#: admin-pages/pages/reservations/resa-display.php:238
+msgid "Check-out:"
+msgstr "Plecare:"
+
+#: admin-pages/pages/reservations/resa-display.php:253
+msgid "Current accom.:"
+msgstr "Camera curentă:"
+
+#: admin-pages/pages/reservations/resa-display.php:259
+msgid "Updating..."
+msgstr "Actualizez..."
+
+#: admin-pages/pages/reservations/resa-display.php:260
+msgid "Fetching available accom..."
+msgstr "Căutăm camerele disponibile..."
+
+#: admin-pages/pages/reservations/resa-display.php:263
+msgid "Select new accom.:"
+msgstr "Selectare cameră nouă:"
+
+#: admin-pages/pages/reservations/resa-display.php:269
+msgid "No other accommodation available!"
+msgstr "Nicio altă unitate de cazare disponibilă!"
+
+#: admin-pages/pages/reservations/resa-display.php:290
+#: admin-pages/pages/reservations/reservations.php:70
+#: front-end/booking-form/details-form.php:457
+msgid "Reservation language:"
+msgstr "Limba de rezervare:"
+
+#: admin-pages/pages/reservations/resa-display.php:333
+#, fuzzy
+#| msgid "New reservation"
+msgid "View reservation"
+msgstr "Rezervare nouă"
+
+#: admin-pages/pages/reservations/resa-display.php:338
+msgid "Add a comment"
+msgstr "Adaugă un comentariu"
+
+#: admin-pages/pages/reservations/resa-display.php:377
+msgid "Create customer"
+msgstr "Creare client"
+
+#: admin-pages/pages/reservations/resa-display.php:378
+#: front-end/booking-form/details-form.php:401
+msgid "Select existing customer"
+msgstr "Selectare client existent"
+
+#: admin-pages/pages/reservations/resa-display.php:379
+msgid "Creating customer..."
+msgstr "Se creează clientul..."
+
+#: admin-pages/pages/reservations/resa-display.php:406
+#, fuzzy
+#| msgid "Edit choice"
+msgid "Edit price"
+msgstr "Editarea opţiunii"
+
+#: admin-pages/pages/reservations/resa-display.php:411
+#: database-actions/database-creation.php:607
+#: database-actions/database-creation.php:628
+msgid "Price:"
+msgstr "Preț:"
+
+#: admin-pages/pages/reservations/resa-display.php:422
+msgid "Mark as paid"
+msgstr "Marcare ca plătit"
+
+#: admin-pages/pages/reservations/resa-display.php:424
+msgid "Marking as paid..."
+msgstr "Marcare ca plătit..."
+
+#: admin-pages/pages/reservations/resa-display.php:431
+msgid "Edit payment"
+msgstr "Editare plată"
+
+#: admin-pages/pages/reservations/resa-display.php:435
+#: admin-pages/pages/reservations/reservations.php:33
+msgid "Paid:"
+msgstr "Plătit:"
+
+#: admin-pages/pages/reservations/resa-display.php:443
+#: admin-pages/pages/reservations/resa-display.php:451
+msgid "Charge"
+msgstr "Plata"
+
+#: admin-pages/pages/reservations/resa-display.php:445
+#: admin-pages/pages/reservations/resa-display.php:461
+msgid "Refund"
+msgstr "Rambursare"
+
+#: admin-pages/pages/reservations/resa-display.php:448
+msgid "Charge amount:"
+msgstr "Suma de plată:"
+
+#: admin-pages/pages/reservations/resa-display.php:452
+msgid "Charging"
+msgstr "Se înregistrează"
+
+#: admin-pages/pages/reservations/resa-display.php:458
+msgid "Refund amount:"
+msgstr "Sumă de rambursat:"
+
+#: admin-pages/pages/reservations/resa-display.php:462
+msgid "Refunding"
+msgstr "Rambursare"
+
+#: admin-pages/pages/reservations/resa-display.php:469
+#, fuzzy
+#| msgid "Add discount rate"
+msgid "Edit discount"
+msgstr "Adăugare marţă de reducere"
+
+#: admin-pages/pages/reservations/resa-display.php:472
+#: admin-pages/pages/reservations/reservations.php:77
+#, fuzzy
+#| msgid "Accommodation:"
+msgid "Accom. discount:"
+msgstr "- Camera:"
+
+#: admin-pages/pages/reservations/resa-display.php:490
+#: admin-pages/pages/reservations/resa-display.php:512
+#, fuzzy
+#| msgid "Percentage"
+msgid "Percent"
+msgstr "Procentaj"
+
+#: admin-pages/pages/reservations/resa-display.php:494
+#: admin-pages/pages/reservations/reservations.php:78
+msgid "Global discount:"
+msgstr ""
+
+#: admin-pages/pages/reservations/resa-display.php:527
+#: admin-pages/pages/reservations/resa-display.php:528
+msgid "Confirm"
+msgstr "Confirmare"
+
+#: admin-pages/pages/reservations/resa-display.php:541
+msgid "Open documents"
+msgstr ""
+
+#: admin-pages/pages/reservations/resa-display.php:554
+msgid "Email sent."
+msgstr "E-mail trimis."
+
+#: admin-pages/pages/reservations/resa-display.php:557
+msgid "Send an email"
+msgstr "Trimite un e-mail"
+
+#: admin-pages/pages/reservations/resa-display.php:558
+#: admin-pages/pages/reservations/resa-display.php:587
+msgid "Send"
+msgstr "Trimite"
+
+#: admin-pages/pages/reservations/resa-display.php:564
+#: utils/strings-utils.php:260
+msgid "To"
+msgstr "La"
+
+#: admin-pages/pages/reservations/resa-display.php:567
+#, fuzzy
+#| msgid "If the field is blank %s will be used."
+msgid "If this field is blank the email will be sent to the customer."
+msgstr "Dacă acest câmp este necompletat %s va fi utilizat."
+
+#: admin-pages/pages/reservations/resa-display.php:575
+#, fuzzy
+#| msgid "Add a comment"
+msgid "Add attachments"
+msgstr "Adaugă un comentariu"
+
+#: admin-pages/pages/reservations/resa-display.php:578
+#, fuzzy
+#| msgid "Remove blocked dates?"
+msgid "Remove all attachments"
+msgstr "Eliminați datele blocate?"
+
+#: admin-pages/pages/reservations/resa-display.php:584
+msgid ""
+"Delete added attachment files from the Media Library after email has been "
+"sent"
+msgstr ""
+
+#: admin-pages/pages/reservations/resa-display.php:628
+#, fuzzy
+#| msgid "Add a reservation"
+msgid "Archived reservations"
+msgstr "Adaugaă o rezervare"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:16
+msgid "Export reservations"
+msgstr "Exportaţi rezervările"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:25
+msgid "Select reservations to be exported:"
+msgstr "Selectare rezervări de exportat:"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:29
+#, fuzzy
+#| msgid "All nights"
+msgid "All dates"
+msgstr "Toate nopţile"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:33
+msgid "Received between"
+msgstr "Primite între"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:40
+msgid "Check-in between"
+msgstr "Sosire între"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:47
+#, fuzzy
+#| msgid "Check-in between"
+msgid "Check-out between"
+msgstr "Sosire între"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:63
+#: database-actions/database-creation.php:606
+#: database-actions/database-creation.php:627
+msgid "Accommodation:"
+msgstr "- Camera:"
+
+#: admin-pages/pages/reservations/resa-exporter-display.php:115
+msgid "Customer information:"
+msgstr "Informaţii despre client:"
+
+#: admin-pages/pages/reservations/resa-sync-errors-display.php:24
+#, php-format
+msgid ""
+"%1$s : There was a connection error to synchronize the calendar named %2$s "
+"and with the url %3$s for the accommodation %4$s (%5$s)."
+msgstr ""
+"%1$s: a existat o eroare de conexiune pentru sincronizarea calendarului "
+"denumit %2$s şi cu URL-ul %3$s pentru cazarea %4$s (%5$s)."
+
+#: admin-pages/pages/reservations/resa-sync-errors-display.php:38
+#, php-format
+msgid ""
+"%1$s : A reservation of the calendar named %2$s could not be imported as the "
+"accommodation %3$s (%4$s) is not available for a check-in on %5$s and a "
+"check-out on %6$s"
+msgstr ""
+"%1$s: o rezervare a calendarului cu numele %2$s nu s-a importat deoarece "
+"camera %3$s (%4$s) nu este disponibilă pentru sosire la %5$s şi plecare la "
+"%6$s"
+
+#: admin-pages/pages/reservations/resa-sync-errors-display.php:53
+#, php-format
+msgid ""
+"%1$s : A reservation of the calendar named %2$s has been modified. Changes "
+"have not been reflected in the Reservation list below. This reservation is "
+"for the accommodation %3$s (%4$s) and appears in the Reservation list with a "
+"check-in on %5$s and a check-out on %6$s."
+msgstr ""
+"%1$s : s-a modificat o rezervare a calendarului denumit %2$s. Modificările "
+"nu au fost reflectate în lista de rezervări de mai jos. Această rezervare "
+"este pentru camera %3$s (%4$s) şi apare în lista de rezervări cu sosire pe "
+"%5$s şi plecare pe %6$s."
+
+#: admin-pages/pages/reservations/reservations.php:27
+#: utils/strings-utils.php:219
+msgid "Processing"
+msgstr "Se prelucrează"
+
+#: admin-pages/pages/reservations/reservations.php:28
+msgid "(not allocated)"
+msgstr "(nealocat)"
+
+#: admin-pages/pages/reservations/reservations.php:29
+msgid "Paid"
+msgstr "Plătit"
+
+#: admin-pages/pages/reservations/reservations.php:30
+msgid "Unpaid"
+msgstr "Neplătit"
+
+#: admin-pages/pages/reservations/reservations.php:31
+msgid "Not fully paid"
+msgstr "Neplătit integral"
+
+#: admin-pages/pages/reservations/reservations.php:32
+#, fuzzy
+#| msgid "Amount paid"
+msgid "Bond not paid"
+msgstr "Suma plătită"
+
+#: admin-pages/pages/reservations/reservations.php:34
+msgid "Unpaid:"
+msgstr "Neplătit:"
+
+#: admin-pages/pages/reservations/reservations.php:35
+msgid "Unpaid bond:"
+msgstr "Garanţie neplătită:"
+
+#: admin-pages/pages/reservations/reservations.php:36
+msgid "Delete reservation?"
+msgstr "Ștergeți rezervarea?"
+
+#: admin-pages/pages/reservations/reservations.php:37
+#, fuzzy
+#| msgid "Create reservation"
+msgid "Cancel reservation?"
+msgstr "Creare rezervare"
+
+#: admin-pages/pages/reservations/reservations.php:38
+msgid "Select accommodation:"
+msgstr "Selectați camera:"
+
+#: admin-pages/pages/reservations/reservations.php:39
+msgid "Please select an accommodation."
+msgstr "Vă rugăm să selectaţi o cameră."
+
+#: admin-pages/pages/reservations/reservations.php:40
+msgid ""
+"Please select a customer (or select \"Enter customer details\" and provide "
+"customer details)."
+msgstr ""
+"Selectați un client (sau selectați \"Introduceți detaliile clientului\" și "
+"furnizați detaliile clientului)."
+
+#: admin-pages/pages/reservations/reservations.php:41
+msgid "No accommodation available."
+msgstr "Nu sunt disponibile camere."
+
+#: admin-pages/pages/reservations/reservations.php:44
+msgid "Invalid price."
+msgstr "Preţ incorect."
+
+#: admin-pages/pages/reservations/reservations.php:45
+#: admin-pages/pages/reservations/reservations.php:312
+msgid "Customer id:"
+msgstr "ID client:"
+
+#: admin-pages/pages/reservations/reservations.php:47
+msgid "More information"
+msgstr "Mai multe informaţii"
+
+#: admin-pages/pages/reservations/reservations.php:48
+msgid "Less information"
+msgstr "Mai puţine informaţii"
+
+#: admin-pages/pages/reservations/reservations.php:50
+msgid "Error:"
+msgstr "Eroare:"
+
+#: admin-pages/pages/reservations/reservations.php:51
+#, fuzzy
+#| msgid ""
+#| "The reservation could not be confirmed because there is no accommodation "
+#| "available for the reservation date."
+msgid ""
+"The reservation could not be confirmed because there is no accommodation "
+"available for the reservation dates."
+msgstr ""
+"Rezervarea nu a putut fi confirmată, deoarece nu există cameree disponibile "
+"pentru data rezervării."
+
+#: admin-pages/pages/reservations/reservations.php:52
+#, fuzzy
+#| msgid ""
+#| "The reservation could not be confirmed because there is no accommodation "
+#| "available for the reservation date."
+msgid ""
+"The reservation could not be confirmed because the accommodation number is "
+"not available for the reservation dates."
+msgstr ""
+"Rezervarea nu a putut fi confirmată, deoarece nu există cameree disponibile "
+"pentru data rezervării."
+
+#: admin-pages/pages/reservations/reservations.php:54
+#, fuzzy
+#| msgid "Please select the data you want to export."
+msgid "Please select which accommodation you want to export data for."
+msgstr "Vă rugăm să selectaţi datele pe care doriţi să le exportaţi."
+
+#: admin-pages/pages/reservations/reservations.php:55
+msgid "Remove blocked dates?"
+msgstr "Eliminați datele blocate?"
+
+#: admin-pages/pages/reservations/reservations.php:57
+msgid "Delete synchronization errors messages?"
+msgstr "Ștergeți mesajele de eroare de sincronizare?"
+
+#: admin-pages/pages/reservations/reservations.php:58
+msgid "The charge amount can not be above %amount"
+msgstr "Suma de plată nu poate fi peste %amount"
+
+#: admin-pages/pages/reservations/reservations.php:59
+msgid "The charge amount can not be below zero."
+msgstr "Suma de plată nu poate fi sub zero."
+
+#: admin-pages/pages/reservations/reservations.php:60
+msgid "The refund amount can not be above %amount"
+msgstr "Suma restituirii nu poate fi mai mare de %amount"
+
+#: admin-pages/pages/reservations/reservations.php:61
+msgid "The refund amount can not be below zero."
+msgstr "Suma restituirii nu poate fi sub zero."
+
+#: admin-pages/pages/reservations/reservations.php:62
+msgid ""
+"Dates have not modified because the accommodation is not available for the "
+"new dates."
+msgstr ""
+"Datele nu s-au modificat, deoarece camera nu este disponibilă pentru noile "
+"date."
+
+#: admin-pages/pages/reservations/reservations.php:63
+msgid "Check-out must be after check-in."
+msgstr "Data de plecare trebuie să fie după data de sosire."
+
+#: admin-pages/pages/reservations/reservations.php:64
+msgid "Invalid date."
+msgstr "Dată invalidă."
+
+#: admin-pages/pages/reservations/reservations.php:65
+msgid "Id:"
+msgstr "ID:"
+
+#: admin-pages/pages/reservations/reservations.php:66
+msgid "Templates..."
+msgstr "Şabloane..."
+
+#: admin-pages/pages/reservations/reservations.php:67
+msgid "To refund:"
+msgstr "Pentru restituire:"
+
+#: admin-pages/pages/reservations/reservations.php:68
+msgid "Are you sure you want to block all accommodation for all days?"
+msgstr "Sigur blocaţi toate spaţiile de cazare pentru toate zilele?"
+
+#: admin-pages/pages/reservations/reservations.php:69
+msgid "The \"To\" date must be after the \"From\" date."
+msgstr "Data \"la\" trebuie să fie după data de \"de la\"."
+
+#: admin-pages/pages/reservations/reservations.php:74
+#: utils/strings-utils.php:262 utils/utils.php:2628
+msgid "Price"
+msgstr "Preț"
+
+#: admin-pages/pages/reservations/reservations.php:75
+msgid "Price with bond"
+msgstr ""
+
+#: admin-pages/pages/reservations/reservations.php:76
+#, fuzzy
+#| msgid "Options price"
+msgid "Previous price"
+msgstr "Preţul opţiunilor"
+
+#: admin-pages/pages/reservations/reservations.php:83
+#, fuzzy
+#| msgid "Select a check-in date"
+msgid "Select a check-in date."
+msgstr "Selectaţi o dată de sosire"
+
+#: admin-pages/pages/reservations/reservations.php:84
+#, fuzzy
+#| msgid "Select a check-out date"
+msgid "Select a check-out date."
+msgstr "Selectaţi o dată de plecare"
+
+#: admin-pages/pages/reservations/reservations.php:85
+#: utils/strings-utils.php:239
+msgid "Past"
+msgstr "Încheiat"
+
+#: admin-pages/pages/reservations/reservations.php:86
+#, fuzzy
+#| msgid "Terms and conditions error"
+msgid "There was a connection error."
+msgstr "Eroare termeni și condiții"
+
+#: admin-pages/pages/reservations/reservations.php:87
+#, fuzzy
+#| msgid "No check-in date and no check-out date"
+msgid "Please enter a check-in date and a check-out date."
+msgstr "Nu există nicio dată de sosire şi nicio dată de plecare"
+
+#: admin-pages/pages/reservations/reservations.php:88
+#, fuzzy
+#| msgid "Select a check-in date"
+msgid "Please enter a check-in date."
+msgstr "Selectaţi o dată de sosire"
+
+#: admin-pages/pages/reservations/reservations.php:89
+#, fuzzy
+#| msgid "Select a check-out date"
+msgid "Please enter a check-out date."
+msgstr "Selectaţi o dată de plecare"
+
+#: admin-pages/pages/reservations/reservations.php:197
+#, fuzzy
+#| msgid "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+msgid ""
+"January,February,March,April,May,June,July,August,September,October,November,"
+"December"
+msgstr "Ian,Feb,Mar,Apr,Mai,Iun,Iul,Aug,Sep,Oct,Nov,Dec"
+
+#: admin-pages/pages/reservations/reservations.php:199
+msgid "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+msgstr "Ian,Feb,Mar,Apr,Mai,Iun,Iul,Aug,Sep,Oct,Nov,Dec"
+
+#: admin-pages/pages/reservations/reservations.php:201
+msgid "Sun,Mon,Tue,Wed,Thu,Fri,Sat"
+msgstr "Dum,Lun,Mar,Mie,Joi,Vin,Sâm"
+
+#: admin-pages/pages/reservations/reservations.php:307 hbook.php:454
+#: hbook.php:456 utils/utils.php:2865
+msgid "Reservations"
+msgstr "Rezervări"
+
+#: admin-pages/pages/reservations/reservations.php:318
+#, fuzzy, php-format
+#| msgid "Check-out days"
+msgid "(Check-out in %s)"
+msgstr "Zile de plecare"
+
+#: admin-pages/pages/rules/rules.php:12
+msgid "Compulsory"
+msgstr "Obligatoriu"
+
+#: admin-pages/pages/rules/rules.php:13
+msgid "Special rate"
+msgstr "Tarif special"
+
+#: admin-pages/pages/rules/rules.php:14
+msgid "Compulsory and special rate"
+msgstr "Tarif obligatoriu şi special"
+
+#: admin-pages/pages/rules/rules.php:15
+msgid "Discount"
+msgstr "Reducere"
+
+#: admin-pages/pages/rules/rules.php:16
+msgid "Coupon"
+msgstr "Cupon"
+
+#: admin-pages/pages/rules/rules.php:20
+msgid "Any"
+msgstr "Oricare"
+
+#: admin-pages/pages/rules/rules.php:21 admin-pages/pages/seasons/seasons.php:8
+msgid "No days selected"
+msgstr "Nu s-au selectat zile"
+
+#: admin-pages/pages/rules/rules.php:22
+msgid "New rule"
+msgstr "Regulă nouă"
+
+#: admin-pages/pages/rules/rules.php:42 utils/utils.php:2880
+msgid "Booking rules"
+msgstr "Reguli de rezervare"
+
+#: admin-pages/pages/rules/rules.php:53 admin-pages/pages/rules/rules.php:295
+msgid "Check-in days"
+msgstr "Zile de sosire"
+
+#: admin-pages/pages/rules/rules.php:54 admin-pages/pages/rules/rules.php:110
+#: admin-pages/pages/rules/rules.php:166 admin-pages/pages/rules/rules.php:222
+#: admin-pages/pages/rules/rules.php:278
+msgid "Add rule"
+msgstr "Adăugare regulă"
+
+#: admin-pages/pages/rules/rules.php:59
+msgid "Customers can check-in any day."
+msgstr "Clienţii pot face sosi în orice zi."
+
+#: admin-pages/pages/rules/rules.php:67
+msgid "Allowed check-in days"
+msgstr "Zile de sosire permise"
+
+#: admin-pages/pages/rules/rules.php:109 admin-pages/pages/rules/rules.php:296
+msgid "Check-out days"
+msgstr "Zile de plecare"
+
+#: admin-pages/pages/rules/rules.php:115
+msgid "Customers can check-out any day."
+msgstr "Clienţii pot pleca în orice zi."
+
+#: admin-pages/pages/rules/rules.php:123
+msgid "Allowed check-out days"
+msgstr "Zile de plecare permise"
+
+#: admin-pages/pages/rules/rules.php:165
+msgid "Minimum stay length"
+msgstr "Lungimea minimă a şederii"
+
+#: admin-pages/pages/rules/rules.php:171
+msgid "There is no minimum stay rules."
+msgstr "Nu există reguli de ședere minimă."
+
+#: admin-pages/pages/rules/rules.php:179 admin-pages/pages/rules/rules.php:297
+msgid "Minimum stay"
+msgstr "Sejur minim"
+
+#: admin-pages/pages/rules/rules.php:221
+msgid "Maximum stay length"
+msgstr "Lungimea maximă a şederii"
+
+#: admin-pages/pages/rules/rules.php:227
+msgid "There is no maximum stay rules."
+msgstr "Nu există reguli de şedere maximă."
+
+#: admin-pages/pages/rules/rules.php:235 admin-pages/pages/rules/rules.php:298
+msgid "Maximum stay"
+msgstr "Sejur maxim"
+
+#: admin-pages/pages/rules/rules.php:277
+msgid "Advanced rules"
+msgstr "Reguli avansate"
+
+#: admin-pages/pages/rules/rules.php:282
+msgid ""
+"You may define advanced rules to create compulsory settings for stays, or to "
+"create special rates or discounts, or to add a rule for a coupon."
+msgstr ""
+"Puteţi defini reguli avansate pentru a crea setări obligatorii pentru "
+"sejururi sau pentru a crea tarife speciale sau reduceri, ori pentru a adăuga "
+"o regulă pentru un cupon."
+
+#: admin-pages/pages/rules/rules.php:285
+msgid "There is no advanced rules."
+msgstr "Nu există reguli avansate."
+
+#: admin-pages/pages/rules/rules.php:294
+msgid "Rule type"
+msgstr "Tip de regulă"
+
+#: admin-pages/pages/rules/rules.php:367
+msgid "Guests who check-in on:"
+msgstr "Oaspeţii care fac sosesc pe:"
+
+#: admin-pages/pages/rules/rules.php:370
+msgid "Apply a special rate when check-in is on:"
+msgstr "Aplicaţi un tarif special când sosirea este pe:"
+
+#: admin-pages/pages/rules/rules.php:373
+msgid "Apply a discount when check-in is on:"
+msgstr "Aplicaţi o reducere când sosirea este pe:"
+
+#: admin-pages/pages/rules/rules.php:376
+msgid "Apply a coupon when check-in is on:"
+msgstr "Aplicaţi un cupon când sosirea este pe:"
+
+#: admin-pages/pages/rules/rules.php:382
+msgid "...must check-out on:"
+msgstr "... trebuie să plece pe:"
+
+#: admin-pages/pages/rules/rules.php:385
+msgid "...and must have a minimum stay of:"
+msgstr "... şi trebuie să aibă un sejur minim de:"
+
+#: admin-pages/pages/rules/rules.php:388
+msgid "...and must have a maximum stay of:"
+msgstr "... şi trebuie să aibă un sejur maxim de:"
+
+#: admin-pages/pages/rules/rules.php:391
+msgid "...for accommodation:"
+msgstr "... pentru camera:"
+
+#: admin-pages/pages/rules/rules.php:394
+msgid "...and for seasons:"
+msgstr "... şi pentru perioadele:"
+
+#: admin-pages/pages/rules/rules.php:400
+msgid "...and check-out is on:"
+msgstr "... şi plecarea este pe:"
+
+#: admin-pages/pages/rules/rules.php:403
+msgid "...and minimum stay is:"
+msgstr "... şi sejurul minim este:"
+
+#: admin-pages/pages/rules/rules.php:406
+msgid "...and maximum stay is:"
+msgstr "... şi sejurul maxim este:"
+
+#: admin-pages/pages/rules/rules.php:409
+msgid "Select accommodation and seasons in the Rates page."
+msgstr "Selectaţi camera şi perioadele în pagina de preţuri."
+
+#: admin-pages/pages/rules/rules.php:424
+msgid "(leave empty for no minimum stay)"
+msgstr "(lăsaţi gol pentru nici un sejur minim)"
+
+#: admin-pages/pages/rules/rules.php:428
+msgid "(leave empty for no maximum stay)"
+msgstr "(lăsaţi gol pentru nici un sejur maxim)"
+
+#: admin-pages/pages/seasons/seasons.php:7
+msgid "New season"
+msgstr "Perioadă nouă"
+
+#: admin-pages/pages/seasons/seasons.php:23
+#: admin-pages/pages/seasons/seasons.php:94
+msgid "Add new season"
+msgstr "Adaugă o perioadă nouă"
+
+#: admin-pages/pages/seasons/seasons.php:32
+msgid "No seasons set yet."
+msgstr "Încă nu s-au stabilit perioadele."
+
+#: admin-pages/pages/seasons/seasons.php:39
+msgid "Season name"
+msgstr "Numele perioadei"
+
+#: admin-pages/pages/seasons/seasons.php:42
+msgid "Days"
+msgstr "Zile"
+
+#: admin-pages/pages/text/text.php:12
+msgid "All text has been saved."
+msgstr "Tot textul a fost salvat."
+
+#: admin-pages/pages/text/text.php:17
+msgid "Search form text"
+msgstr "Căutare text formular"
+
+#: admin-pages/pages/text/text.php:21
+msgid "Search form messages"
+msgstr "Căutare mesaje formular"
+
+#: admin-pages/pages/text/text.php:29
+msgid "Extra services selection"
+msgstr "Selectare servicii suplimentare"
+
+#: admin-pages/pages/text/text.php:33
+msgid "Booking details form text"
+msgstr "Formularul text al detaliilor rezervării"
+
+#: admin-pages/pages/text/text.php:37
+msgid "Booking details form messages"
+msgstr "Formularul mesaj al detaliilor rezervării"
+
+#: admin-pages/pages/text/text.php:45
+msgid "Summary"
+msgstr "Rezumat"
+
+#: admin-pages/pages/text/text.php:49
+msgid "Payment choice"
+msgstr "Alegere tipului de plată"
+
+#: admin-pages/pages/text/text.php:53
+msgid "Stripe payment"
+msgstr "Plata cu Stripe"
+
+#: admin-pages/pages/text/text.php:57
+msgid "Paypal payment"
+msgstr "Plata cu PayPal"
+
+#: admin-pages/pages/text/text.php:61
+msgid "Paypal payment description"
+msgstr "Descrierea plăţii cu PayPal"
+
+#: admin-pages/pages/text/text.php:65
+msgid "Book now area"
+msgstr "Spaţiul \"Rezervă Acum\""
+
+#: admin-pages/pages/text/text.php:69
+msgid "Error messages"
+msgstr "Mesaje de eroare"
+
+#: admin-pages/pages/text/text.php:73
+msgid "Calendars legend"
+msgstr "Legenda calendarelor"
+
+#: admin-pages/pages/text/text.php:77
+msgid "Rates table"
+msgstr "Tabelul de pre'uri"
+
+#: admin-pages/pages/text/text.php:81
+msgid "Invoice table"
+msgstr ""
+
+#: admin-pages/pages/text/text.php:85 blocks/blocks.php:42
+msgid "Accommodation list"
+msgstr "Lista camerelor"
+
+#: admin-pages/pages/text/text.php:107
+msgid "HBook text"
+msgstr "Text"
+
+#: admin-pages/pages/text/text.php:111 utils/options-utils.php:1209
+msgid "Save changes"
+msgstr "Salvează modificările"
+
+#: admin-pages/pages/text/text.php:121
+msgid "Here you can modify any front-end strings for any set language."
+msgstr ""
+
+#: admin-pages/pages/text/text.php:122
+#, fuzzy
+#| msgid "Reservations"
+msgid "Text sections"
+msgstr "Rezervări"
+
+#: admin-pages/pages/text/text.php:136
+msgid "Leave the following fields blank to use their default name."
+msgstr ""
+"Lăsaţi următoarele câmpuri necompletate pentru a utiliza numele implicit."
+
+#: admin-pages/pages/text/text.php:150
+msgid "You can use these variables:"
+msgstr "Puteţi utiliza aceste variabile:"
+
+#: admin-pages/pages/text/text.php:152
+msgid "You can use this variable:"
+msgstr "Puteţi utiliza această variabilă:"
+
+#: blocks/blocks.php:18
+msgid "HBook Blocks"
+msgstr ""
+
+#: blocks/blocks.php:40
+#, fuzzy
+#| msgid "Accommodation id: "
+msgid "Accommodation id:"
+msgstr "ID cameră: "
+
+#: blocks/blocks.php:43
+#, fuzzy
+#| msgid "Accommodation settings"
+msgid "Accommodation list settings"
+msgstr "Setări cameră"
+
+#: blocks/blocks.php:44
+#, fuzzy
+#| msgid "Accommodation list"
+msgid "Accommodation list block."
+msgstr "Lista camerelor"
+
+#: blocks/blocks.php:45
+#, fuzzy
+#| msgid "Display an accommodation thumbnail?"
+msgid "Display thumbnail"
+msgstr "Afişează o miniatură a camerei?"
+
+#: blocks/blocks.php:46
+#, fuzzy
+#| msgid "Link thumbnail towards accommodation pages?"
+msgid "Link thumbnail to accommodation"
+msgstr "Leagă miniatura de paginile camerelor?"
+
+#: blocks/blocks.php:47 utils/options-utils.php:773
+msgid "Thumbnail width (in px)"
+msgstr "Lățime miniatură (în px)"
+
+#: blocks/blocks.php:48 utils/options-utils.php:779
+msgid "Thumbnail height (in px)"
+msgstr "Înălţime miniatură (în px)"
+
+#: blocks/blocks.php:50
+#, fuzzy
+#| msgid "Available"
+msgid "Availability calendar"
+msgstr "Disponibil"
+
+#: blocks/blocks.php:51
+msgid "Availability calendar settings"
+msgstr ""
+
+#: blocks/blocks.php:52
+msgid "Availability calendar block."
+msgstr ""
+
+#: blocks/blocks.php:56
+#, fuzzy
+#| msgid "Date settings"
+msgid "Rates settings"
+msgstr "Setări dată"
+
+#: blocks/blocks.php:57
+#, fuzzy
+#| msgid "Rates table"
+msgid "Rates block."
+msgstr "Tabelul de pre'uri"
+
+#: blocks/blocks.php:58
+#, fuzzy
+#| msgid "Rates table"
+msgid "Rates type"
+msgstr "Tabelul de pre'uri"
+
+#: blocks/blocks.php:60
+#, fuzzy
+#| msgid "extra adults"
+msgid "Extra adults"
+msgstr "adulți suplimentari"
+
+#: blocks/blocks.php:61
+#, fuzzy
+#| msgid "extra children"
+msgid "Extra children"
+msgstr "copii suplimentari"
+
+#: blocks/blocks.php:62
+#, fuzzy
+#| msgid "Date settings"
+msgid "Rates sorting"
+msgstr "Setări dată"
+
+#: blocks/blocks.php:65
+#, fuzzy
+#| msgid "Season name"
+msgid "Show season name"
+msgstr "Numele perioadei"
+
+#: blocks/blocks.php:66
+#, fuzzy
+#| msgid "Please select an accommodation."
+msgid "Please select an accommodation"
+msgstr "Vă rugăm să selectaţi o cameră."
+
+#: blocks/blocks.php:68
+#, fuzzy
+#| msgid "Booking"
+msgid "Booking form"
+msgstr "Rezervare"
+
+#: blocks/blocks.php:69
+#, fuzzy
+#| msgid "Booking payment settings"
+msgid "Booking form settings"
+msgstr "Setările de plată pentru rezervare"
+
+#: blocks/blocks.php:70
+#, fuzzy
+#| msgid "Booking rules"
+msgid "Booking form block."
+msgstr "Reguli de rezervare"
+
+#: blocks/blocks.php:71
+#, fuzzy
+#| msgid "Search button"
+msgid "Search only"
+msgstr "Buton de căutare"
+
+#: blocks/blocks.php:72
+#, fuzzy
+#| msgid "Reservations"
+msgid "Redirection"
+msgstr "Rezervări"
+
+#: blocks/blocks.php:73
+#, fuzzy
+#| msgid "Please select an accommodation."
+msgid "Please select a redirection page"
+msgstr "Vă rugăm să selectaţi o cameră."
+
+#: blocks/blocks.php:90
+#, fuzzy
+#| msgid "Currency"
+msgid "Current"
+msgstr "Monedă"
+
+#: blocks/blocks.php:246
+#, fuzzy
+#| msgid "Please select an accommodation."
+msgid "Please select an Accommodation in the Rates settings."
+msgstr "Vă rugăm să selectaţi o cameră."
+
+#: database-actions/database-actions.php:1147
+#: database-actions/database-actions.php:1153
+#: database-actions/database-actions.php:1164
+#: database-actions/database-actions.php:1170
+msgid "Blocked automatically"
+msgstr "Blocat automat"
+
+#: database-actions/database-actions.php:1192
+#: database-actions/database-actions.php:1198
+#: database-actions/database-actions.php:1202
+#: database-actions/database-actions.php:1208
+#, fuzzy
+#| msgid "Expiration date"
+msgid "Preparation time"
+msgstr "Data de expirare"
+
+#: database-actions/database-creation.php:167
+#: database-actions/database-creation.php:572
+msgid "Admin notification"
+msgstr "Notificare administrator"
+
+#: database-actions/database-creation.php:168
+#: database-actions/database-creation.php:594
+msgid "Customer notification"
+msgstr "Notificarea clientului"
+
+#: database-actions/database-creation.php:576
+msgid "New reservation"
+msgstr "Rezervare nouă"
+
+#: database-actions/database-creation.php:578
+msgid "New reservation:"
+msgstr "Rezervare nouă:"
+
+#: database-actions/database-creation.php:579
+msgid "- Customer first name:"
+msgstr "-Prenume client:"
+
+#: database-actions/database-creation.php:580
+msgid "- Customer last name:"
+msgstr "- Nume client:"
+
+#: database-actions/database-creation.php:581
+msgid "- Customer email:"
+msgstr "- Email-ul clientului:"
+
+#: database-actions/database-creation.php:582
+msgid "- Check-in date:"
+msgstr "- Data de sosire:"
+
+#: database-actions/database-creation.php:583
+msgid "- Check-out date:"
+msgstr "- Data de plecare:"
+
+#: database-actions/database-creation.php:584
+msgid "- Number of adults:"
+msgstr "- Numărul de adulţi:"
+
+#: database-actions/database-creation.php:585
+msgid "- Number of children:"
+msgstr "- Numărul de copii:"
+
+#: database-actions/database-creation.php:586
+msgid "- Accommodation:"
+msgstr "- Camera:"
+
+#: database-actions/database-creation.php:587
+msgid "- Price:"
+msgstr "- Preţul:"
+
+#: database-actions/database-creation.php:598
+#: database-actions/database-creation.php:619
+msgid "Your reservation"
+msgstr "Rezervarea dumneavoastră"
+
+#: database-actions/database-creation.php:600
+#: database-actions/database-creation.php:621
+msgid "Hello"
+msgstr "Bună"
+
+#: database-actions/database-creation.php:601
+#: database-actions/database-creation.php:622
+msgid ""
+"Thank you for choosing to stay with us! We are pleased to confirm your "
+"reservation as follows:"
+msgstr ""
+"Vă mulţumim pentru alegerea de a vă caza la noi! Suntem încântaţi să vă "
+"confirmăm rezervarea după urmează:"
+
+#: database-actions/database-creation.php:602
+#: database-actions/database-creation.php:623
+#: front-end/booking-form/search-form.php:173
+#: front-end/booking-form/search-form.php:177
+msgid "Check-in date:"
+msgstr "Data de sosire:"
+
+#: database-actions/database-creation.php:603
+#: database-actions/database-creation.php:624
+#: front-end/booking-form/search-form.php:174
+#: front-end/booking-form/search-form.php:178
+msgid "Check-out date:"
+msgstr "Data de plecare:"
+
+#: database-actions/database-creation.php:604
+#: database-actions/database-creation.php:625
+msgid "Number of adults:"
+msgstr "- Numărul de adulţi:"
+
+#: database-actions/database-creation.php:605
+#: database-actions/database-creation.php:626
+msgid "Number of children:"
+msgstr "- Numărul de copii:"
+
+#: database-actions/database-creation.php:608
+#: database-actions/database-creation.php:629
+msgid "See you soon!"
+msgstr "Pe curând!"
+
+#: front-end/booking-form/available-accom.php:63
+#, fuzzy
+#| msgid "Link to all accommodation available at the chosen dates"
+msgid "Show unavailable accommodation at the chosen dates"
+msgstr "Vezi toate camerele disponibile la datele alese"
+
+#: front-end/booking-form/available-accom.php:72
+#, fuzzy
+#| msgid "The accommodation can not suit one person"
+msgid "Show accommodation not suitable for 1 person"
+msgstr "Camera nu poate fi ocupată doar de o persoană"
+
+#: front-end/booking-form/available-accom.php:74
+#, fuzzy, php-format
+#| msgid "The accommodation can not suit one person"
+msgid "Show accommodation not suitable for %s persons"
+msgstr "Camera nu poate fi ocupată doar de o persoană"
+
+#: front-end/booking-form/available-accom.php:101
+#, fuzzy
+#| msgid "No accommodation available at the chosen dates"
+msgid "Not available at the chosen dates."
+msgstr "Nu există camere disponibile la datele alese"
+
+#: front-end/booking-form/available-accom.php:109
+#, fuzzy
+#| msgid "Not available for check-in"
+msgid "Not suitable for 1 person."
+msgstr "Nu este disponibil pentru data de sosire"
+
+#: front-end/booking-form/available-accom.php:111
+#, php-format
+msgid "Not suitable for %s persons."
+msgstr ""
+
+#: front-end/booking-form/details-form.php:43
+#, fuzzy
+#| msgid "The accommodation is not available at the chosen dates"
+msgid "The selected accommodation is not available at the chosen dates."
+msgstr "Camera nu este disponibilă la datele alese"
+
+#: front-end/booking-form/details-form.php:126
+#, fuzzy
+#| msgid "Discount"
+msgid "Discount:"
+msgstr "Reducere"
+
+#: front-end/booking-form/details-form.php:129 utils/utils.php:1448
+#, fuzzy
+#| msgid "Amount"
+msgid "Amount:"
+msgstr "Suma"
+
+#: front-end/booking-form/details-form.php:207
+msgid ""
+"There is no active payment gateways. Please activate at least one payment "
+"gateway in HBook settings (Hbook > Payment)."
+msgstr ""
+"Nu există gateway-uri de plată active. Vă rugăm să activați cel puțin un "
+"gateway de plată în setările pluginului (Cazare > Plată)."
+
+#: front-end/booking-form/details-form.php:341
+#, fuzzy
+#| msgid "Fees"
+msgid "Fees:"
+msgstr "Taxe"
+
+#: front-end/booking-form/details-form.php:346
+msgid "Total price:"
+msgstr "Preț Total:"
+
+#: front-end/booking-form/details-form.php:396
+msgid "Customer:"
+msgstr "Client:"
+
+#: front-end/booking-form/details-form.php:405
+msgid "Enter customer details"
+msgstr "Introduceți detaliile clienților"
+
+#: front-end/booking-form/details-form.php:437
+#, fuzzy
+#| msgid "Customer information:"
+msgid "Additional information:"
+msgstr "Informaţii despre client:"
+
+#: front-end/booking-form/details-form.php:504
+msgid "Create reservation"
+msgstr "Creare rezervare"
+
+#: front-end/booking-form/details-form.php:509
+msgid "Updating database..."
+msgstr "Se actualizează baza de date..."
+
+#: front-end/front-end-ajax-actions.php:112
+#, fuzzy
+#| msgid "Create customer"
+msgid "Error. Could not create customer."
+msgstr "Creare client"
+
+#: front-end/front-end-ajax-actions.php:125
+msgid "Error. Could not calculate price."
+msgstr ""
+
+#: front-end/front-end-ajax-actions.php:350
+msgid "Error. Could not find payment gateway."
+msgstr ""
+
+#: front-end/front-end-ajax-actions.php:396
+#, fuzzy
+#| msgid "Create reservation"
+msgid "Error. Could not create reservation."
+msgstr "Creare rezervare"
+
+#: front-end/renders/availability-render.php:17
+msgid "Invalid shortcode. Use: [hb_availability accom_id=\"ID\"]"
+msgstr "Shortcode invalid. Utilizare: [hb_availability accom_id = \"ID\"]"
+
+#: front-end/renders/availability-render.php:19
+#: front-end/renders/rates-render.php:18
+msgid ""
+"Invalid shortcode. Please use the id of an accommodation which is set in the "
+"website default language."
+msgstr ""
+"Shortcode invalid. Vă rugăm să folosiți ID-ul unei unități de cazare care "
+"este setată în limba implicită a site-ului web."
+
+#: front-end/renders/availability-render.php:21
+#: front-end/renders/rates-render.php:20
+#, php-format
+msgid "Invalid shortcode. Could not find an accommodation whose id is %s."
+msgstr ""
+"Shortcode invalid. Imposibil de găsit o unitate de cazare al cărei ID este "
+"%s."
+
+#: front-end/renders/rates-render.php:16
+msgid "Invalid shortcode. Use: [hb_rates accom_id=\"ID\"]"
+msgstr "Shortcode invalid. Utilizare: [hb_rates accom_id = \"ID\"]"
+
+#: hbook.php:232
+msgid "Reservation reader"
+msgstr "Inspector de rezervări"
+
+#: hbook.php:237
+msgid "Reservation manager"
+msgstr "Manager de rezervări"
+
+#: hbook.php:252
+msgid "HBook custom frequency"
+msgstr ""
+
+#: hbook.php:263
+#, fuzzy
+#| msgid "Stripe settings"
+msgid "Settings"
+msgstr "Setări Stripe"
+
+#: hbook.php:274
+msgid "Thanks for using HBook plugin."
+msgstr "Mulţumim!"
+
+#: hbook.php:287
+#, php-format
+msgid "Before setting the plugin up do not forget to have a look at the %s."
+msgstr "Înainte de a seta plug-in sus nu uitaţi să aruncaţi o privire la %s."
+
+#: hbook.php:288
+msgid "documentation"
+msgstr "documentație"
+
+#: hbook.php:294
+#, php-format
+msgid "For any specific issue you can consult our %s."
+msgstr "Pentru orice problemă specifică, puteţi consulta %s."
+
+#: hbook.php:295 utils/options-utils.php:463
+msgid "knowledgebase"
+msgstr "baza de cunoştinţe"
+
+#: hbook.php:361
+#, php-format
+msgid ""
+"Delete accommodation %s? Note that all reservations linked to the %s will "
+"also be deleted."
+msgstr ""
+"Ștergeți cazare %s? Reţineţi că toate rezervările legate la %s vor fi, de "
+"asemenea, şterse."
+
+#: hbook.php:362
+msgid ""
+"Move this accommodation type to trash? Note that all reservations linked to "
+"this accommodtion will also be deleted when you will empty the trash."
+msgstr ""
+"Mutați acest tip de cameră la gunoi? Reţineţi că toate rezervările legate de "
+"această cameră vor fi, de asemenea, şterse atunci când veţi goli coşul de "
+"gunoi."
+
+#: hbook.php:363
+msgid "Starting price should be a number (without currency symbol)."
+msgstr "Preţul de pornire ar trebui să fie un număr (fără simbol monetar)."
+
+#: hbook.php:364
+msgid "There must be at least one accommodation."
+msgstr "Trebuie să existe cel puţin o cameră."
+
+#: payment/paypal/paypal.php:46
+msgid "Paypal settings"
+msgstr "Setări PayPal"
+
+#: payment/paypal/paypal.php:50
+msgid "Paypal mode:"
+msgstr "Modul PayPal:"
+
+#: payment/paypal/paypal.php:53 payment/stripe/stripe.php:34
+msgid "Live"
+msgstr "Activ"
+
+#: payment/paypal/paypal.php:54
+msgid "Sandbox"
+msgstr "Testare"
+
+#: payment/paypal/paypal.php:59
+msgid "Sandbox API Username:"
+msgstr "Nume de utilizator sandbox API:"
+
+#: payment/paypal/paypal.php:64
+msgid "Sandbox API Password:"
+msgstr "Sandbox API parola:"
+
+#: payment/paypal/paypal.php:69
+msgid "Sandbox API Signature:"
+msgstr "Semnătura API pentru sandbox:"
+
+#: payment/paypal/paypal.php:74
+msgid "Live API Username:"
+msgstr "Nume utilizator API Live:"
+
+#: payment/paypal/paypal.php:79
+msgid "Live API Password:"
+msgstr "Parola Live API:"
+
+#: payment/paypal/paypal.php:84
+msgid "Live API Signature:"
+msgstr "Semnătura API Live:"
+
+#: payment/paypal/paypal.php:89
+#, fuzzy
+#| msgid "Displayed?"
+msgid "Displayed icons:"
+msgstr "Afişare?"
+
+#: payment/paypal/paypal.php:92
+msgid "PayPal"
+msgstr ""
+
+#: payment/paypal/paypal.php:93
+#, fuzzy
+#| msgid "Store credit card:"
+msgid "Credit cards"
+msgstr "Card de credit:"
+
+#: payment/stripe/stripe.php:27
+msgid "Stripe settings"
+msgstr "Setări Stripe"
+
+#: payment/stripe/stripe.php:31
+msgid "Stripe mode:"
+msgstr "Mod Stripe:"
+
+#: payment/stripe/stripe.php:35
+msgid "Test"
+msgstr "Test"
+
+#: payment/stripe/stripe.php:40
+msgid "Test Publishable Key:"
+msgstr "Test cheie de publicare:"
+
+#: payment/stripe/stripe.php:45
+msgid "Test Secret Key:"
+msgstr "Test cheie secretă:"
+
+#: payment/stripe/stripe.php:50
+msgid "Live Publishable Key:"
+msgstr "Cheie de publicare Live:"
+
+#: payment/stripe/stripe.php:55
+msgid "Live Secret Key:"
+msgstr "Cheie secretă Live:"
+
+#: payment/stripe/stripe.php:60
+msgid "Store credit card:"
+msgstr "Card de credit:"
+
+#: payment/stripe/stripe.php:69
+msgid "Display a \"Powered by Stripe\" icon:"
+msgstr ""
+
+#: utils/options-utils.php:18
+msgid "Booking payment settings"
+msgstr "Setările de plată pentru rezervare"
+
+#: utils/options-utils.php:21
+msgid "Customers can choose between different payment options:"
+msgstr "Clienţii pot alege între diferite opţiuni de plată:"
+
+#: utils/options-utils.php:30
+msgid "Booking payment:"
+msgstr "Plata rezervării:"
+
+#: utils/options-utils.php:33
+msgid ""
+"Customers do not have to pay online to book an accommodation (payment on "
+"arrival or offline - e.g. bank wire)"
+msgstr ""
+"Clienţii nu trebuie să plătească online pentru a rezerva o cameră (plata la "
+"sosire sau offline - de exemplu, transfer bancar)"
+
+#: utils/options-utils.php:34
+msgid ""
+"Customers have to leave their credit card details to book an accommodation "
+"(this option is available only with Stripe)"
+msgstr ""
+"Clienţii trebuie să indice detaliile cardului de credit pentru a rezerva o "
+"cameră (această opţiune este disponibilă numai cu Stripe)"
+
+#: utils/options-utils.php:35
+msgid "Customers have to pay a deposit online to book an accommodation"
+msgstr ""
+"Clienţii trebuie să plătească un depozit online pentru a rezerva o cameră"
+
+#: utils/options-utils.php:36
+msgid ""
+"Customers have to pay the full stay price online to book an accommodation"
+msgstr ""
+"Clienţii trebuie să plătească preţul complet de şedere online pentru a "
+"rezerva o cameră"
+
+#: utils/options-utils.php:42
+msgid "Customers can pay on arrival or offline - e.g.bank wire:"
+msgstr ""
+"Clienţii pot plăti la sosire sau offline - de exemplu, transfer bancar:"
+
+#: utils/options-utils.php:52
+msgid ""
+"Customers can leave their credit card details for a later charge (this "
+"option is available only with Stripe):"
+msgstr ""
+"Clienţii pot lăsa detaliile cardului de credit pentru o plată ulterioară "
+"(această opţiune este disponibilă numai cu Stripe):"
+
+#: utils/options-utils.php:62
+msgid "Customers can pay an online deposit:"
+msgstr "Clienţii pot plăti un depozit online:"
+
+#: utils/options-utils.php:72
+msgid "Customers can pay the full amount online:"
+msgstr "Clienţii pot plăti întreaga sumă online:"
+
+#: utils/options-utils.php:85
+msgid "Security bond settings"
+msgstr "Setări Garanţie"
+
+#: utils/options-utils.php:86
+msgid ""
+"A security bond is a sum of money which is held during the length of the "
+"stay to cover the cost of any damages or loss caused by the customer."
+msgstr ""
+"Garanţia este o sumă de bani care se reţine pe durata şederii pentru "
+"acoperirea costului oricăror daune sau pierderi cauzate de client."
+
+#: utils/options-utils.php:89
+msgid "Security bond:"
+msgstr "Garanţie:"
+
+#: utils/options-utils.php:99
+msgid "Security bond has to be paid:"
+msgstr "Garanţia trebuie să fie plătită:"
+
+#: utils/options-utils.php:109
+msgid "Security bond amount:"
+msgstr "Suma garanţiei:"
+
+#: utils/options-utils.php:118
+msgid "Deposit settings"
+msgstr "Setări avans"
+
+#: utils/options-utils.php:119
+msgid ""
+"A deposit corresponds to the part of the total price of the stay that is "
+"payed in advance by the customer to secure the booking."
+msgstr ""
+"Avansul reprezintă o parte din preţul total al şederii care este plătită în "
+"avans de către client pentru a asigura rezervarea."
+
+#: utils/options-utils.php:122
+msgid "Deposit type:"
+msgstr "Tipul de avans:"
+
+#: utils/options-utils.php:134
+msgid "Deposit amount:"
+msgstr "Suma avansului:"
+
+#: utils/options-utils.php:140
+msgid "Security bond must be paid along with deposit:"
+msgstr "Garanţia trebuie plătită împreună cu avansul:"
+
+#: utils/options-utils.php:153
+msgid "Price settings"
+msgstr "Setări preț"
+
+#: utils/options-utils.php:156
+msgid "Payment currency:"
+msgstr "Moneda de plată:"
+
+#: utils/options-utils.php:162
+msgid "Currency symbol position:"
+msgstr "Poziție simbol monetar:"
+
+#: utils/options-utils.php:165
+msgid "Before price"
+msgstr "Înainte de pret"
+
+#: utils/options-utils.php:166
+msgid "After price"
+msgstr "După preţ"
+
+#: utils/options-utils.php:171
+msgid "Price precision:"
+msgstr "Precizia preţului:"
+
+#: utils/options-utils.php:174
+msgid "Two decimals"
+msgstr "Două zecimale"
+
+#: utils/options-utils.php:175
+msgid "No decimals"
+msgstr "Fără zecimale"
+
+#: utils/options-utils.php:187
+msgid "General settings"
+msgstr "Setări generale"
+
+#: utils/options-utils.php:190
+msgid "Search form maximum width:"
+msgstr "Lățime maximă formular de căutare:"
+
+#: utils/options-utils.php:191 utils/options-utils.php:198
+#: utils/options-utils.php:205
+msgid "Leave blank for no maximum."
+msgstr "Lăsaţi necompletat pentru nici un maxim."
+
+#: utils/options-utils.php:197
+msgid "Accommodation selection form maximum width:"
+msgstr "Lățimea maximă a selectării camerei:"
+
+#: utils/options-utils.php:204
+msgid "Details form maximum width:"
+msgstr "Lăţimea maximă a formularului de detalii:"
+
+#: utils/options-utils.php:211
+msgid "Forms position:"
+msgstr "Poziţia formularelor:"
+
+#: utils/options-utils.php:214
+msgid "Left"
+msgstr "Stânga"
+
+#: utils/options-utils.php:215
+msgid "Center"
+msgstr "Centru"
+
+#: utils/options-utils.php:220
+msgid "Minimum width required for displaying a horizontal search form:"
+msgstr ""
+"Lățimea minimă necesară pentru afișarea unui formular de căutare orizontal:"
+
+#: utils/options-utils.php:221
+msgid ""
+"If the available space is less than the minimum width the form will be "
+"displayed vertically."
+msgstr ""
+"Dacă spaţiul disponibil este mai mic decât lăţimea minimă, formularul va fi "
+"afişat vertical."
+
+#: utils/options-utils.php:227
+msgid "Minimum width required for displaying columns in the details form:"
+msgstr ""
+"Lățimea minimă necesară pentru afișarea coloanelor în formularul de detalii:"
+
+#: utils/options-utils.php:228
+msgid ""
+"If the available space is less than the minimum width the columns will be "
+"stacked."
+msgstr ""
+"Dacă spaţiul disponibil este mai mic decât lăţimea minimă, coloanele vor fi "
+"stivuite."
+
+#: utils/options-utils.php:234
+msgid "Sticky header/menu height"
+msgstr ""
+
+#: utils/options-utils.php:236
+msgid "If your website has a sticky header insert its height in pixels below."
+msgstr ""
+
+#: utils/options-utils.php:238
+msgid ""
+"This will prevent HBook forms to appear under the header when automatic "
+"scrolling occurs."
+msgstr ""
+
+#: utils/options-utils.php:247
+msgid "Buttons appearance"
+msgstr "Aspectul butoanelor"
+
+#: utils/options-utils.php:250
+msgid "Buttons style:"
+msgstr "Stil butoane:"
+
+#: utils/options-utils.php:253 utils/options-utils.php:269
+#: utils/options-utils.php:285
+msgid "Use theme styles"
+msgstr "Utilizarea stilurilor temei"
+
+#: utils/options-utils.php:254 utils/options-utils.php:270
+msgid "Custom"
+msgstr "Personalizat"
+
+#: utils/options-utils.php:263
+msgid "Inputs and selects appearance"
+msgstr "Aspectul formularului de rezervare"
+
+#: utils/options-utils.php:266
+msgid "Inputs and selects style:"
+msgstr "Stilul formularului de rezervare:"
+
+#: utils/options-utils.php:279
+msgid "Rates tables appearance"
+msgstr "Aspectul tabelului de preţuri"
+
+#: utils/options-utils.php:282
+msgid "Rates tables style:"
+msgstr "Stilul tabelului de preţuri:"
+
+#: utils/options-utils.php:286
+msgid "Use plugin styles"
+msgstr "Utilizarea stilurilor pluginului"
+
+#: utils/options-utils.php:294
+msgid "Calendars appearance"
+msgstr "Aspectul calendarelor"
+
+#: utils/options-utils.php:298
+msgid "Add a shadow to calendars:"
+msgstr "Adăugarea unei umbre la calendare:"
+
+#: utils/options-utils.php:310
+msgid "Custom CSS"
+msgstr "CSS personalizat"
+
+#: utils/options-utils.php:314
+msgid "Custom CSS for the front-end pages:"
+msgstr "Custom CSS pentru paginile de front-end:"
+
+#: utils/options-utils.php:318
+msgid "Custom CSS for the admin pages:"
+msgstr "Custom CSS pentru paginile de administrare:"
+
+#: utils/options-utils.php:330
+#, fuzzy
+#| msgid "HBook settings"
+msgid "Import / Export HBook settings"
+msgstr "Setări"
+
+#: utils/options-utils.php:337
+msgid "Confirmation settings"
+msgstr "Setări de confirmare"
+
+#: utils/options-utils.php:340
+msgid "Unpaid reservations have to be confirmed before dates are blocked out:"
+msgstr ""
+"Rezervările neplătite trebuie confirmate înainte ca datele să fie blocate:"
+
+#: utils/options-utils.php:349
+msgid "Paid reservations have to be confirmed before dates are blocked out:"
+msgstr ""
+"Rezervările plătite trebuie confirmate înainte ca datele să fie blocate:"
+
+#: utils/options-utils.php:361
+#, fuzzy
+#| msgid "Status of reservation"
+msgid "Status of reservations"
+msgstr "Statutul rezervării"
+
+#: utils/options-utils.php:364
+#, fuzzy
+#| msgid "Settings for reservations created from admin"
+msgid "Reservations created from admin:"
+msgstr "Setări pentru rezervări create de administrator"
+
+#: utils/options-utils.php:373
+#, fuzzy
+#| msgid "Settings for reservations created from admin"
+msgid "Reservations received from website:"
+msgstr "Setări pentru rezervări create de administrator"
+
+#: utils/options-utils.php:382
+#, fuzzy
+#| msgid "Status of the reservation imported from an external calendar:"
+msgid "Reservations imported from an external iCal calendar:"
+msgstr "Starea rezervării importate dintr-un calendar extern:"
+
+#: utils/options-utils.php:394
+msgid "Opening dates"
+msgstr "Datele de deschidere"
+
+#: utils/options-utils.php:397
+msgid "Minimum selectable date for a reservation:"
+msgstr "Data minimă selectabilă pentru o rezervare:"
+
+#: utils/options-utils.php:398
+msgid "Enter a number of <u>days</u> from current date..."
+msgstr ""
+
+#: utils/options-utils.php:403 utils/options-utils.php:415
+msgid "...or enter a fixed date (yyyy-mm-dd format)"
+msgstr "... sau introduceţi o dată fixă (format AAAA-LL-ZZ)"
+
+#: utils/options-utils.php:408
+msgid "Maximum selectable date for a reservation:"
+msgstr "Data maximă selectabilă pentru o rezervare:"
+
+#: utils/options-utils.php:409
+msgid "Enter the maximum number of <u>months</u> ahead..."
+msgstr ""
+
+#: utils/options-utils.php:423
+msgid "Date settings"
+msgstr "Setări dată"
+
+#: utils/options-utils.php:430
+msgid "Terms and conditions, Privacy policy"
+msgstr "Termeni si conditii, Politica de confidentialitate"
+
+#: utils/options-utils.php:433
+msgid "Display a terms and conditions checkbox:"
+msgstr "Afișați o casetă de selectare termeni și condiții:"
+
+#: utils/options-utils.php:434
+#, php-format
+msgid ""
+"You can change the text of the terms and conditions checkbox on the %s Text "
+"page%s."
+msgstr ""
+"Se poate modifica textul casetei termeni şi condiţii din pagina de text %s "
+"%s."
+
+#: utils/options-utils.php:443
+msgid "Display a privacy policy checkbox:"
+msgstr "Afișați o casetă de selectare politică de confidențialitate:"
+
+#: utils/options-utils.php:444
+#, php-format
+msgid ""
+"You can change the text of the privacy policy checkbox on the %s Text page%s."
+msgstr ""
+"Aveți posibilitatea să modificați textul casetei de selectare politică de "
+"confidențialitate din pagina de text %s %s."
+
+#: utils/options-utils.php:456 utils/utils.php:2950
+msgid "Misc"
+msgstr "Diverse"
+
+#: utils/options-utils.php:459
+#, fuzzy
+#| msgid "Reservation language:"
+msgid "HBook admin language:"
+msgstr "Limba de rezervare:"
+
+#: utils/options-utils.php:465
+#, php-format
+msgid "You can check available languages on our %s."
+msgstr ""
+
+#: utils/options-utils.php:469
+msgid "English"
+msgstr ""
+
+#: utils/options-utils.php:470
+msgid "User language (if available)"
+msgstr ""
+
+#: utils/options-utils.php:475
+#, fuzzy
+#| msgid "Reservation origin:"
+msgid "Reservations archiving delay:"
+msgstr "Originea rezervării:"
+
+#: utils/options-utils.php:476
+msgid "Enter a number of months."
+msgstr ""
+
+#: utils/options-utils.php:481
+msgid "Accommodation url slug:"
+msgstr "Cazare URL:"
+
+#: utils/options-utils.php:482
+msgid ""
+"The url slug can not be blank. If you leave this field empty the slug will "
+"be set to \"hb_accommodation\"."
+msgstr ""
+"Marcator URL-ul nu poate fi gol. Dacă lăsaţi acest câmp gol va fi setat la "
+"\"hb_accommodation\"."
+
+#: utils/options-utils.php:487
+msgid "Delete all stored information on uninstall:"
+msgstr "Ștergeți toate informațiile stocate la dezinstalare:"
+
+#: utils/options-utils.php:496
+msgid "Image resizing:"
+msgstr ""
+
+#: utils/options-utils.php:499
+msgid "Dynamic"
+msgstr ""
+
+#: utils/options-utils.php:500
+#, fuzzy
+#| msgid "Status"
+msgid "Static"
+msgstr "Stare"
+
+#: utils/options-utils.php:505
+msgid "Delay before a timeout error occurs (in ms) :"
+msgstr "Întârziere înainte de o eroare de expirare apare (în ms):"
+
+#: utils/options-utils.php:511
+#, fuzzy
+#| msgid "Delay before a timeout error occurs (in ms) :"
+msgid "Delay before a timeout error occurs (for admin pages - in ms) :"
+msgstr "Întârziere înainte de o eroare de expirare apare (în ms):"
+
+#: utils/options-utils.php:528
+#, fuzzy
+#| msgid "Confirmation settings"
+msgid "Notifications settings"
+msgstr "Setări de confirmare"
+
+#: utils/options-utils.php:531
+msgid "Keep records of sync errors?"
+msgstr ""
+
+#: utils/options-utils.php:541
+msgid "Show notification messages in Reservations page?"
+msgstr "Afișați mesajele de notificare în pagina de rezervari?"
+
+#: utils/options-utils.php:553
+#, fuzzy
+#| msgid "Import a file"
+msgid "Import settings"
+msgstr "Importul unui fişier"
+
+#: utils/options-utils.php:556
+msgid "HBook synchronization frequency (in seconds)"
+msgstr ""
+
+#: utils/options-utils.php:559
+msgid ""
+"You need to deactivate and reactivate HBook after modifying this setting."
+msgstr ""
+
+#: utils/options-utils.php:562
+msgid ""
+"Update the dates of a reservation when it has been modified in the external "
+"calendar? "
+msgstr ""
+"Actualizaţi datele unei rezervări atunci când acestea au fost modificate în "
+"calendarul extern? "
+
+#: utils/options-utils.php:571
+msgid ""
+"Update the status of a reservation when it has been cancelled in the "
+"external calendar? "
+msgstr ""
+"Actualizaţi starea unei rezervări atunci când aceasta a fost anulată în "
+"calendarul extern? "
+
+#: utils/options-utils.php:580
+msgid "Import window maximum date"
+msgstr ""
+
+#: utils/options-utils.php:583
+msgid ""
+"Set the number of months ahead from current date. HBook will import only "
+"reservations with check-in within this import window."
+msgstr ""
+
+#: utils/options-utils.php:586
+msgid "Import window minimum date"
+msgstr ""
+
+#: utils/options-utils.php:589
+msgid ""
+"Set the number of nights from current date. HBook will not import any "
+"reservation with check-in within this advanced notice period of time."
+msgstr ""
+
+#: utils/options-utils.php:592
+#, fuzzy
+#| msgid "Select reservations to be exported:"
+msgid "Exclude one nights reservations from the import?"
+msgstr "Selectare rezervări de exportat:"
+
+#: utils/options-utils.php:599
+msgid ""
+"Set this to \"Yes\" if you do not accept one-night reservations in any of "
+"your external calendars."
+msgstr ""
+
+#: utils/options-utils.php:604
+#, fuzzy
+#| msgid "Deposit settings"
+msgid "Export settings"
+msgstr "Setări avans"
+
+#: utils/options-utils.php:607
+msgid "Include reservations with status Cancelled in the export?"
+msgstr "Includeţi rezervări cu statut anulat în export?"
+
+#: utils/options-utils.php:617
+msgid "Include blocked dates in the export?"
+msgstr "Includeţi datele blocate în export?"
+
+#: utils/options-utils.php:626
+#, fuzzy
+#| msgid "Include reservations with status Cancelled in the export?"
+msgid "Include only reservations with status \"Confirmed\" in the export?"
+msgstr "Includeţi rezervări cu statut anulat în export?"
+
+#: utils/options-utils.php:636
+msgid "Summary of reservation in the export"
+msgstr "Rezumatul rezervării în export"
+
+#: utils/options-utils.php:641
+msgid "Description of reservation in the export"
+msgstr "Descrierea rezervării în export"
+
+#: utils/options-utils.php:645
+msgid ""
+"You can use the following variables in the \"Summary\" field and the "
+"\"Description\" field:"
+msgstr ""
+"Puteţi utiliza următoarele variabile în câmpul \"Rezumat\" şi câmpul "
+"\"Descriere\":"
+
+#: utils/options-utils.php:659
+msgid "Display an Adults field?"
+msgstr "Afişarea unui câmp pentru adulţi?"
+
+#: utils/options-utils.php:668
+msgid "Display a Children field?"
+msgstr "Să afişeze un teren pentru copii?"
+
+#: utils/options-utils.php:677
+#, fuzzy
+#| msgid "Adults number"
+msgid "Adults field minimum number"
+msgstr "Numărul adulţilor"
+
+#: utils/options-utils.php:684
+#, fuzzy
+#| msgid "Adults number"
+msgid "Adults field maximum number"
+msgstr "Numărul adulţilor"
+
+#: utils/options-utils.php:691
+#, fuzzy
+#| msgid "Children number"
+msgid "Children field maximum number"
+msgstr "Numărul copiilor"
+
+#: utils/options-utils.php:698
+msgid ""
+"Use Accommodation minimum occupancy for Search form fields on Accommodation "
+"pages?"
+msgstr ""
+
+#: utils/options-utils.php:708
+msgid ""
+"Use Accommodation maximum occupancy for Search form fields on Accommodation "
+"pages?"
+msgstr ""
+
+#: utils/options-utils.php:718
+msgid "Display placeholders instead of labels?"
+msgstr "Afişaţi substituenţi în loc de etichete?"
+
+#: utils/options-utils.php:736
+#, fuzzy
+#| msgid "Customers can pay the full amount online:"
+msgid "Customers can choose the accommodation number?"
+msgstr "Clienţii pot plăti întreaga sumă online:"
+
+#: utils/options-utils.php:743
+msgid ""
+"You will enable this option if you wish to allow your customer to pick a "
+"specific accommodation if several of the same type are available."
+msgstr ""
+
+#: utils/options-utils.php:746
+msgid "Link title towards accommodation pages?"
+msgstr "Leagă titlul de paginile camerelor?"
+
+#: utils/options-utils.php:755
+msgid "Display an accommodation thumbnail?"
+msgstr "Afişează o miniatură a camerei?"
+
+#: utils/options-utils.php:764
+msgid "Link thumbnail towards accommodation pages?"
+msgstr "Leagă miniatura de paginile camerelor?"
+
+#: utils/options-utils.php:785
+msgid "Display a button that links towards accommodation pages?"
+msgstr "Afişarea unui buton de legatura spre paginile de camerelor?"
+
+#: utils/options-utils.php:794
+msgid "Display price?"
+msgstr "Afişează preţul?"
+
+#: utils/options-utils.php:803
+msgid "Display price breakdown?"
+msgstr "Afişare detaliată a preţului?"
+
+#: utils/options-utils.php:812
+msgid "Price breakdown default state"
+msgstr "Starea implicită de detaliere a prețurilor"
+
+#: utils/options-utils.php:815
+msgid "Opened"
+msgstr "Deschis"
+
+#: utils/options-utils.php:816 utils/strings-utils.php:240
+msgid "Closed"
+msgstr "Închis"
+
+#: utils/options-utils.php:821
+msgid "Display detailed accommodation price?"
+msgstr "Afişează preţul detaliat al camerei?"
+
+#: utils/resa-ical.php:158 utils/resa-ical.php:160
+msgid "Accommodation blocked"
+msgstr "Cameră blocată"
+
+#: utils/resa-ical.php:298
+msgid "It seems that this file is not a valid calendar file."
+msgstr ""
+
+#: utils/resa-ical.php:313
+msgid ""
+"The calendar has been added. For your information, it currently does not "
+"contain any event that could be imported."
+msgstr ""
+
+#: utils/resa-ical.php:320
+#, php-format
+msgid "Your calendar has been imported: %1$s reservation(s) have been added."
+msgstr "Calendarul a fost importat: s-au adăugat rezervări la %1$s."
+
+#: utils/resa-ical.php:325
+#, php-format
+msgid ""
+"The following reservation(s) could not be imported as the accommodation %1$s "
+"(%2$s) is not available:"
+msgstr ""
+"Rezervările următoare nu s-au importat deoarece camera %1$s (%2$s) nu este "
+"disponibilă:"
+
+#: utils/resa-ical.php:329
+#, php-format
+msgid "A reservation with check-in on %1$s and check-out on %2$s"
+msgstr "O rezervare cu sosire la%1$s şi plecare pe%2$s"
+
+#: utils/resa-ical.php:491
+msgid "Summary: "
+msgstr "Rezumat: "
+
+#: utils/resa-ical.php:508
+msgid "Email: "
+msgstr "E-mail: "
+
+#: utils/resa-options.php:33
+msgid "Extra services:"
+msgstr "Servicii suplimentare:"
+
+#: utils/resa-options.php:127
+msgid "Options total price:"
+msgstr "Pret total cu optiunile alese:"
+
+#: utils/strings-utils.php:12
+msgid "Default form title"
+msgstr "Titlu implicit de formular"
+
+#: utils/strings-utils.php:13
+msgid "Form title on accommodation page"
+msgstr "Titlul formularului pe pagina camerei"
+
+#: utils/strings-utils.php:14
+msgid "Check-in date"
+msgstr "Data sosirii"
+
+#: utils/strings-utils.php:15
+msgid "Check-out date"
+msgstr "Data plecării"
+
+#: utils/strings-utils.php:16
+msgid "Adults number"
+msgstr "Numărul adulţilor"
+
+#: utils/strings-utils.php:17
+msgid "Children number"
+msgstr "Numărul copiilor"
+
+#: utils/strings-utils.php:18
+msgid "Chosen check-in date"
+msgstr "Dată aleasă pentru sosire"
+
+#: utils/strings-utils.php:19
+msgid "Chosen check-out date"
+msgstr "Dată aleasă pentru plecare"
+
+#: utils/strings-utils.php:20
+msgid "Chosen adults number"
+msgstr "Numărul ales de adulţi"
+
+#: utils/strings-utils.php:21
+msgid "Chosen children number"
+msgstr "Numărul ales de copii"
+
+#: utils/strings-utils.php:22
+msgid "Search button"
+msgstr "Buton de căutare"
+
+#: utils/strings-utils.php:23
+msgid "Change search button"
+msgstr "Modificare buton căutare"
+
+#: utils/strings-utils.php:29
+msgid "One type of accommodation found"
+msgstr "Un tip de cameră găsit"
+
+#: utils/strings-utils.php:30
+msgid "Several types of accommodation found"
+msgstr "Mai multe tipuri de camere găsite"
+
+#: utils/strings-utils.php:31
+msgid "Accommodation selection title"
+msgstr "Titlu selecţie cameră"
+
+#: utils/strings-utils.php:32
+msgid "The accommodation is available at the chosen dates"
+msgstr "Camera este disponibilă la datele alese"
+
+#: utils/strings-utils.php:33
+msgid "Price for 1 night"
+msgstr "Preţ pentru 1 noapte"
+
+#: utils/strings-utils.php:34
+msgid "Price for several nights"
+msgstr "Preţ pentru mai multe nopţi"
+
+#: utils/strings-utils.php:35
+msgid "View price breakdown link"
+msgstr "Afişare detaliată a preţului"
+
+#: utils/strings-utils.php:36
+msgid "Hide price breakdown link"
+msgstr "Ascunde afişarea detaliată a preţului"
+
+#: utils/strings-utils.php:37
+msgid "Nights (several - in price breakdown)"
+msgstr "Nopţi (mai multe-în detalierea preţurilor)"
+
+#: utils/strings-utils.php:38
+msgid "Night (one - in price breakdown)"
+msgstr "Noapte (una - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:39
+msgid "Multiple nights (in price breakdown)"
+msgstr "Mai multe nopți (în detalierea prețurilor)"
+
+#: utils/strings-utils.php:40
+msgid "Accommodation price (in price breakdown)"
+msgstr "Preţul camerei (în detalierea preţurilor)"
+
+#: utils/strings-utils.php:41
+msgid "Extra adults (several - in price breakdown)"
+msgstr "Extra adulti (mai mulţi - in detalierea preţurilor)"
+
+#: utils/strings-utils.php:42
+msgid "Extra adult (one - in price breakdown)"
+msgstr "Adult suplimentar (unul - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:43
+msgid "Adults (several - in price breakdown)"
+msgstr "Adulți (mai mulţi - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:44
+msgid "Adult (one - in price breakdown)"
+msgstr "Adult (unul - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:45
+msgid "Extra children (several - in price breakdown)"
+msgstr "Copii suplimentari (mai mulţi - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:46
+msgid "Extra child (one - in price breakdown)"
+msgstr "Copil suplimentar (unul - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:47
+msgid "Children (several - in price breakdown)"
+msgstr "Copii (mai mulţi - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:48
+msgid "Child (one - in price breakdown)"
+msgstr "Copil (unul - în detalierea prețurilor)"
+
+#: utils/strings-utils.php:49
+msgid "Dates (in price breakdown)"
+msgstr "Date (în detalierea prețurilor)"
+
+#: utils/strings-utils.php:50
+msgid "Discount (in price breakdown)"
+msgstr "Reducere (în detalierea prețurilor)"
+
+#: utils/strings-utils.php:51
+msgid "Adults (several - in fee details)"
+msgstr "Adulți (mai mulţi - în detalierea taxelor)"
+
+#: utils/strings-utils.php:52
+msgid "Adult (one - in fee details)"
+msgstr "Adult (unul - în detalierea taxelor)"
+
+#: utils/strings-utils.php:53
+msgid "Children (several - in fee details)"
+msgstr "Copii (mai mulţi - în detalierea taxelor)"
+
+#: utils/strings-utils.php:54
+msgid "Child (one - in fee details)"
+msgstr "Copil (unul - în detalierea taxelor)"
+
+#: utils/strings-utils.php:55
+#, fuzzy
+#| msgid "Adult (one - in fee details)"
+msgid "Persons (in fee details)"
+msgstr "Adult (unul - în detalierea taxelor)"
+
+#: utils/strings-utils.php:56
+msgid "Select accommodation button"
+msgstr "Selectaţi butonul camerei"
+
+#: utils/strings-utils.php:57
+msgid "Book now button"
+msgstr "Butonul de \"rezervă acum\" "
+
+#: utils/strings-utils.php:58
+msgid "View accommodation button"
+msgstr "Vizualizare buton de cazare"
+
+#: utils/strings-utils.php:59
+msgid "Selected accommodation"
+msgstr "Camera selectată"
+
+#: utils/strings-utils.php:60
+msgid "Fees (in price breakdown)"
+msgstr "Taxe (în detalierea prețurilor)"
+
+#: utils/strings-utils.php:61
+#, fuzzy
+#| msgid "Accommodation selection title"
+msgid "Accommodation number selection title"
+msgstr "Titlu selecţie cameră"
+
+#: utils/strings-utils.php:62 utils/strings-utils.php:97 utils/utils.php:2625
+msgid "Accommodation number"
+msgstr "Numărul camerei"
+
+#: utils/strings-utils.php:63
+#, fuzzy
+#| msgid "Accommodation selection title"
+msgid "Accommodation number selection explanation text"
+msgstr "Titlu selecţie cameră"
+
+#: utils/strings-utils.php:69
+msgid "Extra services selection title"
+msgstr "Titlu de selecție servicii suplimentare"
+
+#: utils/strings-utils.php:70
+msgid "Chosen extra services title"
+msgstr "Titlu servicii suplimentare alese"
+
+#: utils/strings-utils.php:71
+msgid "Extra price and maximum"
+msgstr "Preţ suplimentar şi maxim"
+
+#: utils/strings-utils.php:72
+msgid "Free extra"
+msgstr "Servicii suplimentare gratuite"
+
+#: utils/strings-utils.php:73
+msgid "Each (in extra price and maximum)"
+msgstr "Fiecare (în preţ suplimentar şi maxim)"
+
+#: utils/strings-utils.php:74
+msgid "Maximum (in extra price and maximum)"
+msgstr "Maxim (în preţ suplimentar şi maxim)"
+
+#: utils/strings-utils.php:75
+msgid "Total extra services price"
+msgstr "Pret total servicii suplimentare"
+
+#: utils/strings-utils.php:83
+msgid "Apply coupon button"
+msgstr "Butonul Aplică Cupon"
+
+#: utils/strings-utils.php:84
+msgid "Valid coupon message"
+msgstr "Mesaj cupon valid"
+
+#: utils/strings-utils.php:85
+msgid "Invalid coupon message"
+msgstr "Mesaj cupon invalid"
+
+#: utils/strings-utils.php:86
+msgid "Coupon no longer valid message"
+msgstr ""
+
+#: utils/strings-utils.php:87
+msgid "No coupon message"
+msgstr "Mesaj niciun cupon"
+
+#: utils/strings-utils.php:95
+msgid "Change"
+msgstr "Modifică"
+
+#: utils/strings-utils.php:99
+msgid "Options price"
+msgstr "Preţul opţiunilor"
+
+#: utils/strings-utils.php:100
+#, fuzzy
+#| msgid "Invalid price."
+msgid "Included fees"
+msgstr "Preţ incorect."
+
+#: utils/strings-utils.php:101 utils/utils.php:2633
+#, fuzzy
+#| msgid "Coupon discount amount"
+msgid "Coupon amount"
+msgstr "Suma cuponului de reducere"
+
+#: utils/strings-utils.php:102
+#, fuzzy
+#| msgid "Coupon discount amount"
+msgid "Discount amount"
+msgstr "Suma cuponului de reducere"
+
+#: utils/strings-utils.php:103
+msgid "Total price"
+msgstr "Preț total"
+
+#: utils/strings-utils.php:104
+msgid "Deposit"
+msgstr "Avans"
+
+#: utils/strings-utils.php:105
+msgid "Security bond"
+msgstr "Garanţie"
+
+#: utils/strings-utils.php:106
+msgid "Security bond explanation"
+msgstr "Explicaţie Garanţie"
+
+#: utils/strings-utils.php:107
+msgid "Thanks message (unpaid) - above summary"
+msgstr ""
+
+#: utils/strings-utils.php:108
+#, fuzzy
+#| msgid "Thanks message (1)"
+msgid "Thanks message (unpaid)- below summary"
+msgstr "Mesaj de mulţumire (1)"
+
+#: utils/strings-utils.php:109
+#, fuzzy
+#| msgid "Thanks message - payment done (1)"
+msgid "Thanks message (payment made) - above summary"
+msgstr "Mesaj de mulţumire - plata efectuată (1)"
+
+#: utils/strings-utils.php:110
+#, fuzzy
+#| msgid "Thanks message - payment done (1)"
+msgid "Thanks message (payment made) - below summary"
+msgstr "Mesaj de mulţumire - plata efectuată (1)"
+
+#: utils/strings-utils.php:116
+msgid "Payment section title"
+msgstr "Titlul secțiunii de plată"
+
+#: utils/strings-utils.php:117
+msgid "Select payment type"
+msgstr "Selectarea tipului de plată"
+
+#: utils/strings-utils.php:118
+msgid "Payment type offline"
+msgstr "Tip de plată offline"
+
+#: utils/strings-utils.php:119
+msgid "Payment type store credit card"
+msgstr "Tip de plată declararea cardului de credit"
+
+#: utils/strings-utils.php:120
+msgid "Payment type deposit"
+msgstr "Tip de plată Avans"
+
+#: utils/strings-utils.php:121
+msgid "Payment type full"
+msgstr "Tip de plată completă"
+
+#: utils/strings-utils.php:122
+msgid "Explanation text for offline payment"
+msgstr "Text de explicaţie pentru plata offline"
+
+#: utils/strings-utils.php:123
+msgid "Explanation text for stored credit card"
+msgstr "Text de explicaţie pentru cardul de credit declarat"
+
+#: utils/strings-utils.php:124
+msgid "Explanation text for deposit payment"
+msgstr "Text de explicaţie pentru plata avansului"
+
+#: utils/strings-utils.php:125
+msgid "Explanation text for full payment"
+msgstr "Text de explicaţie pentru plata integrală"
+
+#: utils/strings-utils.php:126
+msgid "Select payment method"
+msgstr "Selectați metoda de plată"
+
+#: utils/strings-utils.php:132 utils/strings-utils.php:141
+msgid "Payment method label"
+msgstr "Etichetă metodei de plată"
+
+#: utils/strings-utils.php:133
+msgid "Text before form"
+msgstr "Text înainte de formular"
+
+#: utils/strings-utils.php:134
+msgid "Processing error"
+msgstr "Eroare de procesare"
+
+#: utils/strings-utils.php:135
+#, fuzzy
+#| msgid "Go to the contact support form"
+msgid "Text at the bottom of the form"
+msgstr "Accesați formularul de asistență pentru contact"
+
+#: utils/strings-utils.php:142
+#, fuzzy
+#| msgid "Explanation"
+msgid "Explanation text"
+msgstr "Explicație"
+
+#: utils/strings-utils.php:143
+msgid "Bottom text line 1"
+msgstr ""
+
+#: utils/strings-utils.php:144
+msgid "Bottom text line 2"
+msgstr ""
+
+#: utils/strings-utils.php:163
+msgid "Searching"
+msgstr "În căutare… "
+
+#: utils/strings-utils.php:164
+msgid "No check-in date"
+msgstr "Nicio dată de sosire"
+
+#: utils/strings-utils.php:165
+msgid "No check-out date"
+msgstr "Nicio dată de plecare"
+
+#: utils/strings-utils.php:166
+msgid "No check-in date and no check-out date"
+msgstr "Nu există nicio dată de sosire şi nicio dată de plecare"
+
+#: utils/strings-utils.php:167
+msgid "No adults number"
+msgstr "Numărul adulţilor nu a fost indicat"
+
+#: utils/strings-utils.php:168
+msgid "No children number"
+msgstr "Numărul copiilor nu a fost indicat"
+
+#: utils/strings-utils.php:169
+msgid "No adults and children number"
+msgstr "Numărul dulţilor şi copiilor nu a fost indicat"
+
+#: utils/strings-utils.php:170
+msgid "Invalid check-in date"
+msgstr "Dată de sosire invalidă"
+
+#: utils/strings-utils.php:171
+msgid "Invalid check-out date"
+msgstr "Dată de plecare invalidă"
+
+#: utils/strings-utils.php:172
+msgid "Invalid check-in date and invalid check-out date"
+msgstr "Dată de sosire invalidă și dată de plecare invalidă"
+
+#: utils/strings-utils.php:173
+msgid "Check-in date in the past"
+msgstr "Data de sosire este în trecut"
+
+#: utils/strings-utils.php:174
+msgid "Check-in date before specific date"
+msgstr "Data de sosire înainte de data specificată"
+
+#: utils/strings-utils.php:175
+msgid "Check-out date after specific date"
+msgstr "Data de plecare înainte de data specificată"
+
+#: utils/strings-utils.php:176
+msgid "Check-out date before check-in date"
+msgstr "Data de plecare înainte de data de sosire"
+
+#: utils/strings-utils.php:177
+msgid "Check-in date on a not allowed day"
+msgstr "Data de sosire este într-o zi nepermisă"
+
+#: utils/strings-utils.php:178
+msgid "Check-in date on a not allowed day (seasonal)"
+msgstr "Data de sosire este într-o zi nepermisă (sezonieră)"
+
+#: utils/strings-utils.php:179
+msgid "Check-out date on a not allowed day"
+msgstr "Data de plecare este într-o zi nepermisă"
+
+#: utils/strings-utils.php:180
+msgid "Check-out date on a not allowed day (seasonal)"
+msgstr "Data de plecare este într-o zi nepermisă (sezonieră)"
+
+#: utils/strings-utils.php:181
+msgid "Minimum stay policy"
+msgstr "Politica de ședere minimă"
+
+#: utils/strings-utils.php:182
+msgid "Minimum stay policy (seasonal)"
+msgstr "Politica de şedere minimă (sezonieră)"
+
+#: utils/strings-utils.php:183
+msgid "Maximum stay policy"
+msgstr "Politica de ședere maximă"
+
+#: utils/strings-utils.php:184
+msgid "Maximum stay policy (seasonal)"
+msgstr "Politica de ședere maximă (sezonieră)"
+
+#: utils/strings-utils.php:185
+msgid ""
+"Check-out date on a not allowed day for specific check-in day (conditional "
+"rule)"
+msgstr ""
+"Data de plecare într-o zi nepermisă raportat la data de sosire (regulă "
+"condiţională)"
+
+#: utils/strings-utils.php:186
+msgid ""
+"Check-out date on a not allowed day for specific check-in day (conditional "
+"rule - seasonal)"
+msgstr ""
+"Data de plecare într-o zi nepermisă raportat la data de sosire (regulă "
+"condiţională - sezonieră)"
+
+#: utils/strings-utils.php:187
+msgid "Minimum stay for specific check-in day (conditional rule)"
+msgstr "Sejur minim pentru dată de sosire specifică (regulă condiţională)"
+
+#: utils/strings-utils.php:188
+msgid "Minimum stay for specific check-in day (conditional rule - seasonal)"
+msgstr ""
+"Sejur minim pentru dată de sosire specifică (regulă condiţională - sezonieră)"
+
+#: utils/strings-utils.php:189
+msgid "Maximum stay for specific check-in day (conditional rule)"
+msgstr "Şedere maximă pentru dată de sosire specifică (regulă condiţională)"
+
+#: utils/strings-utils.php:190
+msgid "Maximum stay for specific check-in day (conditional rule - seasonal)"
+msgstr ""
+"Sejur minim pentru dată de sosire specifică (regulă condiţională - sezonieră)"
+
+#: utils/strings-utils.php:191
+msgid "The accommodation can not suit the number of people"
+msgstr "Camera nu suportă numărul de persoane indicat"
+
+#: utils/strings-utils.php:192
+msgid "No accommodation can suit the number of people"
+msgstr "Nicio cameră nu suportă numărul de persoane indicat"
+
+#: utils/strings-utils.php:193
+msgid "Link to all accommodation which suit the number of people"
+msgstr "Vezi toate camerele care suportă numărul de persoane indicat"
+
+#: utils/strings-utils.php:194
+msgid "The accommodation can not suit one person"
+msgstr "Camera nu poate fi ocupată doar de o persoană"
+
+#: utils/strings-utils.php:195
+msgid "No accommodation can suit one person"
+msgstr "Nicio cameră nu este potrivită pentru o persoană"
+
+#: utils/strings-utils.php:196
+msgid "Link to all accommodation which suit one person"
+msgstr "Vezi toate camerele care sunt potrivite pentru o singură persoană"
+
+#: utils/strings-utils.php:197
+msgid "No accommodation available at the chosen dates"
+msgstr "Nu există camere disponibile la datele alese"
+
+#: utils/strings-utils.php:198
+msgid "The accommodation is not available at the chosen dates"
+msgstr "Camera nu este disponibilă la datele alese"
+
+#: utils/strings-utils.php:199
+msgid "Link to all accommodation available at the chosen dates"
+msgstr "Vezi toate camerele disponibile la datele alese"
+
+#: utils/strings-utils.php:205
+msgid "Policies title"
+msgstr "Titlul politicilor"
+
+#: utils/strings-utils.php:206
+msgid "Terms and conditions text"
+msgstr "Text termeni şi condiţii"
+
+#: utils/strings-utils.php:207
+msgid "Terms and conditions error"
+msgstr "Eroare termeni și condiții"
+
+#: utils/strings-utils.php:208
+msgid "Privacy policy text"
+msgstr "Politica de confidențialitate"
+
+#: utils/strings-utils.php:209
+msgid "Privacy policy error"
+msgstr "Eroare politică de confidențialitate"
+
+#: utils/strings-utils.php:210
+msgid "Text before \"Book now\" button"
+msgstr "Text înainte de butonul \"Rezervaţi acum\" "
+
+#: utils/strings-utils.php:211
+msgid "\"Book now\" button"
+msgstr "Butonul de \"Rezervaţi acum\" "
+
+#: utils/strings-utils.php:217
+msgid "Selected accommodation no longer available"
+msgstr "Camera selectată nu mai este disponibilă"
+
+#: utils/strings-utils.php:218
+#, fuzzy
+#| msgid "Selected accommodation no longer available"
+msgid "Selected accommodation number no longer available"
+msgstr "Camera selectată nu mai este disponibilă"
+
+#: utils/strings-utils.php:225
+msgid "Required field"
+msgstr "Câmp obligatoriu"
+
+#: utils/strings-utils.php:226
+msgid "Invalid email"
+msgstr "E-mail invalid"
+
+#: utils/strings-utils.php:227
+msgid "Invalid number"
+msgstr "Număr incorect"
+
+#: utils/strings-utils.php:228
+msgid "Connection error"
+msgstr "Eroare de conexiune"
+
+#: utils/strings-utils.php:229
+msgid "Timeout error"
+msgstr "Eroare de expirare"
+
+#: utils/strings-utils.php:230
+msgid "Season not defined error"
+msgstr "Eroare de perioadă nedefinită"
+
+#: utils/strings-utils.php:231
+msgid "Rate not defined error"
+msgstr "Eroare de preţ nedefinit"
+
+#: utils/strings-utils.php:237
+msgid "Occupied"
+msgstr "Ocupat"
+
+#: utils/strings-utils.php:241
+msgid "Available"
+msgstr "Disponibil"
+
+#: utils/strings-utils.php:242
+msgid "Before check-in day"
+msgstr "Înainte de ziua de sosire"
+
+#: utils/strings-utils.php:243
+msgid "Not available for check-in"
+msgstr "Nu este disponibil pentru data de sosire"
+
+#: utils/strings-utils.php:244
+msgid "Not available for check-out"
+msgstr "Nu este disponibil pentru data de plecare"
+
+#: utils/strings-utils.php:245
+msgid "Available for check-in only"
+msgstr "Disponibil doar pentru data de sosire"
+
+#: utils/strings-utils.php:246
+msgid "Available for check-out only"
+msgstr "Disponibil doar pentru data de plecare"
+
+#: utils/strings-utils.php:247
+msgid "Not available for check-out (due to minimum-stay requirement)"
+msgstr ""
+"Nu este disponibil pentru data de plecare (datorită cerinței de sejur minim)"
+
+#: utils/strings-utils.php:248
+msgid "Not available for check-out (due to maximum-stay requirement)"
+msgstr ""
+"Nu este disponibil pentru data de plecare (datorită cerinței de sejur maxim)"
+
+#: utils/strings-utils.php:249
+msgid "Chosen check-in day"
+msgstr "Dată aleasă pentru sosire"
+
+#: utils/strings-utils.php:250
+msgid "Chosen check-out day"
+msgstr "Dată aleasă pentru plecare"
+
+#: utils/strings-utils.php:251
+msgid "Select a check-in date"
+msgstr "Selectaţi o dată de sosire"
+
+#: utils/strings-utils.php:252
+msgid "Select a check-out date"
+msgstr "Selectaţi o dată de plecare"
+
+#: utils/strings-utils.php:258
+msgid "Season"
+msgstr "Perioda"
+
+#: utils/strings-utils.php:259
+msgid "From"
+msgstr "De la"
+
+#: utils/strings-utils.php:261
+msgid "Nights"
+msgstr "Nopți"
+
+#: utils/strings-utils.php:263
+msgid "Per night"
+msgstr "pe noapte "
+
+#: utils/strings-utils.php:264
+msgid "All nights"
+msgstr "Toate nopţile"
+
+#: utils/strings-utils.php:265
+msgid "For x-night stay"
+msgstr "Pentru şedere de x-nopţi"
+
+#: utils/strings-utils.php:271
+msgid "Description table head"
+msgstr ""
+
+#: utils/strings-utils.php:272
+#, fuzzy
+#| msgid "Amount paid"
+msgid "Amount table head"
+msgstr "Suma plătită"
+
+#: utils/strings-utils.php:290
+msgid "Price starting at"
+msgstr "Preţ incepand de la"
+
+#: utils/strings-utils.php:291
+msgid "Starting price duration unit"
+msgstr "Unitatea de durată a preţului de pornire"
+
+#: utils/utils.php:74
+msgid "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
+msgstr "Luni,Marţi,Miercuri,Joi,Vineri,Sambătă,Duminică"
+
+#: utils/utils.php:80
+msgid "Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+msgstr "Lun,Mar,Mie,Joi,Vin,Sâm,Dum"
+
+#: utils/utils.php:95
+msgid "Error: price should be a numerical value."
+msgstr "Eroare: preţul ar trebui să fie o valoare numerică."
+
+#: utils/utils.php:1440
+msgid "Payment method:"
+msgstr "Metoda de plată:"
+
+#: utils/utils.php:1447
+#, fuzzy
+#| msgid "Code"
+msgid "Code:"
+msgstr "Cod"
+
+#: utils/utils.php:1452
+msgid "Coupon:"
+msgstr "Cupon:"
+
+#: utils/utils.php:1458
+msgid "Reservation origin:"
+msgstr "Originea rezervării:"
+
+#: utils/utils.php:1964
+msgid "Background color:"
+msgstr "Culoare fundal:"
+
+#: utils/utils.php:1970
+msgid "Background color on hover:"
+msgstr "Culoare de fundal la mişcarea mouse-ului:"
+
+#: utils/utils.php:1977
+msgid "Text color:"
+msgstr "Culoare text:"
+
+#: utils/utils.php:1981
+msgid "White"
+msgstr "Alb"
+
+#: utils/utils.php:1982
+msgid "Black"
+msgstr "Negru"
+
+#: utils/utils.php:1987
+msgid "Border radius:"
+msgstr "Raza marginii:"
+
+#: utils/utils.php:1993 utils/utils.php:2040
+msgid "Side padding:"
+msgstr "Distanţă laterală:"
+
+#: utils/utils.php:1999 utils/utils.php:2046
+msgid "Height padding:"
+msgstr "Distanţă pe verticală:"
+
+#: utils/utils.php:2010
+msgid "Borders color:"
+msgstr "Culoare borduri:"
+
+#: utils/utils.php:2016
+msgid "Borders color when active:"
+msgstr "Culoare bordură când este activă:"
+
+#: utils/utils.php:2022
+msgid "Borders width:"
+msgstr "Lățime borduri:"
+
+#: utils/utils.php:2028
+msgid "Borders radius:"
+msgstr "Rază borduri:"
+
+#: utils/utils.php:2034
+msgid "Height:"
+msgstr "Înălțime:"
+
+#: utils/utils.php:2057
+msgid "Calendar background:"
+msgstr "Fundal calendar:"
+
+#: utils/utils.php:2063
+msgid "Available day background:"
+msgstr "Fundal zi disponibilă:"
+
+#: utils/utils.php:2069
+msgid "Not selectable day background:"
+msgstr "Fundal zi neselectabilă:"
+
+#: utils/utils.php:2077
+msgid "Not selectable day number:"
+msgstr "Număr zi neselectabilă:"
+
+#: utils/utils.php:2083
+msgid "Selected day background:"
+msgstr "Fundal zi selectată:"
+
+#: utils/utils.php:2089
+msgid "Occupied day background:"
+msgstr "Fundal zi ocupată:"
+
+#: utils/utils.php:2095
+msgid "Buttons background:"
+msgstr "Fundal butoane:"
+
+#: utils/utils.php:2101
+msgid "Buttons background on hover:"
+msgstr "Fundal butoane la mişcarea mouse-ului:"
+
+#: utils/utils.php:2107
+msgid "Disabled buttons background:"
+msgstr "Fundal butoane dezactivate:"
+
+#: utils/utils.php:2113
+msgid "Button arrows:"
+msgstr "Săgeţi butoane:"
+
+#: utils/utils.php:2119
+msgid "Calendar inner borders:"
+msgstr "Chenare interioare calendar:"
+
+#: utils/utils.php:2620
+msgid "Num"
+msgstr "Num"
+
+#: utils/utils.php:2621
+msgid "Check-in"
+msgstr "Sosire"
+
+#: utils/utils.php:2622
+msgid "Check-out"
+msgstr "Plecare"
+
+#: utils/utils.php:2626
+msgid "Adults"
+msgstr "Adulți"
+
+#: utils/utils.php:2627
+msgid "Children"
+msgstr "Copii"
+
+#: utils/utils.php:2629
+msgid "Amount paid"
+msgstr "Suma plătită"
+
+#: utils/utils.php:2630
+#, fuzzy
+#| msgid "Payment type full"
+msgid "Payment type"
+msgstr "Tip de plată completă"
+
+#: utils/utils.php:2631
+#, fuzzy
+#| msgid "Active payment gateways"
+msgid "Payment Gateway"
+msgstr "Gateway-uri de plată active"
+
+#: utils/utils.php:2632
+#, fuzzy
+#| msgid "Coupon:"
+msgid "Coupon code"
+msgstr "Cupon:"
+
+#: utils/utils.php:2634
+msgid "Currency"
+msgstr "Monedă"
+
+#: utils/utils.php:2905
+#, fuzzy
+#| msgid "Customer details form"
+msgid "Details form"
+msgstr "Formular detalii client"
+
+#: utils/utils.php:2915
+#, fuzzy
+#| msgid "Ical sync"
+msgid "ICal sync"
+msgstr "Sincronizare iCal"
+
+#: utils/utils.php:2920
+msgid "Emails"
+msgstr "E-mail-uri"
+
+#: utils/utils.php:2925
+#, fuzzy
+#| msgid "documentation"
+msgid "Documents"
+msgstr "documentație"
+
+#: utils/utils.php:2945
+msgid "Languages"
+msgstr "Limbi"
+
+#, fuzzy
+#~| msgid "Opened"
+#~ msgid "Open %s"
+#~ msgstr "Deschis"
+
+#~ msgid "Settings for iCal synchronization"
+#~ msgstr "Setări pentru sincronizarea iCal"
+
+#~ msgid ""
+#~ "No reservation could be imported. Please check that your file contain a "
+#~ "calendar with events."
+#~ msgstr ""
+#~ "Nu s-a putut importa nicio rezervare. Vă rugăm să verificaţi că fişierul "
+#~ "conţine un calendar cu evenimente."
+
+#, fuzzy
+#~| msgid "Coupon discount amount"
+#~ msgid "Coupon amount:"
+#~ msgstr "Suma cuponului de reducere"
+
+#~ msgid "Phone: "
+#~ msgstr "Telefon: "

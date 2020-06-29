@@ -1,0 +1,209 @@
+# Translation of Plugins - Plugins Garbage Collector - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Plugins Garbage Collector - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-13 14:57:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Plugins Garbage Collector - Stable (latest release)\n"
+
+#: includes/lib.php:645
+msgid "Table was shown"
+msgstr "La tabla se ha mostrado"
+
+#: includes/lib.php:625
+msgid "Table was hidden"
+msgstr "La tabla se ha ocultado"
+
+#: includes/lib.php:198
+msgid "Tables are deleted successfully: "
+msgstr "Las tablas se han eliminado satisfactoriamente:"
+
+#: includes/lib.php:191
+msgid "Tables are deleted: "
+msgstr "Las tablas de han eliminado:"
+
+#: includes/lib.php:113
+msgid "deleted?"
+msgstr "¿eliminado?"
+
+#: includes/lib.php:110
+msgid "inactive"
+msgstr "inactivo"
+
+#: includes/lib.php:108
+msgid "active"
+msgstr "activa"
+
+#. Author URI of the plugin
+msgid "http://www.shinephp.com"
+msgstr "http://www.shinephp.com"
+
+#. Author of the plugin
+msgid "Vladimir Garagulya"
+msgstr "Vladimir Garagulya"
+
+#. Description of the plugin
+msgid "It scans your WordPress database and shows what various things old plugins which were deactivated, uninstalled) left in it. The list of additional database tables used by plugins with quant of records, size, and plugin name is shown."
+msgstr "Escanea la base de datos de tu WordPress y muestra qué cosas se han dejado en ella los plugins viejos (que has desactivado o desinstalado). La lista de tablas adicionales de la base de datos usadas por estos plugins que se muestra incluye la cantidad de entradas, tamaño y el nombre del plugin."
+
+#. Plugin URI of the plugin
+msgid "http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/"
+msgstr "http://www.shinephp.com/plugins-garbage-collector-wordpress-plugin/"
+
+#: plugins-garbage-collector.php:42
+msgid "Please update!"
+msgstr "¡Actualiza, por favor !"
+
+#: plugins-garbage-collector.php:41
+msgid "requires WordPress 4.0 or newer."
+msgstr "necesita WordPress 4.0 o superior."
+
+#. Plugin Name of the plugin
+#: plugins-garbage-collector.php:39
+msgid "Plugins Garbage Collector"
+msgstr "Plugins Garbage Collector"
+
+#: includes/options.php:41
+msgid "Click this button to gather information how plugins use your WordPress database"
+msgstr "Haz clic en esta botón para recolecter información de cómo tus plugins usan la base de datos de tu WordPress"
+
+#: includes/options.php:41
+msgid "Scan Database"
+msgstr "Escanear base de datos"
+
+#: includes/options.php:38
+msgid "Show hidden tables"
+msgstr "Mostrar tablas ocultas"
+
+#: includes/options.php:37
+msgid "Include tables which are hidden by your request to the search results"
+msgstr "Incluir las tablas que están ocultas a petición tuya a los resultados de búsqueda"
+
+#: includes/options.php:34
+msgid "Search WP tables structure changes (beta - experimental)"
+msgstr "Buscar cambios en la estructura de tablas de WP (beta - experimental)"
+
+#: includes/options.php:33
+msgid "Search DB for changes which plugins made to the original WP tables structure"
+msgstr "Busca cambios a la estructura original de WP en la DB que han podido ser realizados por plugins"
+
+#: includes/options.php:30
+msgid "Search none-WP tables"
+msgstr "Buscar en las tablas que no son WP"
+
+#: includes/options.php:29
+msgid "Search DB for tables created by plugins"
+msgstr "Buscar en la DB tablas creadas por plugins"
+
+#: includes/lib.php:558
+msgid "This feature is still under development and will be realized in the future version"
+msgstr "Esta característica está todavía en desarrollo y será implementada en una versión futura"
+
+#: includes/lib.php:544
+msgid "Congratulations! It seems that your WordPress database tables structure is not changed"
+msgstr "¡Enhorabuena! Parece que la estructura de tablas de tu base de datos de WordPress no ha sido cambiada"
+
+#: includes/lib.php:535
+msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click <code>Delete Extra Columns</code> button."
+msgstr "No es posible la marcha atrás de esta operación. Ten en consideración el realizar una copia de seguridad de tu base de datos antes. Por favor, piénsalo dos veces antes de hacer clic en el botón <code>Eliminar columnas extra</code>"
+
+#: includes/lib.php:530
+msgid "Delete Extra Columns"
+msgstr "Eliminar columnas extra"
+
+#: includes/lib.php:359
+msgid "Extra Field"
+msgstr "Campo extra"
+
+#: includes/lib.php:343
+msgid "Congratulations! It seems that your WordPress database is clean."
+msgstr "¡Enhorabuena! Parece que la base de datos de tu WordPress está limpia."
+
+#: includes/lib.php:334
+msgid "Operation rollback is not possible. Consider to make database backup first. Please double think before click \"Delete Tables\" button."
+msgstr "No es posible la marcha atrás de esta operación. Ten en consideración el realizar una copia de seguridad antes. Por favor, piénsalo dos veces antes de hacer clic en el botón \"Eliminar tablas\""
+
+#: includes/lib.php:333 includes/lib.php:534
+msgid "Attention!"
+msgstr "Atención!"
+
+#: includes/lib.php:329
+msgid "Delete Tables"
+msgstr "Eliminar Tablas"
+
+#: includes/lib.php:321 includes/lib.php:522
+msgid "Some tables are hidden by you. Turn on \"Show hidden DB tables\" option and click \"Scan\" button again to show them."
+msgstr "Algunas tablas han sido ocultadas por ti. Habilita la opción \"Mostrar tablas ocultas de la DB\" y haz clic en el botón \"Escanear\" de nuevo para mostrarlas."
+
+#: includes/lib.php:241
+msgid "Let's see what tables in your database do not belong to the core WordPress installation:"
+msgstr "Veamos qué tablas de tu base de datos no pertenecen al núcleo de la instalación de WordPress:"
+
+#: includes/lib.php:232 includes/lib.php:361
+msgid "Plugin State"
+msgstr "Estado del plugin"
+
+#: includes/lib.php:231 includes/lib.php:360
+msgid "Plugin Name"
+msgstr "Nombre del plugin"
+
+#: includes/lib.php:230
+msgid "KBytes #"
+msgstr "KBytes #"
+
+#: includes/lib.php:229
+msgid "Records #"
+msgstr "Registros #"
+
+#: includes/lib.php:228 includes/lib.php:358
+msgid "Table Name"
+msgstr "Nombre de Tabla"
+
+#: includes/lib.php:227 includes/lib.php:357
+msgid "Hide"
+msgstr "Ocultar"
+
+#: includes/lib.php:161
+msgid " checked"
+msgstr "marcado"
+
+#: includes/class-plugins-garbage-collector.php:139
+msgid "Delete database tables last confirmation: Click \"Cancel\" if you have any doubt."
+msgstr "Última confirmación para el eliminado de la base de datos: Haz clic en \"Cancelar\" si tienes cualquier duda."
+
+#: includes/class-plugins-garbage-collector.php:138
+msgid "Select at least one table before click on Delete button"
+msgstr "Selecciona al menos una tabla antes de hacer clic en el botón \"Eliminar\""
+
+#: includes/class-plugins-garbage-collector.php:137
+msgid "will take some time. Please confirm to continue"
+msgstr "llevará algo de tiempo. Por favor, confirma para continuar"
+
+#: includes/class-plugins-garbage-collector.php:136
+msgid "Checking plugin"
+msgstr "Comprobando plugin"
+
+#: includes/class-plugins-garbage-collector.php:135
+msgid "Scanning"
+msgstr "Explorando"
+
+#: includes/class-plugins-garbage-collector.php:134
+msgid "Receive plugins list"
+msgstr "Recibir lista de plugins"
+
+#: includes/class-plugins-garbage-collector.php:133
+msgid "Turn on at least one Search checkbox before start Scan process!"
+msgstr "¡Marca por lo menos un checkbox de búsqueda antes de empezar el proceso de escaneado!"
+
+#: includes/class-plugins-garbage-collector.php:77
+msgid "Changelog"
+msgstr "Registro de cambios"
+
+#: includes/class-plugins-garbage-collector.php:64
+msgid "Scan"
+msgstr "Explorar"

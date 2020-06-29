@@ -1,0 +1,23 @@
+.hb-import-export-settings-wrapper + .hb-options-save-wrapper {
+	display: none;
+}
+
+.hb-import-settings-error {
+	color: #e04343;
+}
+
+.hb-import-settings-waiting-msg {
+	display: none;
+}
+
+.hb-import-settings-waiting-msg .spinner {
+	float: none;
+	margin: 0 3px 0 0;
+	visibility: visible;
+}
+
+.hb-import-existing-posts {
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-left: 3px;
+}

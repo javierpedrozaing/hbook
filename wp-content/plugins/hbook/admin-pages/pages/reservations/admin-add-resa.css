@@ -1,0 +1,215 @@
+#hb-admin-add-resa {
+	padding: 2px 20px 17px;
+}
+
+/* search form */
+
+#hb-admin-add-resa .hb-title-search-form {
+	display: none;
+}
+
+.hb-check-dates-wrapper,
+.hb-people-wrapper,
+.hb-accom-wrapper,
+.hb-search-button-wrapper {
+	float: left;
+	margin-right: 2%;
+	position: relative;
+	width: 18.4%;
+}
+
+.hb-search-button-wrapper {
+	margin-right: 0;
+}
+
+.hb-people-wrapper {
+	width: 8.2%;
+}
+
+.hb-search-form-no-children .hb-people-wrapper-adults {
+	width: 18.4%;
+}
+
+.hb-search-form-no-people .hb-check-dates-wrapper,
+.hb-search-form-no-people .hb-accom-wrapper {
+	width: 25%;
+}
+
+.hb-search-form-no-people .hb-search-button-wrapper {
+	width: 19%;
+}
+
+.hb-vertical-search-form .hb-check-dates-wrapper,
+.hb-vertical-search-form .hb-people-wrapper,
+.hb-vertical-search-form .hb-accom-wrapper,
+.hb-vertical-search-form .hb-search-button-wrapper {
+	float: none;
+	margin-right: 0%;
+	width: 100%;
+}
+
+.hb-vertical-search-form .hb-check-dates-wrapper input[type="text"] {
+	max-width: 100%;
+}
+
+.hb-search-form-no-people .hb-people-wrapper-adults,
+.hb-search-form-no-people .hb-chosen-adults,
+.hb-search-form-no-people .hb-people-wrapper-children,
+.hb-search-form-no-people .hb-chosen-children,
+.hb-search-form-no-children .hb-people-wrapper-children,
+.hb-search-form-no-children .hb-chosen-children {
+	display: none;
+}
+
+.hb-check-dates-wrapper input,
+.hb-people-wrapper select,
+.hb-accom-wrapper select,
+.hb-search-button-wrapper input {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.hb-booking-searching,
+.hb-searched-summary,
+.hb-search-no-result,
+.hb-search-error,
+.hb-accom-list {
+	display: none;
+}
+
+/* end search form */
+
+/* accommodation selection */
+
+.hb-accom-list .hb-accom-title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.hb-accom-list .hb-accom {
+	border: 1px solid #ddd;
+	margin-bottom: 3px;
+	padding: 0 14px;
+}
+
+.hb-price-breakdown-section {
+	display: block;
+}
+
+.hb-price-breakdown-title {
+	display: block;
+	font-weight: bold;
+}
+
+.hb-accom-list .hb-accom-selected {
+	background: #f7f7f7;
+}
+
+.hb-price-breakdown-section.hb-fee-accom-included,
+.hb-price-breakdown-section.hb-fee-accom-final,
+.hb-price-breakdown-global-discount,
+.hb-accom-list .hb-accom-selected .hb-select-accom-button,
+.hb-accom-list .hb-select-accom-button-disabled,
+.hb-accom-list .hb-accom.hb-accom-multiple:not(.hb-accom-available),
+.hb-accom-list .hb-accom.hb-accom-multiple:not(.hb-accom-suits-people) {
+	display: none;
+}
+
+.hb-accom-list .hb-accom-selected .hb-select-accom-button-disabled {
+	display: inline-block;
+}
+
+.hb-options-form,
+.hb-select-accom-num-form {
+	display: none;
+}
+
+.hb-quantity-option label {
+	font-weight: normal;
+}
+
+.hb-quantity-option input,
+.hb-multiple-option {
+	margin-bottom: 5px;
+}
+
+.hb-multiple-option b {
+	display: inline-block;
+	margin-bottom: 7px;
+}
+
+/* end accommodation selection */
+
+/* booking details form */
+
+.hb-admin-booking-details-form,
+.hb-accom-not-available-msg,
+#hb-resa-customer-details {
+	display: none;
+}
+
+#hb-resa-customer-id {
+	margin-top: 10px;
+}
+
+.hb-fee {
+	line-height: 1.5;
+}
+
+.hb-admin-booking-details-form .hb-fee-accom-final {
+	display: block;
+}
+
+.hb-summary-discount-amount {
+	margin-top: 3px;
+}
+
+.hb-summary-total-price {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 7px;
+}
+
+#hb-resa-additional-info label,
+#hb-resa-customer-details label {
+	display: table;
+}
+
+#hb-resa-additional-info label.hb-label-choice,
+#hb-resa-customer-details label.hb-label-choice {
+	display: inline;
+}
+
+#hb-resa-additional-info input[type="text"],
+#hb-resa-customer-details input[type="text"] {
+	max-width: 400px;
+}
+
+#hb-admin-comment {
+	height: 100px;
+}
+
+.hb-accom-not-available-msg {
+	margin: 15px 0 7px;
+}
+
+/* end booking details form */
+
+/* misc */
+
+.hb-admin-add-resa-section-title,
+.hb-additional-info-title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+.hb-additional-info-title {
+	margin-bottom: -7px;
+}
+
+.hb-admin-add-resa-section-title-fees {
+	display: none;
+}
+
+/* end misc */

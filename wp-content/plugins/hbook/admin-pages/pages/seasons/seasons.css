@@ -1,0 +1,13 @@
+.hb-season-table .hb-table-head-data,
+.hb-season-table .hb-table-data {
+	width: 21%;
+}
+
+.hb-season-table .hb-table-data-action,
+.hb-season-table .hb-table-head-data-action {
+	width: 16%;
+}
+
+.hb-season-dates-row {
+	border-top: 1px dashed #E5E5E5;
+}
