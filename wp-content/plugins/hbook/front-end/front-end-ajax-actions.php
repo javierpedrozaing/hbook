@@ -17,6 +17,7 @@ class HbFrontEndAjaxActions {
 		$options_form = new HbOptionsForm( $this->hbdb, $this->utils );
 		$strings = $this->hbdb->get_strings();
 		$available_accom = new HbAvailableAccom( $this->hbdb, $this->utils, $strings, $price_calc, $options_form );
+
 		$search_request = array(
 			'check_in' => $_POST['check_in'],
 			'check_out' => $_POST['check_out'],
@@ -35,9 +36,22 @@ class HbFrontEndAjaxActions {
 		die;
 	}
 
-	public function hb_create_resa() {
-		$response = array();
+	public function hb_get_details_form() {	
+		require_once $this->utils->plugin_directory . '/front-end/booking-form/available-accom.php';
+		require_once $this->utils->plugin_directory . '/utils/resa-options.php';
+		require_once $this->utils->plugin_directory . '/utils/price-calc.php';	
+		$options_form = new HbOptionsForm( $this->hbdb, $this->utils );
+		$form_resa = $_POST['form'];
+		
+		$dataform = $options_form->create_form_customer($form_resa);
+		echo json_encode($dataform);
+		die;
+	}
 
+
+	public function hb_create_resa() { // function for save forms data called from ajax
+		$response = array();
+		
 		$is_admin = false;
 		if ( $_POST['hb-details-is-admin'] == 'yes' ) {
 			$is_admin = true;
@@ -91,7 +105,7 @@ class HbFrontEndAjaxActions {
 			$customer_id = intval( $_POST['hb-customer-id'] );
 		}
 		if ( ! $customer_id ) {
-			$customer_info = $this->utils->get_posted_customer_info();
+			$customer_info = $this->utils->get_posted_customer_info(); // get info customer
 			$customer_email = '';
 			if ( isset( $_POST['hb_email'] ) ) {
 				$customer_email = stripslashes( strip_tags( $_POST['hb_email'] ) );
@@ -101,7 +115,7 @@ class HbFrontEndAjaxActions {
 			if ( $customer_id ) {
 				$customer_id = $this->hbdb->update_customer_on_resa_creation( $customer_id, $customer_email, $customer_info );
 			} else {
-				$customer_id = $this->hbdb->create_customer( $customer_email, $customer_info );
+				$customer_id = $this->hbdb->create_customer( $customer_email, $customer_info ); //register data customer
 			}
 		}
 		if ( ! $customer_id ) {
@@ -119,7 +133,7 @@ class HbFrontEndAjaxActions {
 
 		require_once $this->utils->plugin_directory . '/utils/price-calc.php';
 		$price_calc = new HbPriceCalc( $this->hbdb, $this->utils );
-		$prices = $price_calc->get_price( $accom_id, $check_in, $check_out, $adults, $children );
+		$prices = $price_calc->get_price( $accom_id, $check_in, $check_out, $adults, $children );		
 		if ( ! $prices['success'] ) {
 			$response['success'] = false;
 			$response['error_msg'] = esc_html__( 'Error. Could not calculate price.', 'hbook-admin' );
@@ -321,7 +335,7 @@ class HbFrontEndAjaxActions {
 		$resa_info['payment_type'] = $payment_type;
 		$resa_info['paid'] = 0;
 		$resa_info['currency'] = get_option( 'hb_currency' );
-		$resa_info['customer_id'] = $customer_id;
+		$resa_info['customer_id'] = $customer_id; // pass customer_id for save in table hbook.wp_hb_resa;
 		$resa_info['additional_info'] = $this->utils->get_posted_additional_booking_info();
 		$resa_info['options'] = $chosen_options;
 		$resa_info['fees'] = $resa_fees;
@@ -331,7 +345,7 @@ class HbFrontEndAjaxActions {
 		$resa_info['origin'] = 'website';
 		$resa_info['gateway_custom_info'] = $gateway_custom_info;
 		$resa_info['payment_gateway'] = '';
-
+		
 		$status = '';
 		$admin_comment = '';
 		$lang = get_locale();
@@ -390,7 +404,9 @@ class HbFrontEndAjaxActions {
 		$resa_info['lang'] = $lang;
 		unset( $resa_info['gateway_custom_info'] );
 
-		$resa_id = $this->hbdb->create_resa( $resa_info );
+		$resa_id = $this->hbdb->create_resa( $resa_info ); // call to funtion in database-actions.php
+
+		
 		if ( ! $resa_id && ! $resa_info['paid'] ) {
 			$response['success'] = false;
 			$response['error_msg'] = esc_html__( 'Error. Could not create reservation.', 'hbook-admin' );
@@ -439,6 +455,7 @@ class HbFrontEndAjaxActions {
 
 
 		$response['success'] = true;
+		$response['resa_id'] = $resa_id;
 		echo( json_encode( $response ) );
 		die;
 	}

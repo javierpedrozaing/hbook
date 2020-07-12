@@ -204,7 +204,7 @@ class HbUtils {
 			case 'validate-form' :
 				$this->hb_enqueue_script( 'hb-validate-form', '/front-end/js/jquery.form-validator.js' );
 				break;
-			case 'booking-form' :
+			case 'booking-form' :				
 				$this->hb_enqueue_script( 'hb-front-end-booking-form-script', '/front-end/js/booking-form.js' );
 				break;
 		}
@@ -1784,8 +1784,9 @@ class HbUtils {
 	}
 
 	public function frontend_basic_css() {
+		$this->hb_enqueue_style( 'hb-front-end-style', '/front-end/css/hbook.css' );
 		if ( $this->load_css() ) {
-			$this->hb_enqueue_style( 'hb-front-end-style', '/front-end/css/hbook.css' );
+						
 			if ( is_rtl() ) {
 				$this->hb_enqueue_style( 'hb-front-end-style-rtl', '/front-end/css/hbook-rtl.css' );
 			}
@@ -1856,7 +1857,7 @@ class HbUtils {
 				<style type="text/css">.hb-booking-search-form, .hb-accom-list, .hb-booking-details-form { margin: 0 auto; }</style>
 			<?php
 			}
-		}
+		}		
 	}
 
 	public function frontend_calendar_css() {

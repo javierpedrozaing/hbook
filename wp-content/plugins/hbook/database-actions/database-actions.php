@@ -72,8 +72,8 @@ class HbDataBaseActions {
 		$this->email_templates_table = $this->prefix . 'email_templates';
 		$this->email_templates_accom_table = $this->prefix . 'email_templates_accom';
 		$this->document_templates_table = $this->prefix . 'document_templates';
-		$this->fields_table = $this->prefix . 'fields';
-		$this->fields_choices_table = $this->prefix . 'fields_choices';
+		$this->fields_table = $this->prefix . 'fields'; // table where is save fields for customers
+		$this->fields_choices_table = $this->prefix . 'fields_choices'; // 
 		$this->strings_table = $this->prefix . 'strings';
 		$this->booking_rules_table = $this->prefix . 'booking_rules';
 		$this->booking_rules_accom_table = $this->prefix . 'booking_rules_accom';
@@ -739,6 +739,8 @@ class HbDataBaseActions {
 		return $available_accom;
 	}
 
+
+	// valida si el alojamiento esta disponible
 	public function get_first_available_accom_num( $accom_id, $check_in, $check_out ) {
 		$unavailable_accom = $this->get_unavailable_accom_num_per_date( $accom_id, $check_in, $check_out );
 		$accom_num_name = $this->get_accom_num_name( $accom_id );
@@ -1080,7 +1082,7 @@ class HbDataBaseActions {
 		return $returned_seasons;
 	}
 
-	public function create_resa( $resa_info ) {
+	public function create_resa( $resa_info ) { // function for save form data
 		if ( isset( $resa_info['additional_info'] ) ) {
 			$resa_info['additional_info'] = json_encode( $resa_info['additional_info'] );
 		}
@@ -1104,7 +1106,7 @@ class HbDataBaseActions {
 		}
 		if ( $this->db->insert( $this->resa_table, $resa_info ) ) {
 			$inserted_id = $this->db->insert_id;
-			do_action( 'hb_create_reservation', $resa_info );
+			do_action( 'hb_create_reservation', $resa_info ); // call do action create reservation
 			do_action( 'hb_reservations_updated' );
 			return $inserted_id;
 		} else {
@@ -1671,10 +1673,10 @@ class HbDataBaseActions {
 		}
 	}
 
-	public function create_customer( $email, $info ) {
+	public function create_customer( $email, $info ) { // function for create customers
 		if ( $this->db->insert( $this->customers_table, array( 'email' => $email, 'info' => json_encode( $info ) ) ) ) {
 			$inserted_id = $this->db->insert_id;
-			do_action( 'hb_create_customer', $info );
+			do_action( 'hb_create_customer', $info ); // for each form call this function for save data
 			return $inserted_id;
 		} else {
 			return false;
@@ -1803,7 +1805,7 @@ class HbDataBaseActions {
 		return $returned_fields;
 	}
 
-	public function get_customer_form_fields() {
+	public function get_customer_form_fields() { // get info fields for customer
 		$fields = $this->get_details_form_fields( 'customer' );
 		$returned_fields = array();
 		$info_type = array( 'text', 'email', 'number', 'textarea', 'select', 'radio', 'checkbox' );

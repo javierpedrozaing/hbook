@@ -110,6 +110,7 @@ class HBook {
 			'hb_get_available_accom',
 			'hb_create_resa',
 			'hb_verify_coupon',
+			'hb_get_details_form'
 		);
 		foreach( $front_end_ajax_action as $action ) {
 			add_action( 'wp_ajax_' . $action, array( $this->front_end_ajax_actions, $action ) );
@@ -371,10 +372,9 @@ class HBook {
 		$this->utils->hb_enqueue_style( 'hb-admin-pages-style', '/admin-pages/css/hb-admin-pages-style.css' );
 
 		wp_enqueue_script( 'jquery' );
-		$this->utils->hb_enqueue_script( 'hb-settings', '/admin-pages/js/hb-settings.js' );
+		$this->utils->hb_enqueue_script( 'hb-settings', '/admin-pages/js/hb-settings.js' );		
 
-		$page_name = str_replace( 'hb_', '', $_GET['page'] );
-
+		$page_name = str_replace( 'hb_', '', $_GET['page'] );		
 		$knockout_pages = array(
 			'customers',
 			'emails',

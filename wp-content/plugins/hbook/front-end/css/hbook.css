@@ -538,3 +538,15 @@ a.hb-thumbnail-link {
 }
 
 /* end misc */
+
+.accordion-custom {
+	margin:0 auto;
+	width:80%;
+}
+
+.accordion-custom h3.adulto{
+	background-color: cornflowerblue;
+	padding: 20px;
+	
+}
+

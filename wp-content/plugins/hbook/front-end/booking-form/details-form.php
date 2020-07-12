@@ -17,12 +17,10 @@ class HbDetailsForm {
 	}
 
 	public function get_details_form_mark_up( $resa, $booking_form_num ) {
-		
-		if ($resa['adults'] == 1) {
-			return '<p>TESTING</p>';
-			
-		}else {
-			return
+
+			return '';
+
+			/*<
 			'<form class="hb-booking-details-form">' .
 				$this->get_details_fields( $resa ) .
 				$this->get_coupon_area() .
@@ -32,8 +30,8 @@ class HbDetailsForm {
 				$this->get_policies_area() .
 				$this->get_payment_fields() .
 				$this->get_confirm_area() .
-			'</form><!-- end .hb-booking-details-form -->';
-		}
+			'</form><!-- end .hb-booking-details-form -->'; */
+
 		
 	}
 

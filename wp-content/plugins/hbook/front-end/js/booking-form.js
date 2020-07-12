@@ -1,5 +1,5 @@
 jQuery( document ).ready( function( $ ) {
-
+		
 	/* padding top */
 
 	var page_padding_top;
@@ -110,7 +110,7 @@ jQuery( document ).ready( function( $ ) {
 						'admin_accom_id': admin_accom_id
 					},
 					success: function( response ) {	
-										
+						debugger;					
 						search_show_response( response, $form, $booking_wrapper );
 					},
 					error: function( jqXHR, textStatus, errorThrown ) {
@@ -343,6 +343,7 @@ jQuery( document ).ready( function( $ ) {
 	}
 
 	function search_show_response( response_text, $form, $booking_wrapper ) {
+		
 		$form.find( '.hb-booking-searching' ).hide();
 		enable_form_submission( $form );
 		try {
@@ -366,6 +367,7 @@ jQuery( document ).ready( function( $ ) {
 			$form.find( '.hb-search-fields-and-submit' ).slideUp( function() {});
 			$form.find( '.hb-searched-summary' ).slideDown();
 			$booking_wrapper.find( '.hb-accom-list' ).html( response.mark_up );
+			
 			if ( ( $form.find( '.hb-accom' ).length ) && ( $form.find( '.hb-accom' ).val() != 'all' ) ) {
 				set_selected_accom( $booking_wrapper, $form.find( '.hb-accom' ).val() );
 			}
@@ -400,6 +402,7 @@ jQuery( document ).ready( function( $ ) {
 		$booking_wrapper.find( '.hb-searched-summary' ).slideUp( function() {
 			$booking_wrapper.find( '.hb-search-fields-and-submit' ).slideDown();
 		});
+		$('.entry-content .accordion-custom').html('');
 	}
 
 	$( '.hb-change-search-wrapper input' ).click( function( e ) {
@@ -451,13 +454,63 @@ jQuery( document ).ready( function( $ ) {
 			$form = $booking_wrapper.find( '.hb-booking-search-form' );
 
 			debugger;
-		if ( $form.attr( 'action' ) == '#' ) {
-			$numberPeople = $form[0][5].value;
-			if ($numberPeople > 1) {
-				$('.new-custom-form').html("<p>testing javier</p>");
-			}else{
-				set_selected_accom( $booking_wrapper, accom_id );
+			// make petition ajax to get_details_form_mark_up
+			let dataForm = {
+				form: $form.serializeArray(),				
 			}
+			$( "#accordion" ).accordion();
+		
+			$.ajax({
+				data: {
+					'form' : dataForm.form,
+					'action': 'hb_get_details_form'
+				},
+				type : 'POST',
+				timeout: hb_booking_form_data.ajax_timeout,
+				url: hb_booking_form_data.ajax_url,
+
+				success: function( response ) {					
+					let data = JSON.parse(response);
+					debugger;
+					$('.entry-content').append('<div class="accordion-custom">' +
+					data.mark_up + '<div>');
+
+					//$( "#accordion" ).accordion();					
+					//after_form_details_submit( response, data.mark_up );
+				},
+
+				complete: function() {
+					let newWrapper = '.hb-booking-details-custom-form';
+					set_details_form_info($booking_wrapper, accom_id, $(newWrapper));
+					console.log(accom_id);
+
+					debugger;
+
+					$('.entry-content').on('click', '.save-customer', function(e){
+						$idcustomer = $(this).data('customer');						
+						$form = $(this).parent();
+						$formData = $(this).parent().serialize();
+						console.log("data form" , $formData);
+						e.preventDefault();						
+						save_data_customers_detail($idcustomer, $formData, $form);
+						
+					});
+					
+				},
+			
+				error: function( jqXHR, textStatus, errorThrown ) {					
+					$form.find( '.hb-saving-resa, .hb-confirm-error, .hb-policies-error' ).slideUp();
+					$form.find( '.hb-confirm-error' ).html( hb_text.connection_error ).slideDown();
+					console.log( jqXHR );
+					console.log( textStatus );
+					console.log( errorThrown );
+					enable_form_submission( $form );
+				}
+			});
+			
+		if ( $form.attr( 'action' ) == '#' ) {
+			debugger;
+			set_selected_accom( $booking_wrapper, accom_id );		
 						
 		} else {
 			$form.data( 'booking-details-redirection', 'yes' );
@@ -466,7 +519,30 @@ jQuery( document ).ready( function( $ ) {
 		}
 	});
 
+
+	function save_data_customers_detail ($idcustomer, $formData, $form) {		
+		debugger;
+		if ($idcustomer === 1) {
+			//create_principal_data_customer($formData); // creaa cliente principal
+			//en el php 
+			//creamos el cliente
+			//	$customer_id = $this->hbdb->create_customer( $customer_email, $customer_info ); //register data customer
+
+			// creamos la reserva
+			// el parametro $resa_info debe tener toda la información a guardar mas el id del cliente
+			//$resa_id = $this->hbdb->create_resa( $resa_info ); // call to funtion in database-actions.php
+
+			// LLAMAMOS A LA FUNCION JAVASCRIPT QUE LLAMA A LA FUNCIÓN POR AJAX Y HACE TODO LO ANTERIOR
+			save_resa_details($form);
+
+		} else {
+			create_secundary_data_customers($formData);// creaa clientes segundarios
+		}
+	}
+
+
 	function set_selected_accom( $booking_wrapper, accom_id ) {
+		debugger;
 		$booking_wrapper.find( '.hb-accom' ).removeClass( 'hb-accom-selected' );
 		$booking_wrapper.find( '.hb-accom-id-' + accom_id ).addClass( 'hb-accom-selected' );
 		$booking_wrapper.find( '.hb-coupon-code' ).val( '' );
@@ -532,13 +608,7 @@ jQuery( document ).ready( function( $ ) {
 			}
 		}
 		setTimeout( function() {
-			var top = $booking_wrapper.find( target ).offset().top;
-			if ( hb_booking_form_data.is_admin != 'yes' ) {
-				top -= page_padding_top;
-			} else {
-				top -= adminbar_height;
-			}
-			$( 'html, body' ).animate({ scrollTop: top });
+			
 		}, 800 );
 	}
 
@@ -975,13 +1045,31 @@ jQuery( document ).ready( function( $ ) {
 
 	/* details form info */
 
-	function set_details_form_info( $booking_wrapper, accom_id ) {
-		$booking_wrapper.find( '.hb-details-check-in' ).val( $booking_wrapper.find( '.hb-check-in-hidden' ).val() );
-		$booking_wrapper.find( '.hb-details-check-out' ).val( $booking_wrapper.find( '.hb-check-out-hidden' ).val() );
-		$booking_wrapper.find( '.hb-details-adults' ).val( $booking_wrapper.find( 'select.hb-adults' ).val() );
-		$booking_wrapper.find( '.hb-details-children' ).val( $booking_wrapper.find( 'select.hb-children' ).val() );
-		$booking_wrapper.find( '.hb-details-accom-id' ).val( accom_id );
-		$booking_wrapper.find( '.hb-details-is-admin' ).val( hb_booking_form_data.is_admin );
+	function set_details_form_info( $booking_wrapper, accom_id, $newWrapper = "" ) {
+		
+		if ($newWrapper != "") {
+
+			$newWrapper.find( '.hb-details-check-in' ).val( $booking_wrapper.find( '.hb-check-in-hidden' ).val() );
+			$newWrapper.find( '.hb-details-check-out' ).val( $booking_wrapper.find( '.hb-check-out-hidden' ).val() );
+			$newWrapper.find( '.hb-details-adults' ).val( $booking_wrapper.find( 'select.hb-adults' ).val() );
+			$newWrapper.find( '.hb-details-children' ).val( $booking_wrapper.find( 'select.hb-children' ).val() );
+			$newWrapper.find( '.hb-details-accom-id' ).val( accom_id );
+			$newWrapper.find( '.hb-details-is-admin' ).val( hb_booking_form_data.is_admin );	
+
+			debugger;
+
+		} else {
+
+			debugger;
+
+			$booking_wrapper.find( '.hb-details-check-in' ).val( $booking_wrapper.find( '.hb-check-in-hidden' ).val() );
+			$booking_wrapper.find( '.hb-details-check-out' ).val( $booking_wrapper.find( '.hb-check-out-hidden' ).val() );
+			$booking_wrapper.find( '.hb-details-adults' ).val( $booking_wrapper.find( 'select.hb-adults' ).val() );
+			$booking_wrapper.find( '.hb-details-children' ).val( $booking_wrapper.find( 'select.hb-children' ).val() );
+			$booking_wrapper.find( '.hb-details-accom-id' ).val( accom_id );
+			$booking_wrapper.find( '.hb-details-is-admin' ).val( hb_booking_form_data.is_admin );
+		}
+		
 	}
 
 	/* end details form info */
@@ -1088,22 +1176,42 @@ jQuery( document ).ready( function( $ ) {
 		}
 	}
 
-	function save_resa_details( $form ) {
+	function save_resa_details( $form ) { // function for call hb_create_resa function in front-end-ajax-actions.php		
 		disable_form_submission( $form );
 		var $options_form = $form.parents( '.hbook-wrapper' ).find( '.hb-options-form' ),
 			$accom_num_form = $form.parents( '.hbook-wrapper' ).find( '.hb-select-accom-num-form' ),
 			$forms;
 		$forms = $form.add( $options_form );
 		$forms = $forms.add( $accom_num_form );
+		debugger;
 		$.ajax({
 			data: $forms.serialize(),
-			success: function( response ) {
-				after_form_details_submit( response, $form );
+
+			beforeSend: function() {
+				$('.hb-booking-details-custom-form').find('.hb-booking-searching').slideDown();
+			},
+
+			success: function( response ) {				
+				let resp = JSON.parse(response);
+				debugger;
+				if ( resp.success ) {
+					debugger;
+					//after_form_details_submit( response, $form );
+					$form.after("<p>Registro guardado exitosamente</p>");
+					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
+					
+					$("<input name='resa_id' value='"+ resp.resa_id +"'></input>").attr("type", "hidden").appendTo(".hb-booking-details-custom-form"); 
+					
+				} else {
+					$form.after("<p>Ocurrio un error durante el registro, intenta mas tarde.</p>");
+				}
+				
 			},
 			type : 'POST',
 			timeout: hb_booking_form_data.ajax_timeout,
 			url: hb_booking_form_data.ajax_url,
 			error: function( jqXHR, textStatus, errorThrown ) {
+				debugger;
 				$form.find( '.hb-saving-resa, .hb-confirm-error, .hb-policies-error' ).slideUp();
 				$form.find( '.hb-confirm-error' ).html( hb_text.connection_error ).slideDown();
 				console.log( jqXHR );
@@ -1407,6 +1515,11 @@ jQuery( document ).ready( function( $ ) {
 				}
 			}, 100 );
 		}
+
+
+		$( function() {
+			$( "#tabs" ).tabs();
+		} );
 	});
 
 	/* end status processing */
