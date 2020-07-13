@@ -49,6 +49,49 @@ class HbFrontEndAjaxActions {
 	}
 
 
+	public function hb_create_additional_customers() {		
+		$response = array();
+
+		$resa_id = intval( $_POST['resa_id'] );
+		$name =  $_POST['hb_first_name'];
+		$last_name =  $_POST['hb_last_name'];
+		$phone =  $_POST['hb_phone__telefono'];
+		$email =  $_POST['hb_email'];
+		$address_1 =  $_POST['hb_address_1'];
+		$address_2 =  $_POST['hb_address_line_2_direccin_2'];
+		$city =  $_POST['hb_city__ciudad'];
+		$state_provincia =  $_POST['hb_state_provincia'];
+		$zip_code =  $_POST['hb_zip_code_'];
+		$country =  $_POST['hb_country__pais'];
+
+		$customer_info = array(			
+			'name' => $name,
+			'last_name' => $last_name,
+			'email' => $email,
+			'phone' => $phone,
+			'address_1' => $address_1,
+			'address_2' => $address_2,
+			'city' => $city,
+			'state_provincia' => $state_provincia,
+			'zip_code' => $zip_code,
+			'country' => $country,
+			'id_reservation' => $resa_id,
+		);
+
+		$id_additional_customer = $this->hbdb->create_additional_customer($customer_info);
+
+		if ( $id_additional_customer ) {
+			$response['success'] = true;			
+		} else {
+			$response['error'] = "No se pudo registrar la información intentalo de nuevo.";
+		}
+
+
+		echo( json_encode( $response ) );
+		die();
+
+	}
+
 	public function hb_create_resa() { // function for save forms data called from ajax
 		$response = array();
 		

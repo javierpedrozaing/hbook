@@ -1114,6 +1114,16 @@ class HbDataBaseActions {
 		}
 	}
 
+	public function create_additional_customer($customer_info) {
+
+		if ( $this->db->insert( 'wp_hb_additional_customers', $customer_info ) ) {
+			$inserted_id = $this->db->insert_id;			
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public function automatic_block_accom( $resa_accom_id, $resa_accom_num, $resa_check_in, $resa_check_out, $resa_id ) {
 		$preparation_time = get_post_meta( $resa_accom_id, 'accom_preparation_time', true );
 		$blocked_linked_accom = $this->block_linked_accom( $resa_accom_id, $resa_check_in, $resa_check_out, $resa_id, $preparation_time );

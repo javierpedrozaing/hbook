@@ -110,7 +110,7 @@ jQuery( document ).ready( function( $ ) {
 						'admin_accom_id': admin_accom_id
 					},
 					success: function( response ) {	
-						debugger;					
+						//debugger;					
 						search_show_response( response, $form, $booking_wrapper );
 					},
 					error: function( jqXHR, textStatus, errorThrown ) {
@@ -453,12 +453,12 @@ jQuery( document ).ready( function( $ ) {
 			$booking_wrapper = $( this ).parents( '.hbook-wrapper' ),
 			$form = $booking_wrapper.find( '.hb-booking-search-form' );
 
-			debugger;
+			//debugger;
 			// make petition ajax to get_details_form_mark_up
 			let dataForm = {
 				form: $form.serializeArray(),				
 			}
-			$( "#accordion" ).accordion();
+			//$( "#accordion" ).accordion();
 		
 			$.ajax({
 				data: {
@@ -471,7 +471,7 @@ jQuery( document ).ready( function( $ ) {
 
 				success: function( response ) {					
 					let data = JSON.parse(response);
-					debugger;
+					//debugger;
 					$('.entry-content').append('<div class="accordion-custom">' +
 					data.mark_up + '<div>');
 
@@ -484,7 +484,7 @@ jQuery( document ).ready( function( $ ) {
 					set_details_form_info($booking_wrapper, accom_id, $(newWrapper));
 					console.log(accom_id);
 
-					debugger;
+					//debugger;
 
 					$('.entry-content').on('click', '.save-customer', function(e){
 						$idcustomer = $(this).data('customer');						
@@ -509,7 +509,7 @@ jQuery( document ).ready( function( $ ) {
 			});
 			
 		if ( $form.attr( 'action' ) == '#' ) {
-			debugger;
+			//debugger;
 			set_selected_accom( $booking_wrapper, accom_id );		
 						
 		} else {
@@ -521,7 +521,7 @@ jQuery( document ).ready( function( $ ) {
 
 
 	function save_data_customers_detail ($idcustomer, $formData, $form) {		
-		debugger;
+		//debugger;
 		if ($idcustomer === 1) {
 			//create_principal_data_customer($formData); // creaa cliente principal
 			//en el php 
@@ -536,13 +536,14 @@ jQuery( document ).ready( function( $ ) {
 			save_resa_details($form);
 
 		} else {
-			create_secundary_data_customers($formData);// creaa clientes segundarios
+			
+			save_additional_customers($form);// creaa clientes segundarios
 		}
 	}
 
 
 	function set_selected_accom( $booking_wrapper, accom_id ) {
-		debugger;
+		//debugger;
 		$booking_wrapper.find( '.hb-accom' ).removeClass( 'hb-accom-selected' );
 		$booking_wrapper.find( '.hb-accom-id-' + accom_id ).addClass( 'hb-accom-selected' );
 		$booking_wrapper.find( '.hb-coupon-code' ).val( '' );
@@ -1056,11 +1057,11 @@ jQuery( document ).ready( function( $ ) {
 			$newWrapper.find( '.hb-details-accom-id' ).val( accom_id );
 			$newWrapper.find( '.hb-details-is-admin' ).val( hb_booking_form_data.is_admin );	
 
-			debugger;
+			//debugger;
 
 		} else {
 
-			debugger;
+			//debugger;
 
 			$booking_wrapper.find( '.hb-details-check-in' ).val( $booking_wrapper.find( '.hb-check-in-hidden' ).val() );
 			$booking_wrapper.find( '.hb-details-check-out' ).val( $booking_wrapper.find( '.hb-check-out-hidden' ).val() );
@@ -1176,6 +1177,45 @@ jQuery( document ).ready( function( $ ) {
 		}
 	}
 
+	function save_additional_customers( $form ) {
+		//debugger;
+		$.ajax({
+			data: $form.serialize(),
+
+			beforeSend: function() {
+				$('.hb-booking-details-custom-form').find('.hb-booking-searching').slideDown();
+			},
+
+			success: function( response ) {				
+				let resp = JSON.parse(response);
+				//debugger;
+				if ( resp.success ) {
+					//debugger;
+					//after_form_details_submit( response, $form );
+					$form.after("<strong>Registro guardado exitosamente</strong>");
+					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
+					
+				} else {
+					$form.after("<p>Ocurrio un error durante el registro, intenta mas tarde.</p>");
+				}
+				
+			},
+			type : 'POST',
+			timeout: hb_booking_form_data.ajax_timeout,
+			url: hb_booking_form_data.ajax_url,
+			error: function( jqXHR, textStatus, errorThrown ) {
+				//debugger;
+				$form.find( '.hb-saving-resa, .hb-confirm-error, .hb-policies-error' ).slideUp();
+				$form.find( '.hb-confirm-error' ).html( hb_text.connection_error ).slideDown();
+				console.log( jqXHR );
+				console.log( textStatus );
+				console.log( errorThrown );
+				enable_form_submission( $form );
+			}
+		});
+
+	}
+
 	function save_resa_details( $form ) { // function for call hb_create_resa function in front-end-ajax-actions.php		
 		disable_form_submission( $form );
 		var $options_form = $form.parents( '.hbook-wrapper' ).find( '.hb-options-form' ),
@@ -1183,7 +1223,7 @@ jQuery( document ).ready( function( $ ) {
 			$forms;
 		$forms = $form.add( $options_form );
 		$forms = $forms.add( $accom_num_form );
-		debugger;
+		//debugger;
 		$.ajax({
 			data: $forms.serialize(),
 
@@ -1193,9 +1233,9 @@ jQuery( document ).ready( function( $ ) {
 
 			success: function( response ) {				
 				let resp = JSON.parse(response);
-				debugger;
+				//debugger;
 				if ( resp.success ) {
-					debugger;
+					//debugger;
 					//after_form_details_submit( response, $form );
 					$form.after("<p>Registro guardado exitosamente</p>");
 					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
@@ -1211,7 +1251,7 @@ jQuery( document ).ready( function( $ ) {
 			timeout: hb_booking_form_data.ajax_timeout,
 			url: hb_booking_form_data.ajax_url,
 			error: function( jqXHR, textStatus, errorThrown ) {
-				debugger;
+				//debugger;
 				$form.find( '.hb-saving-resa, .hb-confirm-error, .hb-policies-error' ).slideUp();
 				$form.find( '.hb-confirm-error' ).html( hb_text.connection_error ).slideDown();
 				console.log( jqXHR );

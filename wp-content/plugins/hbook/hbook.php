@@ -109,6 +109,7 @@ class HBook {
 		$front_end_ajax_action = array(
 			'hb_get_available_accom',
 			'hb_create_resa',
+			'hb_create_additional_customers',
 			'hb_verify_coupon',
 			'hb_get_details_form'
 		);

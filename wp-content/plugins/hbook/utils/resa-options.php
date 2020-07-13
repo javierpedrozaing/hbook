@@ -14,12 +14,12 @@ class HbOptionsForm {
 		$adults = $resa[4]['value'];		
 		$output = '';
 		$adultsArray =  array_fill(0, $adults, 'cliente');
-		$output .=  '<h2 class="note-reservation">' . "Por favor diligencia la información respectiva para cada adulto" . '</h2>';	
+		$output .=  '<h2 class="note-reservation">' . "Por favor diligencia la información respectiva para cada adulto." . '</h2>';	
 		foreach ($adultsArray as $key => $value) {
 			$num = $key+1;			
 			$output .=  '<h3 class="adulto">Adulto ' . $num . '</h3>';	
 			if ($key <= 0) {
-				$output .=  '<p><i class="note-reservation">' . "La información de la persona registrada aquí será la persona encargada del pago y con quien nos comunicaremos para establecer detalles de la reserva" . '</i></p>';	
+				$output .=  '<p><i class="note-reservation">' . "La información de la persona registrada aquí será la persona encargada del pago y con quien nos comunicaremos para establecer detalles de la reserva." . '</i></p>';	
 			}			
 			$output .= '<div "content-form form-'.$num.'">';
 			$output .= '<form class="hb-booking-details-custom-form">' .
@@ -27,13 +27,20 @@ class HbOptionsForm {
 			$this->get_hidden_fields( $booking_form_num );
 
 			if ($key <= 0) {
+				// show info only for first customer
 				$output .=	$this->get_payment_fields();
 				$output .= $this->get_policies_area();
 			}
-			
-			$output .= '<input type="hidden" name="action" value="hb_create_resa" />' .
-			'<button class="save-customer" data-customer="'.$num.'">Gurdar</button>' .
-			'<p class="hb-booking-searching">Registrando información</p>' .		
+			if ($key <= 0) {
+				// create resa for first register
+				$output .= '<input type="hidden" name="action" value="hb_create_resa" />';
+			} else {
+				// create info additional customer
+				$output .= '<input type="hidden" name="action" value="hb_create_additional_customers" />';			
+			}
+						
+			$output .= '<button class="save-customer" data-customer="'.$num.'">Gurdar</button>' .
+			'<p class="hb-booking-searching">Registrando información...</p>' .		
 			'</form><!-- end .hb-booking-details-form -->' ;
 			
 			$output .= '<div>';
