@@ -469,33 +469,67 @@ jQuery( document ).ready( function( $ ) {
 				timeout: hb_booking_form_data.ajax_timeout,
 				url: hb_booking_form_data.ajax_url,
 
-				success: function( response ) {					
+				success: function( response ) {		
+					
 					let data = JSON.parse(response);
 					//debugger;
 					$('.entry-content').append('<div class="accordion-custom">' +
 					data.mark_up + '<div>');
 
-					//$( "#accordion" ).accordion();					
-					//after_form_details_submit( response, data.mark_up );
 				},
 
 				complete: function() {
 					let newWrapper = '.hb-booking-details-custom-form';
 					set_details_form_info($booking_wrapper, accom_id, $(newWrapper));
 					console.log(accom_id);
-
-					//debugger;
-
-					$('.entry-content').on('click', '.save-customer', function(e){
-						$idcustomer = $(this).data('customer');						
-						$form = $(this).parent();
-						$formData = $(this).parent().serialize();
-						console.log("data form" , $formData);
-						e.preventDefault();						
-						save_data_customers_detail($idcustomer, $formData, $form);
-						
-					});
 					
+					let target = $(".hb-options-form");
+					if( target.length ) {
+						event.preventDefault();
+						$('html, body').stop().animate({
+							scrollTop: target.offset().top
+						}, 1000);
+					}
+					//debugger;
+					
+					$(newWrapper).validate({
+						rules: {
+							hb_first_name: "required",
+							hb_last_name: 'required',
+							hb_nmero_de_documento: 'required',
+							hb_email :  {
+								required: true,
+								email: true
+							},
+							hb_phone__telefono: "required",
+							hb_terms_and_cond : "required",
+							'hb-payment-type' : "required"
+							
+						  },
+						  messages: {
+							hb_first_name: "El campo nombres es requrido",
+							hb_last_name: "El campo apellidos es requrido",
+							hb_nmero_de_documento: "El número de documento es requrido",
+							hb_email: {
+								required: "El campo email es requerido",
+								email: "Por favor, escribe un email válido EJm. nombre@dominio.com"
+							},
+							hb_phone__telefono :  "El campo teléfono es requrido",
+							hb_terms_and_cond : "Debes aceptar términos y condiciones",
+							'hb-payment-type' : "Debes seleccionar un método de pago"
+						  },
+						submitHandler: function(form) {	
+							
+							$idcustomer = $(newWrapper).find('.save-customer').data('customer');
+							$form = $(newWrapper);
+							$formData = $(newWrapper).serialize();						
+
+							save_data_customers_detail($idcustomer, $formData, $form);
+						}
+					});
+
+					$(newWrapper).find('label.error').css("color", "red");
+
 				},
 			
 				error: function( jqXHR, textStatus, errorThrown ) {					
@@ -521,7 +555,7 @@ jQuery( document ).ready( function( $ ) {
 
 
 	function save_data_customers_detail ($idcustomer, $formData, $form) {		
-		//debugger;
+		debugger;
 		if ($idcustomer === 1) {
 			//create_principal_data_customer($formData); // creaa cliente principal
 			//en el php 
@@ -1237,7 +1271,7 @@ jQuery( document ).ready( function( $ ) {
 				if ( resp.success ) {
 					//debugger;
 					//after_form_details_submit( response, $form );
-					$form.after("<p>Registro guardado exitosamente</p>");
+					$form.after("<strong>Registro guardado exitosamente</strong>");
 					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
 					
 					$("<input name='resa_id' value='"+ resp.resa_id +"'></input>").attr("type", "hidden").appendTo(".hb-booking-details-custom-form"); 
@@ -1556,10 +1590,6 @@ jQuery( document ).ready( function( $ ) {
 			}, 100 );
 		}
 
-
-		$( function() {
-			$( "#tabs" ).tabs();
-		} );
 	});
 
 	/* end status processing */

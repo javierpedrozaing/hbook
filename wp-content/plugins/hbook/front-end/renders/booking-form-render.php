@@ -87,6 +87,7 @@ class HBookBookingForm extends HBookRender {
 		$this->utils->load_front_end_script( 'utils' );
 		$this->utils->load_front_end_script( 'validate-form' );
 		$this->utils->load_front_end_script( 'booking-form' );
+		$this->utils->load_front_end_script( 'jquery-validate' );
 
 		if ( $status == 'external-payment-confirm-ok' ) {
 			$page_padding_top = intval( get_option( 'hb_page_padding_top' ) );

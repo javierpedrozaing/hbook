@@ -458,7 +458,7 @@
         var $parent = this.getParentContainer($input);
         $message = $parent.find('.' + conf.errorMessageClass + '.help-block');
         if ($message.length === 0) {
-          $message = $('<span></span>').addClass('help-block').addClass(conf.errorMessageClass);
+          $message = $('<span style="color:#F04826;"></span>').addClass('help-block').addClass(conf.errorMessageClass);
           $message.appendTo($parent);
         }
         setErrorMessage($message);

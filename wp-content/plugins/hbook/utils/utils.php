@@ -207,6 +207,8 @@ class HbUtils {
 			case 'booking-form' :				
 				$this->hb_enqueue_script( 'hb-front-end-booking-form-script', '/front-end/js/booking-form.js' );
 				break;
+			case 'jquery-validate' : 
+				$this->hb_enqueue_script( 'hb-front-end-jquery-validate', '/front-end/js/jquery.validate.js' );
 		}
 
 	}

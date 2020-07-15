@@ -11,18 +11,19 @@ class HbOptionsForm {
 	
 
 	public function create_form_customer($resa,  $booking_form_num = 0) {	 // fix second parameter, get dinamically número del alojamiento
+		$this->utils->load_front_end_script( 'jquery-validate' );
 		$adults = $resa[4]['value'];		
 		$output = '';
 		$adultsArray =  array_fill(0, $adults, 'cliente');
 		$output .=  '<h2 class="note-reservation">' . "Por favor diligencia la información respectiva para cada adulto." . '</h2>';	
 		foreach ($adultsArray as $key => $value) {
 			$num = $key+1;			
-			$output .=  '<h3 class="adulto">Adulto ' . $num . '</h3>';	
+			$output .=  '<h3 class="adulto">Adulto #' . $num . '</h3>';	
 			if ($key <= 0) {
 				$output .=  '<p><i class="note-reservation">' . "La información de la persona registrada aquí será la persona encargada del pago y con quien nos comunicaremos para establecer detalles de la reserva." . '</i></p>';	
 			}			
 			$output .= '<div "content-form form-'.$num.'">';
-			$output .= '<form class="hb-booking-details-custom-form">' .
+			$output .= '<form class="hb-booking-details-custom-form" id="form-customer-' . $num . '">' .
 			$this->get_details_fields( $resa ) .							
 			$this->get_hidden_fields( $booking_form_num );
 
@@ -161,7 +162,7 @@ class HbOptionsForm {
 			$payment_types = apply_filters( 'hb_payment_types', array( 'offline', 'store_credit_card', 'deposit', 'full' ) );
 			foreach ( $payment_types as $payment_type ) {
 				if ( get_option( 'hb_resa_payment_' . $payment_type ) == 'yes' ) {
-					$payment_choice_text .= '<input type="radio" id="hb-payment-type-' . $payment_type . '" name="hb-payment-type" value="' . $payment_type . '" />';
+					$payment_choice_text .= '<input required type="radio" id="hb-payment-type-' . $payment_type . '" name="hb-payment-type" value="' . $payment_type . '" />';
 					$payment_choice_text .= ' <label for="hb-payment-type-' . $payment_type . '">' . $this->hbdb->get_strings()[ 'payment_type_' . $payment_type ] . '</label><br/>';
 					$explanation = '';
 					if ( isset( $this->hbdb->get_strings()[ 'payment_type_explanation_' . $payment_type ] ) && $this->hbdb->get_strings()[ 'payment_type_explanation_' . $payment_type ] ) {
@@ -247,14 +248,14 @@ class HbOptionsForm {
 		if ( get_option( 'hb_display_terms_and_cond' ) == 'yes' ) {
 			$policies .=
 				'<p>' .
-					'<input type="checkbox" id="terms-and-cond" name="hb_terms_and_cond" />' .
-					'<label for="terms-and-cond" class="hb-terms-and-cond"> ' . $this->hbdb->get_strings()['terms_and_cond_text'] . '</label>' .
+					'<input type="checkbox" id="terms-and-cond" required name="hb_terms_and_cond" />' .
+					'<label for="terms-and-cond" class="hb-terms-and-cond"> ' . "  " . $this->hbdb->get_strings()['terms_and_cond_text'] . '</label>' .
 				'</p>';
 		}
 		if ( get_option( 'hb_display_privacy_policy' ) == 'yes' ) {
 			$policies .=
 				'<p>' .
-					'<input type="checkbox" id="privacy-policy" name="hb_privacy_policy" />' .
+					'<input type="checkbox" required id="privacy-policy" name="hb_privacy_policy" />' .
 					'<label for="privacy-policy" class="hb-privacy-policy"> ' . $this->hbdb->get_strings()['privacy_policy_text'] . '</label>' .
 				'</p>';
 		}
