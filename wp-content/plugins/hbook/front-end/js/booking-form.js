@@ -491,45 +491,52 @@ jQuery( document ).ready( function( $ ) {
 						}, 1000);
 					}
 					//debugger;
-					
-					$(newWrapper).validate({
-						rules: {
-							hb_first_name: "required",
-							hb_last_name: 'required',
-							hb_nmero_de_documento: 'required',
-							hb_email :  {
-								required: true,
-								email: true
-							},
-							hb_phone__telefono: "required",
-							hb_terms_and_cond : "required",
-							'hb-payment-type' : "required"
-							
-						  },
-						  messages: {
-							hb_first_name: "El campo nombres es requrido",
-							hb_last_name: "El campo apellidos es requrido",
-							hb_nmero_de_documento: "El número de documento es requrido",
-							hb_email: {
-								required: "El campo email es requerido",
-								email: "Por favor, escribe un email válido EJm. nombre@dominio.com"
-							},
-							hb_phone__telefono :  "El campo teléfono es requrido",
-							hb_terms_and_cond : "Debes aceptar términos y condiciones",
-							'hb-payment-type' : "Debes seleccionar un método de pago"
-						  },
-						submitHandler: function(form) {	
-							
-							$idcustomer = $(newWrapper).find('.save-customer').data('customer');
-							$form = $(newWrapper);
-							$formData = $(newWrapper).serialize();						
-
-							save_data_customers_detail($idcustomer, $formData, $form);
-						}
+	
+					$('.entry-content').on('click', '.save-customer', function(e) {
+						$idcustomer = $(this).data('customer');						
+						$form = $(this).parent();
+						$formData = $(this).parent().serialize();						
+										
+						$form.validate({
+							rules: {
+								hb_first_name: "required",
+								hb_last_name: 'required',
+								hb_nmero_de_documento: 'required',
+								hb_email :  {
+									required: true,
+									email: true
+								},
+								hb_phone__telefono: "required",
+								hb_terms_and_cond : "required",
+								'hb-payment-type' : "required"
+								
+							  },
+							  messages: {
+								hb_first_name: "El campo nombres es requrido",
+								hb_last_name: "El campo apellidos es requrido",
+								hb_nmero_de_documento: "El número de documento es requrido",
+								hb_email: {
+									required: "El campo email es requerido",
+									email: "Por favor, escribe un email válido EJm. nombre@dominio.com"
+								},
+								hb_phone__telefono :  "El campo teléfono es requrido",
+								hb_terms_and_cond : "Debes aceptar términos y condiciones",
+								'hb-payment-type' : "Debes seleccionar un método de pago"
+							  },
+							submitHandler: function(form) {	
+								e.preventDefault();		
+								/*
+								$idcustomer = $(newWrapper).find('.save-customer').data('customer');
+								$form = $("#form-customer-1");
+								$formData = $(newWrapper).serialize();						
+								*/
+								save_data_customers_detail($idcustomer, $formData, $form);
+							}
+						});
+						
+						
 					});
-
-					$(newWrapper).find('label.error').css("color", "red");
-
+					
 				},
 			
 				error: function( jqXHR, textStatus, errorThrown ) {					
@@ -555,7 +562,7 @@ jQuery( document ).ready( function( $ ) {
 
 
 	function save_data_customers_detail ($idcustomer, $formData, $form) {		
-		debugger;
+		//debugger;
 		if ($idcustomer === 1) {
 			//create_principal_data_customer($formData); // creaa cliente principal
 			//en el php 

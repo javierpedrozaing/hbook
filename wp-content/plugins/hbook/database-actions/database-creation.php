@@ -835,7 +835,7 @@ class HbDataBaseCreation {
 			('selected_accom', 'en_US', 'You have selected the %accom_name.'),
 			('select_accom_button', 'en_US', 'Select this accommodation'),
 			('select_accom_title', 'en_US', 'Select your accommodation'),
-			('several_types_of_accommodation_found', 'en_US', 'We have found %nb_types types of accommodation that suit your needs.'),
+			('several_types_of_accommodation_found', 'en_US', 'We have found %nb_types accommodations that suit your needs.'),
 			('summary_accommodation', 'en_US', 'Accommodation:'),
 			('summary_change', 'en_US', 'Change'),
 			('summary_deposit', 'en_US', 'Deposit amount:'),

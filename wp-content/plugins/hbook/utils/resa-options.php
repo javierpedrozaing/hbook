@@ -249,7 +249,7 @@ class HbOptionsForm {
 			$policies .=
 				'<p>' .
 					'<input type="checkbox" id="terms-and-cond" required name="hb_terms_and_cond" />' .
-					'<label for="terms-and-cond" class="hb-terms-and-cond"> ' . "  " . $this->hbdb->get_strings()['terms_and_cond_text'] . '</label>' .
+					'<label for="terms-and-cond" class="hb-terms-and-cond"> ' . $this->hbdb->get_strings()['terms_and_cond_text'] . '</label>' .
 				'</p>';
 		}
 		if ( get_option( 'hb_display_privacy_policy' ) == 'yes' ) {

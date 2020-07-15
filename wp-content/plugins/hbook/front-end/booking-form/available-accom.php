@@ -285,7 +285,8 @@ class HbAvailableAccom {
 		} else {
 			if ( count( $available_accom ) > 1 ) {
 				// We have found %s of accommodation that suit your needs.
-				$msg1 = $hb_strings['several_types_of_accommodation_found'];
+				//$msg1 = $hb_strings['several_types_of_accommodation_found'];
+				$msg1 = "Hemos encontrado los siguientes alojamientos que responden a sus deseos.";
 				$msg1 = str_replace( '%nb_types', count( $available_accom ), $msg1 );
 
 				// Select your accommodation

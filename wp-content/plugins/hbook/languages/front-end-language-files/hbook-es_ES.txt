@@ -198,7 +198,7 @@ msgctxt "We have found 1 type of accommodation that suit your needs."
 msgid "one_type_of_accommodation_found"
 msgstr "Hemos encontrado un alojamiento que se ajusta a sus deseos."
 
-msgctxt "We have found %nb_types types of accommodation that suit your needs."
+msgctxt "We have found %nb_types accommodations that suit your needs."
 msgid "several_types_of_accommodation_found"
 msgstr "Hemos encontrado un alojamiento de tipo %nb_types que responden a sus deseos."
 
