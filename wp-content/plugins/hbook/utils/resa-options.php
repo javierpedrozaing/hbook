@@ -40,7 +40,7 @@ class HbOptionsForm {
 				$output .= '<input type="hidden" name="action" value="hb_create_additional_customers" />';			
 			}
 						
-			$output .= '<button class="save-customer" data-customer="'.$num.'">Gurdar</button>' .
+			$output .= '<button class="save-customer" data-customer="'.$num.'">Guardar</button>' .
 			'<p class="hb-booking-searching">Registrando información...</p>' .		
 			'</form><!-- end .hb-booking-details-form -->' ;
 			
