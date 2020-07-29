@@ -398,8 +398,9 @@ class HbFrontEndAjaxActions {
 			$lang = $_POST['hb-resa-admin-lang'];
 		} else {
 			if ( $_POST['hb-payment-flag'] == 'yes' ) {
+				// call info for payment
 				$payment_gateway = $this->utils->get_payment_gateway( $_POST['hb-payment-gateway'] );
-				if ( $payment_gateway ) {
+				if ( $payment_gateway ) {					
 					$resa_info['payment_gateway'] = $payment_gateway->name;
 					$response = $payment_gateway->process_payment( $resa_info, $customer_info, $amount_to_pay );
 				} else {

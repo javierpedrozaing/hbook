@@ -204,7 +204,7 @@ msgstr "Hemos encontrado un alojamiento de tipo %nb_types que responden a sus de
 
 msgctxt "Select your accommodation"
 msgid "select_accom_title"
-msgstr "Selccione su alojamiento"
+msgstr "Seleccione su alojamiento"
 
 msgctxt "The %accom_name is available at the chosen dates."
 msgid "accom_available_at_chosen_dates"

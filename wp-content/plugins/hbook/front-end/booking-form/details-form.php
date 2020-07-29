@@ -17,20 +17,17 @@ class HbDetailsForm {
 	}
 
 	public function get_details_form_mark_up( $resa, $booking_form_num ) {
-
-			return '';
-
-			/*<
-			'<form class="hb-booking-details-form">' .
-				$this->get_details_fields( $resa ) .
-				$this->get_coupon_area() .
-				$this->get_global_discount_area() .
-				$this->get_resa_summary() .
-				$this->get_hidden_fields( $booking_form_num ) .
-				$this->get_policies_area() .
-				$this->get_payment_fields() .
-				$this->get_confirm_area() .
-			'</form><!-- end .hb-booking-details-form -->'; */
+		return 
+		'<form class="hb-booking-details-form">' .
+			//$this->get_details_fields( $resa ) .
+			$this->get_coupon_area() .
+			$this->get_global_discount_area() .
+			$this->get_resa_summary() .
+			$this->get_hidden_fields( $booking_form_num ) .
+			//$this->get_policies_area() .
+			$this->get_payment_fields() .
+			$this->get_confirm_area() .
+		'</form><!-- end .hb-booking-details-form -->';
 
 		
 	}
@@ -494,7 +491,7 @@ class HbDetailsForm {
 			'<p class="hb-saving-resa">' . $this->hb_strings['processing'] . '</p>' .
 			$txt_before_book_now_button .
 			'<p class="hb-confirm-error"></p>' .
-			'<p class="hb-confirm-button"><input type="submit" value="' . $this->hb_strings['book_now_button'] . '" /></p>' .
+			'<p class="hb-confirm-button"><input type="submit" value="' . "Registrar pago" . '" /></p>' .
 		'</div>' .
 		'<p class="hb-bottom-area">&nbsp;</p>' .
 		'<input type="hidden" name="action" value="hb_create_resa" />';

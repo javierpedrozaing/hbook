@@ -1,4 +1,6 @@
 <?php
+
+ini_set('display_errors','off');
 class HbUtils {
 
 	private $hbdb;
@@ -9,7 +11,7 @@ class HbUtils {
 	public $plugin_url;
 	public $strings_utils;
 
-	public function __construct( $hbdb, $plugin_version ) {
+	public function __construct( $hbdb, $plugin_version ) { 
 		$this->hbdb = $hbdb;
 		$this->plugin_directory = dirname( plugin_dir_path( __FILE__ ) );
 		$this->plugin_url = dirname( plugin_dir_url( __FILE__ ) );

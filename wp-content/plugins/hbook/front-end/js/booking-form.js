@@ -491,12 +491,24 @@ jQuery( document ).ready( function( $ ) {
 						}, 1000);
 					}
 					//debugger;
+
+					$( 'input[name="hb-payment-type"]' ).change( function() {		
+						hide_show_payment_explanation( $( this ).parents( 'form' ) );
+						hide_show_payment_gateway_choice( $( this ).parents( 'form' ) );
+						hide_show_bottom_area( $( this ).parents( 'form' ) );
+					});
+				
+					$( 'input[name="hb-payment-gateway"]' ).change( function() {
+						hide_show_payment_gateway_form( $( this ).parents( 'form' ) );
+						hide_show_bottom_area( $( this ).parents( 'form' ) );
+					});
+
+					
 	
 					$('.entry-content').on('click', '.save-customer', function(e) {
 						$idcustomer = $(this).data('customer');						
 						$form = $(this).parent();
-						$formData = $(this).parent().serialize();						
-										
+						$formData = $(this).parent().serialize();																
 						$form.validate({
 							rules: {
 								hb_first_name: "required",
@@ -563,23 +575,10 @@ jQuery( document ).ready( function( $ ) {
 
 	function save_data_customers_detail ($idcustomer, $formData, $form) {		
 		//debugger;
-		if ($idcustomer === 1) {
-			//create_principal_data_customer($formData); // creaa cliente principal
-			//en el php 
-			//creamos el cliente
-			//	$customer_id = $this->hbdb->create_customer( $customer_email, $customer_info ); //register data customer
+		
 
-			// creamos la reserva
-			// el parametro $resa_info debe tener toda la información a guardar mas el id del cliente
-			//$resa_id = $this->hbdb->create_resa( $resa_info ); // call to funtion in database-actions.php
 
-			// LLAMAMOS A LA FUNCION JAVASCRIPT QUE LLAMA A LA FUNCIÓN POR AJAX Y HACE TODO LO ANTERIOR
-			save_resa_details($form);
-
-		} else {
-			
-			save_additional_customers($form);// creaa clientes segundarios
-		}
+		submit_booking_details($form);	
 	}
 
 
@@ -1138,7 +1137,8 @@ jQuery( document ).ready( function( $ ) {
 				$form.find( '.hb-confirm-button input' ).blur();
 				$( 'html, body' ).animate({	scrollTop: $( '.has-error' ).first().offset().top - page_padding_top }, 400 );
 			},
-			onSuccess: function( $form ) {				
+			onSuccess: function( $form ) {	
+				//debugger;			
 				submit_booking_details( $form );
 				return false;
 			}
@@ -1164,6 +1164,7 @@ jQuery( document ).ready( function( $ ) {
 	/* save reservation details */
 
 	function submit_booking_details( $form ) {
+		//debugger;
 		$form.find( '.hb-confirm-button input' ).blur();
 
 		if ( $form.hasClass( 'submitted' ) ) {
@@ -1193,6 +1194,7 @@ jQuery( document ).ready( function( $ ) {
 			payment_processing = false;
 
 		if ( payment_type == 'store_credit_card' || payment_type == 'deposit' || payment_type == 'full' ) {
+			
 			$form.find( '.hb-payment-flag' ).val( 'yes' );
 			var gateway_id = $form.find( 'input[name="hb-payment-gateway"]:checked' ).val(),
 				payment_process_function = 'hb_' + gateway_id + '_payment_process';
@@ -1203,16 +1205,19 @@ jQuery( document ).ready( function( $ ) {
 			if ( typeof window[ payment_process_function ] == 'function' ) {
 				disable_form_submission( $form );
 				payment_processing = window[ payment_process_function ]( $form, save_resa_details );
+				//debugger;
 				if ( ! payment_processing ) {
 					enable_form_submission( $form );
 					return;
 				}
 			}
+			//debugger;
 		} else {
 			$form.find( '.hb-payment-flag' ).val( '' );
 		}
-
+		
 		if ( ! payment_processing ) {
+			//debugger;
 			$form.find( '.hb-saving-resa' ).slideDown();
 			save_resa_details( $form );
 		}
@@ -1233,7 +1238,7 @@ jQuery( document ).ready( function( $ ) {
 				if ( resp.success ) {
 					//debugger;
 					//after_form_details_submit( response, $form );
-					$form.after("<strong>Registro guardado exitosamente</strong>");
+					$form.after("<strong>Cliente guardado exitosamente</strong>");
 					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
 					
 				} else {
@@ -1272,19 +1277,20 @@ jQuery( document ).ready( function( $ ) {
 				$('.hb-booking-details-custom-form').find('.hb-booking-searching').slideDown();
 			},
 
-			success: function( response ) {				
+			success: function( response ) {						
 				let resp = JSON.parse(response);
 				//debugger;
+				after_form_details_submit( response, $form );						
 				if ( resp.success ) {
 					//debugger;
 					//after_form_details_submit( response, $form );
-					$form.after("<strong>Registro guardado exitosamente</strong>");
+					$form.after("<strong>Registro cliente guardado exitosamente</strong>");
 					$('.hb-booking-details-custom-form').find('.hb-booking-searching').hide();
 					
 					$("<input name='resa_id' value='"+ resp.resa_id +"'></input>").attr("type", "hidden").appendTo(".hb-booking-details-custom-form"); 
 					
 				} else {
-					$form.after("<p>Ocurrio un error durante el registro, intenta mas tarde.</p>");
+					//$form.after("<p>Ocurrio un error durante el registro, intenta mas tarde.</p>");
 				}
 				
 			},
@@ -1312,6 +1318,7 @@ jQuery( document ).ready( function( $ ) {
 			$form.find( '.hb-confirm-error' ).html( response_text ).slideDown();
 			return false;
 		}
+		//debugger;
 		if ( response['success'] ) {
 			var payment_type = $form.find( 'input[name="hb-payment-type"]:checked' ).val(),
 				payment_has_redirection = $form.find( 'input[name="hb-payment-gateway"]:checked' ).data( 'has-redirection' );
@@ -1325,7 +1332,8 @@ jQuery( document ).ready( function( $ ) {
 				if ( hb_booking_form_data.is_admin != 'yes' ) {
 					$form.find( '.hb-resa-done-email' ).html( $form.find( 'input[name="hb_email"]' ).val() );
 					$form.find( '.hb-summary-change-search, .hb-summary-change-accom, .hb-summary-change-accom-num' ).hide();
-					$( 'html, body' ).animate({ scrollTop: $form.parents( '.hbook-wrapper' ).offset().top - page_padding_top }, 1000, function() {
+					
+					/*$( 'html, body' ).animate({ scrollTop: $( '#hbook-booking-form-1' ).offset().top - page_padding_top }, 1000, function() {
 						$form.parents( '.hbook-wrapper' ).find( '.hb-booking-search-form, .hb-accom-list, .hb-details-fields, .hb-coupons-area, .hb-resa-summary-title, .hb-confirm-area, .hb-policies-area, .hb-payment-info-wrapper, .hb-resa-summary' ).fadeOut( 1000, function() {
 							if ( payment_type == 'deposit' || payment_type == 'full' ) {
 								$form.find( '.hb-resa-payment-msg' ).show();
@@ -1334,7 +1342,7 @@ jQuery( document ).ready( function( $ ) {
 							}
 							$form.find( '.hb-resa-summary' ).slideDown();
 						});
-					});
+					});*/
 					if ( typeof window['hbook_reservation_done'] == 'function' ) {
 						window['hbook_reservation_done']();
 					}
@@ -1393,7 +1401,7 @@ jQuery( document ).ready( function( $ ) {
 
 	/* payment gateway choice */
 
-	$( 'input[name="hb-payment-type"]' ).change( function() {
+	$( 'input[name="hb-payment-type"]' ).change( function() {		
 		hide_show_payment_explanation( $( this ).parents( 'form' ) );
 		hide_show_payment_gateway_choice( $( this ).parents( 'form' ) );
 		hide_show_bottom_area( $( this ).parents( 'form' ) );
@@ -1475,6 +1483,7 @@ jQuery( document ).ready( function( $ ) {
 	}
 
 	function enable_form_submission( $form ) {
+		debugger;
 		$form.removeClass( 'submitted' );
 		$form.find( 'input[type="submit"]' ).prop( 'disabled', false );
 	}

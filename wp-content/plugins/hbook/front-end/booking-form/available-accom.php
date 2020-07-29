@@ -297,7 +297,7 @@ class HbAvailableAccom {
 					<p>' . $msg1 . '</p>';
 				if ( $msg2 != '' ) {
 					$output .= '
-					<h3 class="hb-title hb-title-select">' . $msg2 . '</h3>';
+					<h3 class="hb-title hb-title-select">' . "Seleccione su alojamiento" . '</h3>';
 				}
 				$output .= '
 				</div><!-- end .hb-search-result-title-section -->

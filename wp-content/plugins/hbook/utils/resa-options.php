@@ -12,10 +12,11 @@ class HbOptionsForm {
 
 	public function create_form_customer($resa,  $booking_form_num = 0) {	 // fix second parameter, get dinamically número del alojamiento
 		$this->utils->load_front_end_script( 'jquery-validate' );
+		
 		$adults = $resa[4]['value'];		
 		$output = '';
 		$adultsArray =  array_fill(0, $adults, 'cliente');
-		$output .=  '<h2 class="note-reservation">' . "Por favor diligencia la información respectiva para cada adulto." . '</h2>';	
+		$output .=  '<h2 class="note-reservation">' . "Por favor introduzca la información respectiva para cada adulto." . '</h2>';	
 		foreach ($adultsArray as $key => $value) {
 			$num = $key+1;			
 			$output .=  '<h3 class="adulto">Adulto #' . $num . '</h3>';	
@@ -27,11 +28,7 @@ class HbOptionsForm {
 			$this->get_details_fields( $resa ) .							
 			$this->get_hidden_fields( $booking_form_num );
 
-			if ($key <= 0) {
-				// show info only for first customer
-				$output .=	$this->get_payment_fields();
-				$output .= $this->get_policies_area();
-			}
+			
 			if ($key <= 0) {
 				// create resa for first register
 				$output .= '<input type="hidden" name="action" value="hb_create_resa" />';
@@ -41,10 +38,17 @@ class HbOptionsForm {
 			}
 						
 			$output .= '<button class="save-customer" data-customer="'.$num.'">Guardar</button>' .
-			'<p class="hb-booking-searching">Registrando información...</p>' .		
+			'<p class="hb-booking-searching"></p>' .		
 			'</form><!-- end .hb-booking-details-form -->' ;
 			
 			$output .= '<div>';
+			if ($key <= 0) {
+				// show info only for first customer
+				//$output .=  $this->get_resa_summary();
+				//$output .=  $this->get_policies_area();
+				//$output .=	$this->get_payment_fields();				
+				//$output .=  $this->get_confirm_area();
+			}
 		}		
 
 		return array(
@@ -198,6 +202,7 @@ class HbOptionsForm {
 		}
 		$output .= $payment_choice_text;
 		$output .= $payment_type_explanation;
+		
 
 		$output .= '<div class="hb-payment-method-wrapper">';
 
@@ -374,6 +379,113 @@ class HbOptionsForm {
 		
 	}
 
+	private function get_confirm_area() {
+		$txt_before_book_now_button = '';
+		if ( $this->hb_strings['txt_before_book_now_button'] ) {
+			$txt_before_book_now_button = '<p>' . $this->hb_strings['txt_before_book_now_button'] . '</p>';
+		}
+		$output =
+		'<div class="hb-confirm-area">' .
+			'<p class="hb-saving-resa">' . $this->hb_strings['processing'] . '</p>' .
+			$txt_before_book_now_button .
+			'<p class="hb-confirm-error"></p>' .
+			//'<p class="hb-confirm-button"><input type="submit" value="' . $this->hb_strings['book_now_button'] . '" /></p>' .
+		'</div>' .
+		'<p class="hb-bottom-area">&nbsp;</p>' .
+		'<input type="hidden" name="action" value="hb_create_resa" />';
+		$output = apply_filters( 'hb_confirm_area_markup', $output );
+		return $output;
+	}
+
+	private function get_resa_summary() {
+		$change_link = '<small><a href="#">' . $this->hb_strings['summary_change'] . '</a></small>';
+		$change_search = '<span class="hb-summary-change-search"> - ' . $change_link . '</span>';
+		$change_accom = '<span class="hb-summary-change-accom"> - ' . $change_link . '</span>';
+		$change_accom_num = '<span class="hb-summary-change-accom-num"> - ' . $change_link . '</span>';
+		$output = '
+			<div class="hb-resa-summary">
+				<h3 class="hb-title hb-resa-summary-title">' . $this->hb_strings['summary_title'] . '</h3>
+				<p class="hb-resa-payment-msg">' . str_replace( '%customer_email', '<span class="hb-resa-done-email"></span>', $this->hb_strings['thanks_message_payment_done_1'] ) . '</p>
+				<p class="hb-resa-done-msg">' . str_replace( '%customer_email', '<span class="hb-resa-done-email"></span>', $this->hb_strings['thanks_message_1'] ) . '</p>
+				<div class="hb-resa-summary-content">
+					<div>' . $this->hb_strings['chosen_check_in'] . ' <span class="hb-summary-check-in"></span>' . $change_search . '</div>
+					<div>' . $this->hb_strings['chosen_check_out'] . ' <span class="hb-summary-check-out"></span>' . $change_search . '</div>
+					<div>' . $this->hb_strings['number_of_nights'] . ' <span class="hb-summary-nights"></span></div>';
+		if ( get_option( 'hb_display_adults_field' ) == 'yes' ) {
+			$output .= '
+					<div>' . $this->hb_strings['chosen_adults'] . ' <span class="hb-summary-adults"></span>' . $change_search . '</div>';
+		}
+		if ( get_option( 'hb_display_children_field' ) == 'yes' ) {
+			$output .= '
+					<div>' . $this->hb_strings['chosen_children'] . ' <span class="hb-summary-children"></span>' . $change_search . '</div>';
+		}
+		$bond_text ='';
+		if ( get_option( 'hb_security_bond' ) == 'yes' ) {
+			$bond_text .= '<br/>';
+			$bond_amount = $this->utils->price_with_symbol( get_option( 'hb_security_bond_amount' ) );
+			$bond_text .= '<div class="hb-summary-bond">' . $this->hb_strings['summary_security_bond'] . ' ' . $bond_amount . '</div>';
+			$bond_explanation = $this->hb_strings['summary_security_bond_explanation'];
+			if ( $bond_explanation ) {
+				$bond_text .= '<div>' . $bond_explanation . '</div>';
+			}
+		}
+		$deposit_text = '';
+		if ( get_option( 'hb_deposit_type' ) != 'none' ) {
+			$deposit_text .= '<br/><div class="hb-summary-deposit">';
+			$deposit_text .= $this->hb_strings['summary_deposit'] . ' ';
+			$deposit_text .= $this->utils->price_placeholder();
+			$deposit_text .= '</div>';
+		}
+		$coupon_text = '<div class="hb-summary-coupon-amount">' . $this->hb_strings['summary_coupon_amount']. ' ' . $this->utils->price_placeholder() . '</div>';
+		$discount_text = '<div class="hb-summary-discount-amount">' . $this->hb_strings['summary_discount_amount']. ' ' . $this->utils->price_placeholder() . '</div>';
+		$output .= '<div class="hb-summary-accom-wrap">';
+		$output .= $this->hb_strings['summary_accommodation'];
+		$output .= ' <span class="hb-summary-accom"></span>';
+		$output .= $change_accom;
+		if ( get_option( 'hb_select_accom_num' ) == 'yes' ) {
+			$output .= '<div class="hb-summary-accom-num-name-wrap">';
+			$output .= $this->hb_strings['summary_accommodation_number'];
+			$output .= ' <span class="hb-summary-accom-num-name"></span>';
+			$output .= $change_accom_num;
+			$output .= '</div>';
+		}
+		$output .= '</div>';
+		if ( get_option( 'hb_display_price' ) != 'no' ) {
+			$output .= '<div class="hb-summary-accom-price">';
+			$output .= '<br/>';
+			$output .= $this->hb_strings['summary_accom_price'];
+			$output .= ' ';
+			$output .= $this->utils->price_placeholder();
+			$output .= $this->global_fees->get_accom_included_fees_markup();
+			$output .= '</div>';
+			$output .= '<div class="hb-summary-options-price">';
+			$output .= $this->hb_strings['summary_options_price'];
+			$output .= ' <span class="hb-price-placeholder-minus">-</span>';
+			$output .= $this->utils->price_placeholder();
+			$output .= $this->global_fees->get_extras_included_fees_markup();
+			$output .= '</div>';
+			$output .= $coupon_text;
+			$output .= $discount_text;
+			$output .= $this->global_fees->get_fees_markup_frontend();
+			$output .= $deposit_text;
+			$output .= '<br/>';
+			$output .= '<div class="hb-summary-total-price">';
+			$output .= $this->hb_strings['summary_price'];
+			$output .= ' ';
+			$output .= $this->utils->price_placeholder();
+			$output .= $this->global_fees->get_global_included_fees_markup();
+			$output .= '</div>';
+			$output .= $bond_text;
+		}
+		$output .= '
+				</div><!-- end .resa-summary-content -->
+				<p class="hb-resa-done-msg">' . $this->hb_strings['thanks_message_2'] . '</p>
+				<p class="hb-resa-payment-msg">' . $this->hb_strings['thanks_message_payment_done_2'] . '</p>
+			</div><!-- end .hb-resa-summary -->';
+		$output = apply_filters( 'hb_resa_summary_markup', $output );
+		$output = apply_filters( 'hb_resa_summary_no_external_payment_markup', $output );
+		return $output;
+	}
 
 	
 
