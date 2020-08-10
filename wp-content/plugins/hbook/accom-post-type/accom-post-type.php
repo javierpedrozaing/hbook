@@ -220,7 +220,6 @@ class HbAccommodation {
 		}
 	}
 
-	
 
 
 	public function save_accommodation_meta( $post_id ) {

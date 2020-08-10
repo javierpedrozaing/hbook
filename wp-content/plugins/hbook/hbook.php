@@ -159,7 +159,7 @@ class HBook {
 		foreach ( $admin_ajax_action as $action ) {
 			add_action( 'wp_ajax_' . $action, array( $this->admin_ajax_actions, $action ) );
 		}
-		//add_action('wp', array( $this->accommodation, 'hb_update_accommodations_from_custom_table' ) );
+		//add_action('wp', array( $this->accommodation, 'hb_update_accommodations_from_CPT' ) );
 		//add_action('wp', array( $this->accommodation, 'update_accommodations_from_custom_table' ) );
 		add_action( 'init', array( $this->accommodation, 'create_accommodation_post_type' ) );
 		add_action( 'pre_get_posts', array( $this->accommodation, 'admin_accom_order' ) );
