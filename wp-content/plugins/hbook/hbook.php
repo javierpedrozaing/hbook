@@ -78,6 +78,8 @@ class HBook {
 			add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		}
 
+		
+
 		add_action( 'init', array( $this, 'init_plugin' ) );
 		add_action( 'init', array( $this->hbdb, 'delete_uncompleted_resa' ) );
 		add_action( 'init', array( $this->utils, 'export_lang_file' ) );
@@ -157,12 +159,13 @@ class HBook {
 		foreach ( $admin_ajax_action as $action ) {
 			add_action( 'wp_ajax_' . $action, array( $this->admin_ajax_actions, $action ) );
 		}
-
+		//add_action('wp', array( $this->accommodation, 'hb_update_accommodations_from_custom_table' ) );
+		//add_action('wp', array( $this->accommodation, 'update_accommodations_from_custom_table' ) );
 		add_action( 'init', array( $this->accommodation, 'create_accommodation_post_type' ) );
 		add_action( 'pre_get_posts', array( $this->accommodation, 'admin_accom_order' ) );
 		add_action( 'edit_form_before_permalink', array( $this->accommodation, 'display_accom_id' ) );
 		add_action( 'add_meta_boxes', array( $this->accommodation, 'accommodation_meta_box' ) );
-		add_action( 'save_post_hb_accommodation', array( $this->accommodation, 'save_accommodation_meta' ) );
+		add_action( 'save_post_hb_accommodation', array( $this->accommodation, 'save_accommodation_meta' ) ); // save post meta custom fields()
 		add_action( 'delete_post', array( $this->hbdb, 'deleted_accom' ) );
 		add_action( 'publish_hb_accommodation', array( $this->hbdb, 'published_accom' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this->blocks, 'block_editor_assets' ) );

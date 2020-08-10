@@ -40,6 +40,7 @@ class HbAccommodation {
 
 	public function accommodation_meta_box() {
 		add_meta_box( 'accommodation_meta_box', esc_html__( 'Accommodation settings', 'hbook-admin' ), array( $this, 'accommodation_meta_box_display' ), 'hb_accommodation', 'normal' );
+		
 	}
 
 	public function accommodation_meta_box_display( $post ) {
@@ -219,7 +220,11 @@ class HbAccommodation {
 		}
 	}
 
+	
+
+
 	public function save_accommodation_meta( $post_id ) {
+
 		if ( isset( $_REQUEST['hb-accom-quantity'] ) ) {
 			$accom_quantity = intval( $_REQUEST['hb-accom-quantity'] );
 			if ( ! $accom_quantity ) {
@@ -321,6 +326,8 @@ class HbAccommodation {
 		if ( isset( $_REQUEST['hb-accom-short-name'] ) ) {
 			update_post_meta( $post_id, 'accom_short_name', sanitize_text_field( $_REQUEST['hb-accom-short-name'] ) );
 		}
+
+
 	}
 
 	public function redirect_hb_menu_accom_page() {
@@ -333,7 +340,7 @@ class HbAccommodation {
 		?>
 		<div style="padding: 10px 10px 0; color: #666">
 			<strong><?php esc_html_e( 'Accommodation id: ', 'hbook-admin' ); ?></strong>
-			<?php echo( $post->ID ); ?>
+			<?#php echo( $post->ID ); ?>
 		</div>
 		<?php
 		}

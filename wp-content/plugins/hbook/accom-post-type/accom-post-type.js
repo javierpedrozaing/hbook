@@ -12,8 +12,7 @@ jQuery( document ).ready( function( $ ) {
 
 	if ( $( '#hb-accom-num-name-wrapper' ).length ) {
 
-		var current_db_index = $( '#hb-accom-num-name-index' ).val();
-
+		var current_db_index = $( '#hb-accom-num-name-index' ).val();		
 		update_accom_num_name_inputs();
 
 		$( '#hb-accom-quantity' ).keyup( function() {
