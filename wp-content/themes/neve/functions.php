@@ -312,9 +312,7 @@ function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom
 	} else {
 		foreach ($post_type_accom as $key => $accom) {
 			//echo get_post_meta($get_accommodations['posts'][$key]->ID, 'accom_quantity', true);exit;
-			$accommodations = array(		
-				'id'  => random_int(1, 999),
-				'name' => $accom->post_title, 	
+			$accommodations = array(								
 				'quantity' => get_post_meta($accom->ID, 'accom_quantity', true),			
 				'occupancy' => get_post_meta($accom->ID, 'accom_occupancy', true),
 				'max_occupancy' => get_post_meta($accom->ID, 'accom_max_occupancy', true),
@@ -324,7 +322,8 @@ function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom
 				'short_name' => get_post_meta($accom->ID, 'accom_short_name', true),
 				'starting_price' => get_post_meta($accom->ID, 'accom_starting_price', true),
 				'preparation_time' => get_post_meta($accom->ID, 'accom_preparation_time', true),
-				'id_hb_accommodation' => $accom->ID
+				'id_hb_accommodation' => $accom->ID,
+				'name' => $accom->post_title, 	
 			);	
 		
 			$format = array('%d','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%d');
