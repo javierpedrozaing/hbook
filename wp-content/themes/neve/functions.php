@@ -129,7 +129,8 @@ function get_accommodations_ids_custom_table() {
 
 add_action( 'hb_insert_accommodations_from_custom_table', 'hb_insert_accommodations_from_custom_table' );
 
-function hb_insert_accommodations_from_custom_table() {		
+function hb_insert_accommodations_from_custom_table() {
+		
 	$accommodations = get_accommodations_current_cpt();
 	$database_results = query_accommodations_similar_ids($accommodations);	
 	
@@ -160,7 +161,8 @@ function hb_insert_accommodations_from_custom_table() {
 			
 			if ($new_id_accom) {
 				update_field( 'id_accommodation', $result->id, $new_id_accom );            
-			}			
+			}
+			
 		}	
 	}			
 }
@@ -216,57 +218,8 @@ function hb_update_accommodations_from_custom_table() {
 	
 }
 
-/// INSERTAR O ACTUALIZAR A CUSTOM TABLE DESDE EL ACTUAL TIPO DE CONTENIDO 
 
-function get_relation_id_accommodation($ids_accom) {
-	global $wpdb;
-	$table_name = $wpdb->prefix . 'hb_accommodations';	
-	$ids = implode("," , $ids_accom);		
-	$sql = "SELECT * FROM $table_name WHERE id IN ($ids)";
-	$results = $wpdb->get_results($sql);						
-
-	return $results;
-}
-
-function get_all_current_accommodations() {
-	$args = array(
-		'post_type' 	 => 'hb_accommodation',
-		'posts_per_page' => -1,			
-	);
-
-	$query = new WP_Query($args);
-	return  (array) $query;
-}
-
-add_action( 'hb_insert_accommodations_from_CPT', 'hb_insert_accommodations_from_CPT' );
-
-function hb_insert_accommodations_from_CPT() {	
-	$get_accommodations = get_all_current_accommodations();
-
-	$get_ids = function($accom){
-		return $accom->id;
-	};
-	//var_dump($get_accommodations['posts']);exit;
-	$ids_accommodations = array_map($get_ids, $get_accommodations['posts']);
-	$get_relation_in_custom_table = get_relation_id_accommodation(array_filter($ids_accommodations));
-
-	foreach ($get_relation_in_custom_table as $key => $accom) {
-		$accommodations = array(		
-			'name' => wp_strip_all_tags($get_accommodations['posts'][$key]->name), 
-			'quantity' => $get_accommodations['posts'][$key]->quantity,			
-			'occupancy' => $get_accommodations['posts'][$key]->occupancy,
-			'max_occupancy' => $get_accommodations['posts'][$key]->max_occupancy,
-			'min_occupancy' => $get_accommodations['posts'][$key]->min_occupancy,
-			'search_result_desc' => $get_accommodations['posts'][$key]->search_result_desc,
-			'list_desc' => $get_accommodations['posts'][$key]->list_desc,
-			'short_name' => $get_accommodations['posts'][$key]->short_name,
-			'starting_price' => $get_accommodations['posts'][$key]->starting_price,
-			'preparation_time' => $get_accommodations['posts'][$key]->preparation_time,				
-		);
-		
-	}
-}
-
+//INSERT AND UPDATE CUSTOM TABLE FROM TYPE CONTENT
 function get_relation_id_accommodation($ids_accom) {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'hb_accommodations';	
@@ -288,12 +241,11 @@ function get_all_current_accommodations() {
 	return  (array) $query;
 }
 	
-
 add_action( 'hb_update_accommodations_from_CPT', 'hb_update_accommodations_from_CPT' );
 
 function hb_update_accommodations_from_CPT() {	
 	global $wpdb;
-	$get_accommodations = $this->get_all_current_accommodations();
+	$get_accommodations = get_all_current_accommodations();
 	
 	$table_name = $wpdb->prefix . 'hb_accommodations';		
 	$get_ids = function($accom){
@@ -302,7 +254,7 @@ function hb_update_accommodations_from_CPT() {
 	
 	$ids_accommodations = array_map($get_ids, $get_accommodations['posts']);
 	
-	$get_relation_in_custom_table = $this->get_relation_id_accommodation(array_filter($ids_accommodations));
+	$get_relation_in_custom_table = get_relation_id_accommodation(array_filter($ids_accommodations));
 
 	$new_id_accom = [];
 	
@@ -330,14 +282,13 @@ function hb_update_accommodations_from_CPT() {
 		}
 
 	} else {			
-		$new_id_accom[] = $this->hb_insert_accommodations_from_CPT($get_accommodations['posts'], $get_relation_in_custom_table);
+		$new_id_accom[] = hb_insert_accommodations_from_CPT($get_accommodations['posts'], $get_relation_in_custom_table);
 		
 	}
 
 	var_dump($new_id_accom);
 	
 }
-
 
 function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom) {
 	
@@ -381,9 +332,10 @@ function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom
 		}
 	}
 
-	
-
 	return $new_id_accom;
 }
+
+
+
 
 
