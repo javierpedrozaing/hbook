@@ -213,6 +213,15 @@ function hb_update_accommodations_from_custom_table() {
 			if ($new_accom_post_id) {				
 				update_post_meta( $new_accom_post_id, '_visibility', 'visible' );   
 				update_field( 'accom_quantity',  wp_strip_all_tags($accommodations[$key]->quantity),  $new_accom_post_id );
+				update_field( 'accom_occupancy',  wp_strip_all_tags($accommodations[$key]->occupancy),  $new_accom_post_id );
+				update_field( 'accom_max_occupancy',  wp_strip_all_tags($accommodations[$key]->max_occupancy),  $new_accom_post_id );
+				update_field( 'accom_min_occupancy',  wp_strip_all_tags($accommodations[$key]->min_occupancy),  $new_accom_post_id );
+				update_field( 'accom_search_result_desc',  wp_strip_all_tags($accommodations[$key]->search_result_desc),  $new_accom_post_id );
+				update_field( 'accom_list_desc',  wp_strip_all_tags($accommodations[$key]->list_desc),  $new_accom_post_id );
+				update_field( 'accom_short_name',  wp_strip_all_tags($accommodations[$key]->short_name),  $new_accom_post_id );
+				update_field( 'starting_price',  wp_strip_all_tags($accommodations[$key]->starting_price),  $new_accom_post_id );
+				update_field( 'preparation_time',  wp_strip_all_tags($accommodations[$key]->preparation_time),  $new_accom_post_id );
+				
 			} 
 		}
 	
@@ -282,8 +291,7 @@ function hb_update_accommodations_from_CPT() {
 		}
 
 	} else {			
-		$new_id_accom[] = hb_insert_accommodations_from_CPT($get_accommodations['posts'], $get_relation_in_custom_table);
-		
+		$new_id_accom[] = hb_insert_accommodations_from_CPT($get_accommodations['posts'], $get_relation_in_custom_table);		
 	}
 
 	var_dump($new_id_accom);
