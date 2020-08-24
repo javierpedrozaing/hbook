@@ -37,9 +37,11 @@ class HbAdminPageSeasons extends HbAdminPage {
 
 			<div class="hb-table-head hb-clearfix">
 				<div class="hb-table-head-data"><?php esc_html_e( 'Season name', 'hbook-admin' ); ?></div>
+				<div class="hb-table-head-data"><?php esc_html_e( 'Costo', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'Start date', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'End date', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'Days', 'hbook-admin' ); ?></div>
+				
 				<div class="hb-table-head-data hb-table-head-data-action"><?php esc_html_e( 'Actions', 'hbook-admin' ); ?></div>
 			</div>
 			<div data-bind="template: { name: template_to_use, foreach: seasons, as: 'season', afterRender: season_render, beforeRemove: hide_setting }"></div>
@@ -47,9 +49,11 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="text_tmpl" type="text/html">
 				<div class="hb-table-row hb-clearfix">
 					<div class="hb-table-data" data-bind="text: name"></div>
+					<div class="hb-table-data" data-bind="text: costo"></div>					
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
+					
 					<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'season' ); ?></div>
 				</div>
 				<div data-bind="template: { name: $parent.child_template_to_use, foreach: dates, beforeRemove: $parent.hide_setting }"></div>
@@ -58,6 +62,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="edit_tmpl" type="text/html">
 				<div class="hb-table-row hb-clearfix">
 					<div class="hb-table-data"><input data-bind="value: name" type="text" /></div>
+					<div class="hb-table-data"><input  data-bind="value: costo" type="text" /></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
@@ -69,6 +74,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="child_text_tmpl" type="text/html">
 				<div class="hb-season-dates-row hb-clearfix">
 					<div class="hb-table-data"></div>
+					<div class="hb-table-data"></div>
 					<div class="hb-table-data" data-bind="text: start_date_text"></div>
 					<div class="hb-table-data" data-bind="text: end_date_text"></div>
 					<div class="hb-table-data" data-bind="text: days_list"></div>
@@ -78,6 +84,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 
 			<script id="child_edit_tmpl" type="text/html">
 				<div class="hb-season-dates-row hb-clearfix">
+					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"><input data-bind="value: start_date" class="hb-season-date hb-season-date-start" type="text" /></div>
 					<div class="hb-table-data"><input data-bind="value: end_date" class="hb-season-date hb-season-date-end" type="text" /></div>

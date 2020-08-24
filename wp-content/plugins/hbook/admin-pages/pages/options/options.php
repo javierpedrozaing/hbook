@@ -3,6 +3,7 @@ class HbAdminPageOptions extends HbAdminPage {
 
 	public function __construct( $page_id, $hbdb, $utils, $options_utils ) {
 		$this->accom = $hbdb->get_all_accom();
+		$this->seasons = $hbdb->get_all_seasons_with_dates();
 		$this->data = array(
 			'hb_text' => array(
 				'new_option' => esc_html__( 'New extra', 'hbook-admin' ),
@@ -14,7 +15,7 @@ class HbAdminPageOptions extends HbAdminPage {
 				'children' => esc_html__( 'Children:', 'hbook-admin' ),
 			),
 			'options' => $hbdb->get_all_options_with_choices(),
-			'accom_list' => $this->accom,
+			'accom_list' => $this->accom,			
 			'hb_apply_to_types' => array(
 				array(
 					'option_value' => 'per-person',
@@ -39,6 +40,16 @@ class HbAdminPageOptions extends HbAdminPage {
 				array(
 					'option_value' => 'quantity-per-day',
 					'option_text' => esc_html__( 'Quantity per day', 'hbook-admin' )
+				),
+			),
+			'hb_temporadas' => array(
+				array(
+					'option_value' => 'temporada-alta',
+					'option_text' => esc_html__( 'Temporada Alta', 'hbook-admin' )
+				),
+				array(
+					'option_value' => 'temporada-baja',
+					'option_text' => esc_html__( 'Temporada Baja', 'hbook-admin' )
 				),
 			),
 			'hb_price_precision' => get_option('hb_price_precision' ),
@@ -73,6 +84,7 @@ class HbAdminPageOptions extends HbAdminPage {
 				<div class="hb-table-head-data"><?php esc_html_e( 'Type', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'Amount', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data hb-table-data-accom"><?php esc_html_e( 'Accommodation', 'hbook-admin' ); ?></div>
+				<div class="hb-table-head-data hb-table-data-accom"><?php esc_html_e( 'Temporadas', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data hb-table-head-data-action"><?php esc_html_e( 'Actions', 'hbook-admin' ); ?></div>
 			</div>
 
@@ -105,6 +117,8 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-accom" data-bind="text: accom_list"></div>
 
+				<div class="hb-table-data hb-table-data-accom" data-bind="text: hb_temporadas[0].option_text"></div>
+			
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option' ); ?></div>
 
 			</div>
@@ -179,6 +193,12 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-accom"><?php $this->display_checkbox_list( $this->accom, 'accom' ); ?></div>
 
+				<!-- APPLY SELECT TEMPORADA -->
+				<div class="hb-table-data">
+				<?php $this->display_temporadas( $this->seasons ); ?>				
+				</div>
+				<!-- END SELECT TEMPORADA -->
+
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_on_edit_action( 'option' ); ?></div>
 
 			</div>
@@ -188,10 +208,13 @@ class HbAdminPageOptions extends HbAdminPage {
 		<script id="child_text_tmpl" type="text/html">
 			<div class="hb-option-choice-row hb-clearfix">
 				<div class="hb-table-data" data-bind="text: name"></div>
+				<div class="hb-table-data" data-bind="text: costo"></div>
 				<div class="hb-table-data hb-table-data-choice">-</div>
 				<div class="hb-table-data">-</div>
+				
 				<div class="hb-table-data" data-bind="html: amount_text"></div>
-				<div class="hb-table-data hb-table-data-accom">-</div>
+				<div class="hb-table-data hb-table-data-accom">-</div>				
+				
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option_choice' ); ?></div>
 			</div>
 		</script>

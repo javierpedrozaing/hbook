@@ -1,5 +1,5 @@
 <?php
-class HbAdminPage {
+class HbAdminPage { 
 
 	private $page_id;
 	private $common_text;
@@ -63,6 +63,23 @@ class HbAdminPage {
 	<?php
 	}
 
+	protected function display_temporadas($seasons) { ?>
+	
+		<?php								
+		if ( $seasons ) {			
+			$fields_options = '';
+			foreach ( $seasons as $tmp_id => $tmp_label ) {
+				$fields_options .= '<option value="' . $tmp_label['id'] . '">' . $tmp_label['name']. '</option>';
+			}
+		?>
+			<select class="hb-form-field-select" data-bind="value: hb_temporadas">
+				<?php echo( $fields_options ); ?>
+			</select>		
+		
+		<?php 
+		}
+	}
+
 	protected function display_admin_on_edit_action( $setting_type = '' ) {
 	?>
 		<input type="button" class="button-primary" data-bind="click: $root.save_setting, disable: saving, value: save_text" />
@@ -92,7 +109,7 @@ class HbAdminPage {
 	}
 
 	protected function display_checkbox_list( $data, $data_type, $display_check_all_box = true, $display_select_all_link = false ) {
-		if ( $display_check_all_box ) {
+		if ( $display_check_all_box ) {			
 		?>
 		<input data-bind="checked: all_<?php echo( $data_type ); ?>" type="checkbox" id="hb-checkbox-<?php echo( $data_type ); ?>-all" />
 		<label for="hb-checkbox-<?php echo( $data_type ); ?>-all"><?php esc_html_e( 'All', 'hbook-admin' ); ?></label><br/>

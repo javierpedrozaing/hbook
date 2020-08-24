@@ -63,7 +63,7 @@ function OptionChoice( brand_new, id, option_id, name, amount, amount_children, 
 function OptionsViewModel() {
 
 	var self = this;
-
+	
 	observable_options = [];
 	for ( var i = 0; i < options.length; i++ ) {
 		var observable_option_choices = [];

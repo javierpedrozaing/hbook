@@ -6,10 +6,10 @@ function date_to_str( date ) {
 	}
 }
 
-function Season( brand_new, id, name, dates ) {
-	HbSetting.call( this, brand_new, 'season', id, name );
+function Season( brand_new, id, name, dates, costo ) {
+	HbSetting.call( this, brand_new, 'season', id, name, costo );
 	this.dates = ko.observableArray( dates );
-
+	this.costo = 0.0;
 	var self = this;
 
 	this.revert = function( season ) {
@@ -39,6 +39,10 @@ function SeasonDates( brand_new, id, season_id, start_date, end_date, days ) {
 
 	this.end_date_text = ko.computed( function() {
 		return date_to_str( self.end_date() );
+	});
+
+	this.costo = ko.computed( function() {
+		return '0.0';
 	});
 
 	this.days_list = ko.computed( function() {
@@ -88,9 +92,9 @@ function SeasonsViewModel() {
 		var observable_dates = [];
 		//seasons[i].dates = seasons[i].dates.reverse();
 		for ( var j = 0; j < seasons[i].dates.length; j++ ) {
-			observable_dates.push( new SeasonDates( false, seasons[i].dates[j].id, seasons[i].dates[j].season_id, seasons[i].dates[j].start_date, seasons[i].dates[j].end_date, seasons[i].dates[j].days ) );
+			observable_dates.push( new SeasonDates( false, seasons[i].dates[j].id, seasons[i].dates[j].season_id, seasons[i].dates[j].start_date, seasons[i].dates[j].end_date, seasons[i].dates[j].days) );
 		}
-		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates ) );
+		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates, seasons[i].costo ) );
 	}
 
 	this.seasons = ko.observableArray( observable_seasons );
@@ -98,7 +102,7 @@ function SeasonsViewModel() {
 	ko.utils.extend( this, new HbSettings() );
 
 	this.create_season = function() {
-		var new_season = new Season( true, 0, hb_text.new_season, [] );
+		var new_season = new Season( true, 0, hb_text.new_season, [], 0.0 );
 		self.create_setting( new_season, function( new_season ) {
 			self.seasons.push( new_season );
 		});
