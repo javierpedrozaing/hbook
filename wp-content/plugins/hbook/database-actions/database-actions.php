@@ -204,7 +204,7 @@ class HbDataBaseActions {
 				break;
 
 			case 'season' :
-				$default_columns = array( 'name' );
+				$default_columns = array( 'name', 'price_season' );
 				break;
 
 			case 'season_date':

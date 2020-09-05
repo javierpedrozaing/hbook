@@ -208,7 +208,7 @@ class HbAdminPageOptions extends HbAdminPage {
 		<script id="child_text_tmpl" type="text/html">
 			<div class="hb-option-choice-row hb-clearfix">
 				<div class="hb-table-data" data-bind="text: name"></div>
-				<div class="hb-table-data" data-bind="text: costo"></div>
+				<div class="hb-table-data" data-bind="text: price_season"></div>
 				<div class="hb-table-data hb-table-data-choice">-</div>
 				<div class="hb-table-data">-</div>
 				
@@ -226,7 +226,7 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-choice">-</div>
 
-				<div class="hb-table-data">-</div>
+				<div class="hb-table-data price">-</div>
 
 				<div class="hb-table-data">
 					<!-- ko if: apply_to_type() == 'per-person' || apply_to_type() == 'per-person-per-day' -->

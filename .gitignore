@@ -1,3 +1,4 @@
 /wp-admin/*
 /wp-snapshots/*
 /wp-includes/*
+/wp-content/plugins/

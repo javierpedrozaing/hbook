@@ -1,15 +1,19 @@
-function HbSetting( brand_new, type, id, name ) {
+function HbSetting( brand_new, type, id, name, price_season ) {	
+	debugger;
 	this.brand_new = brand_new;
 	this.saving = ko.observable( false );
 	this.deleting = ko.observable( false );
 	this.adding_child = ko.observable( false );
 	this.type = type;
 	this.id = id;
+	this.price_season = price_season ;
 	if ( name ) {
 		this.name = ko.observable( name );
 	} else {
 		this.name = ko.observable( '' );
 	}
+
+
 	var self = this;
 	this.save_text = ko.computed( function() {
 		if ( self.saving() ) {
@@ -94,6 +98,7 @@ function HbSeasons( seasons, all_seasons ) {
 	} else {
 		this.seasons = ko.observableArray();
 	}
+	console.log("seasons => " + this.seasons);
 
 	if ( typeof all_seasons == 'string' ) { // wp-localize-script turns all values to string
 		all_seasons = parseInt( all_seasons );
@@ -155,6 +160,7 @@ function HbSettings() {
 	var saved_setting = null;
 
 	this.selected_setting = ko.observable( false );
+	this.price_season = null;
 
 	this.settings = [];
 
@@ -202,12 +208,13 @@ function HbSettings() {
 	this.discount_template_to_use = function( setting ) {
 		return self.selected_setting() === setting ? 'discount_edit_tmpl' : 'discount_text_tmpl';
 	}
-
+ 
 	this.coupon_template_to_use = function( setting ) {
 		return self.selected_setting() === setting ? 'coupon_edit_tmpl' : 'coupon_text_tmpl';
 	}
 
 	this.create_setting = function( setting, add_to_observable, spinner_class ) {
+		
 		if ( spinner_class ) {
 			spinner_class = '.' + spinner_class;
 		} else {
@@ -216,7 +223,8 @@ function HbSettings() {
 		jQuery( '.hb-add-new.spinner' + spinner_class ).css( 'visibility', 'visible' );
 		ajax_update_db( 'create', setting, function( id ) {
 			jQuery( '.hb-add-new.spinner' ).css( 'visibility', 'hidden' );
-			setting.id = id.trim();
+			setting.id = id.trim();		
+			setting.price_season = setting.price_season;
 			add_to_observable( setting );
 			self.edit_setting( setting );
 			jQuery( '.add-new-h2, .add-new-below' ).blur();
@@ -240,13 +248,16 @@ function HbSettings() {
 	}
 
 	this.save_setting = function( setting ) {
+		
 		if ( typeof setting.is_valid == 'function' ) {
 			if ( ! setting.is_valid( setting ) ) {
 				return;
 			}
 		}
 		setting.saving( true );
-		ajax_update_db( 'update', setting, function() {
+		ajax_update_db( 'update', setting, function() {			
+			self.price_season= setting.price_season;
+			debugger;
 			setting.saving( false );
 			saved_setting = null;
 			saved_js = null;
@@ -278,6 +289,7 @@ function HbSettings() {
 	}
 
 	function ajax_update_db( action, object, callback_function_ok, callback_function_error ) {
+		
 		jQuery.ajax({
 			url: ajaxurl,
 			type: 'POST',

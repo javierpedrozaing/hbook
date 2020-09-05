@@ -69,7 +69,7 @@ class HbAdminPage {
 		if ( $seasons ) {			
 			$fields_options = '';
 			foreach ( $seasons as $tmp_id => $tmp_label ) {
-				$fields_options .= '<option value="' . $tmp_label['id'] . '">' . $tmp_label['name']. '</option>';
+				$fields_options .= '<option value="' . $tmp_label['price_season'] . '">' . $tmp_label['name']. '</option>';
 			}
 		?>
 			<select class="hb-form-field-select" data-bind="value: hb_temporadas">

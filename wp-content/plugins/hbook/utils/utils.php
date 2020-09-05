@@ -1328,7 +1328,7 @@ class HbUtils {
 		return $price_before_included_fees;
 	}
 
-	public function calculate_options_price( $adults, $children, $nb_nights, $options, $include_fee ) {
+	public function calculate_options_price( $adults, $children, $nb_nights, $options, $include_fee ) { 
 		$tmp_options = array();
 		foreach ( $options as $option ) {
 			if ( $option['choice_type'] == 'single' ) {

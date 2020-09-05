@@ -6,15 +6,19 @@ function date_to_str( date ) {
 	}
 }
 
-function Season( brand_new, id, name, dates, costo ) {
-	HbSetting.call( this, brand_new, 'season', id, name, costo );
+function Season( brand_new, id, name, dates, price_season ) {
+	
+	HbSetting.call( this, brand_new, 'season', id, name, price_season );
 	this.dates = ko.observableArray( dates );
-	this.costo = 0.0;
+	this.price_season =price_season;
+	
 	var self = this;
 
-	this.revert = function( season ) {
+	this.revert = function( season ) {		
 		if ( season ) {
+			
 			self.name( season.name );
+			self.price_season(season.price_season);
 		}
 	}
 
@@ -41,9 +45,6 @@ function SeasonDates( brand_new, id, season_id, start_date, end_date, days ) {
 		return date_to_str( self.end_date() );
 	});
 
-	this.costo = ko.computed( function() {
-		return '0.0';
-	});
 
 	this.days_list = ko.computed( function() {
 		var days = self.days();
@@ -94,17 +95,25 @@ function SeasonsViewModel() {
 		for ( var j = 0; j < seasons[i].dates.length; j++ ) {
 			observable_dates.push( new SeasonDates( false, seasons[i].dates[j].id, seasons[i].dates[j].season_id, seasons[i].dates[j].start_date, seasons[i].dates[j].end_date, seasons[i].dates[j].days) );
 		}
-		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates, seasons[i].costo ) );
+		console.log("price season => " + seasons[i].price_season);
+		console.log("name season => " + seasons[i].name);
+		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates, seasons[i].price_season ) );
+
 	}
 
-	this.seasons = ko.observableArray( observable_seasons );
-
+	this.seasons = ko.observableArray( observable_seasons );	
+	
 	ko.utils.extend( this, new HbSettings() );
 
 	this.create_season = function() {
-		var new_season = new Season( true, 0, hb_text.new_season, [], 0.0 );
+		
+		var new_season = new Season( true, 0, hb_text.new_season_name, [], price_season );
+		
 		self.create_setting( new_season, function( new_season ) {
+			debugger;
+			this.price_season = new_season.price_season;
 			self.seasons.push( new_season );
+			
 		});
 	}
 

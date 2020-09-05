@@ -257,6 +257,7 @@ function hb_update_accommodations_from_CPT() {
 	$get_accommodations = get_all_current_accommodations();
 	
 	$table_name = $wpdb->prefix . 'hb_accommodations';		
+	
 	$get_ids = function($accom){
 		return $accom->ID;
 	};
@@ -294,7 +295,7 @@ function hb_update_accommodations_from_CPT() {
 		$new_id_accom[] = hb_insert_accommodations_from_CPT($get_accommodations['posts'], $get_relation_in_custom_table);		
 	}
 
-	var_dump($new_id_accom);
+	//var_dump($new_id_accom);
 	
 }
 
@@ -320,7 +321,8 @@ function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom
 	} else {
 		foreach ($post_type_accom as $key => $accom) {
 			//echo get_post_meta($get_accommodations['posts'][$key]->ID, 'accom_quantity', true);exit;
-			$accommodations = array(								
+			$accommodations = array(			
+				'id' => $accom->ID,					
 				'quantity' => get_post_meta($accom->ID, 'accom_quantity', true),			
 				'occupancy' => get_post_meta($accom->ID, 'accom_occupancy', true),
 				'max_occupancy' => get_post_meta($accom->ID, 'accom_max_occupancy', true),
@@ -334,7 +336,7 @@ function hb_insert_accommodations_from_CPT($post_type_accom, $custom_table_accom
 				'name' => $accom->post_title, 	
 			);	
 		
-			$format = array('%d','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%d');
+			$format = array('%d','%d','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s');
 			$new_id_accom[] = $wpdb->insert($table_name,$accommodations, $format);			
 		}
 	}

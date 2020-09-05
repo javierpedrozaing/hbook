@@ -507,7 +507,7 @@ class HbOptionsForm {
 
 	private function get_options_form_markup( $adults, $children, $nb_nights, $is_admin, $chosen_options ) {
 		
-		$output = '<form class="hb-options-form">';
+		$output = '<form class="hb-options-form">'; 
 
 		if ( $is_admin ) {
 			$output .= '<p class="hb-admin-add-resa-section-title">';
