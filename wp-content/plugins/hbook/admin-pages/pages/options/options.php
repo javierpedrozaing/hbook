@@ -117,7 +117,7 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-accom" data-bind="text: accom_list"></div>
 
-				<div class="hb-table-data hb-table-data-accom" data-bind="text: hb_temporadas[0].option_text"></div>
+				<div class="hb-table-data hb-table-data-accom" data-bind="text: hb_temporadas[0]['option_text']"></div>
 			
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option' ); ?></div>
 

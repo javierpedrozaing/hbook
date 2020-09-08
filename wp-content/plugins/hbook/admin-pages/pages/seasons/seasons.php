@@ -5,9 +5,10 @@ class HbAdminPageSeasons extends HbAdminPage {
 		$this->data = array(
 			'hb_text' => array(
 				'new_season_name' => "Nueva temporada",								
+				'price_season' => "Precio",
 				'no_days_selected' => esc_html__( 'No days selected', 'hbook-admin' ),
 			),			
-			'price_season' => "Precio",
+			
 			'days_short_name' => $utils->days_short_name(),
 			'seasons' => $hbdb->get_all_seasons_with_dates()
 		);
@@ -50,7 +51,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="text_tmpl" type="text/html">
 				<div class="hb-table-row hb-clearfix">
 					<div class="hb-table-data" data-bind="text: name"></div>
-					<div class="hb-table-data" data-bind="text: price_season"></div>					
+					<div class="hb-table-data" data-bind="value: price_season"></div>					
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
@@ -63,7 +64,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="edit_tmpl" type="text/html">
 				<div class="hb-table-row hb-clearfix">
 					<div class="hb-table-data"><input data-bind="value: name" type="text" /></div>
-					<div class="hb-table-data"><input  data-bind="value: price_season" type="text" /></div>
+					<div class="hb-table-data"><input data-bind="value: price_season" type="text" /></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
 					<div class="hb-table-data"></div>
@@ -75,7 +76,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 			<script id="child_text_tmpl" type="text/html">
 				<div class="hb-season-dates-row hb-clearfix">
 					<div class="hb-table-data"></div>
-					<div class="hb-table-data"></div>
+					<div class="hb-table-data" data-bind="value: price_season"></div>
 					<div class="hb-table-data" data-bind="text: start_date_text"></div>
 					<div class="hb-table-data" data-bind="text: end_date_text"></div>
 					<div class="hb-table-data" data-bind="text: days_list"></div>

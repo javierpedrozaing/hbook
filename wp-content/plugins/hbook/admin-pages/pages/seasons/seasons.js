@@ -10,15 +10,14 @@ function Season( brand_new, id, name, dates, price_season ) {
 	
 	HbSetting.call( this, brand_new, 'season', id, name, price_season );
 	this.dates = ko.observableArray( dates );
-	this.price_season =price_season;
-	
+	this.price_season = ko.observable(price_season);
+		
 	var self = this;
 
 	this.revert = function( season ) {		
-		if ( season ) {
-			
-			self.name( season.name );
-			self.price_season(season.price_season);
+		if ( season ) {			
+			self.name( season.name );			
+			self.price_season( season.price_season );
 		}
 	}
 
@@ -107,11 +106,10 @@ function SeasonsViewModel() {
 
 	this.create_season = function() {
 		
-		var new_season = new Season( true, 0, hb_text.new_season_name, [], price_season );
+		var new_season = new Season( true, 0, hb_text.new_season_name, [], hb_text.price_season );
 		
-		self.create_setting( new_season, function( new_season ) {
-			debugger;
-			this.price_season = new_season.price_season;
+		self.create_setting( new_season, function( new_season ) {			
+			//this.price_season = new_season.price_season;
 			self.seasons.push( new_season );
 			
 		});

@@ -1,5 +1,4 @@
-function HbSetting( brand_new, type, id, name, price_season ) {	
-	debugger;
+function HbSetting( brand_new, type, id, name, price_season ) {		
 	this.brand_new = brand_new;
 	this.saving = ko.observable( false );
 	this.deleting = ko.observable( false );
@@ -256,8 +255,7 @@ function HbSettings() {
 		}
 		setting.saving( true );
 		ajax_update_db( 'update', setting, function() {			
-			self.price_season= setting.price_season;
-			debugger;
+			self.price_season= setting.price_season;			
 			setting.saving( false );
 			saved_setting = null;
 			saved_js = null;
