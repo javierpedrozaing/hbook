@@ -6,7 +6,7 @@ function OptionsAndFees( brand_new, type, id, name, amount, amount_children, app
 	this.apply_to_type = ko.observable( apply_to_type );
 	this.temporada = ko.observable( temporada );
 	
-	var self = this;
+	var self = this; 
 	this.amount_text = ko.computed( function() {
 		amount = self.amount();
 		amount_children = self.amount_children();
@@ -53,13 +53,7 @@ function OptionsAndFees( brand_new, type, id, name, amount, amount_children, app
 		}
 	});
 
-	this.apply_temporada_text = ko.computed( function() {
-		for ( var i = 0; i < hb_temporadas.length; i++ ) {
-			if ( hb_temporadas[i]['option_value'] == self.temporada() ) {
-				return hb_temporadas[i]['option_text'];
-			}
-		}
-	});
+
 
 	this.is_valid = function( setting ) {
 		if ( setting ) {

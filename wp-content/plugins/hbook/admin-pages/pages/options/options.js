@@ -8,12 +8,35 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 	this.showPriceSeason1 = ko.observable(false);
 	this.showPriceSeason2 = ko.observable(false);
 	this.showPriceSeason3 = ko.observable(false);	
-
+	this.temporada = ko.observable(temporada);
 	this.price_season_1 = ko.observable(price_season_1);
 	this.price_season_2 = ko.observable(price_season_2);
 	this.price_season_3 = ko.observable(price_season_3);
+
+
 	var self = this;
 
+	this.apply_temporada_text = ko.computed( function() {
+		let price = "";
+		for ( var i = 0; i < hb_temporadas.length; i++ ) {
+			if ( hb_temporadas[i]['option_value'] == self.temporada() ) {
+				if (self.temporada() == 'temporada_1') {
+					price = self.price_season_1()	
+				}
+				return hb_temporadas[i]['option_text'] + " (" +  (price) + "€ )";
+			}
+		}
+	});
+	
+	this.precio_temporada =  ko.computed( function() {
+		if ( self.temporada() == 'temporada_1' ) {
+			return this.price_season_1;
+		} else if (  self.temporada() == 'temporada_2'  ) {
+			return this.price_season_2;
+		} else if ( self.temporada() == 'temporada_3' ){
+			return this.price_season_3;
+		}
+	});
 
 	this.choice_type_text = ko.computed( function() {
 		if ( self.apply_to_type() == 'quantity' || self.apply_to_type() == 'quantity-per-day' ) {
@@ -56,7 +79,9 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 			default:
 				break;
 		}
-		
+		for ( var i = 0; i < self.choices().length; i++ ) {
+			self.choices()[ i ].temporada( new_value );
+		}
 	}, this);
 
 	
@@ -156,7 +181,7 @@ function OptionsViewModel() {
 	}
 
 	this.create_option_choice = function( option ) {
-		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person' );
+		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person', '', '', ''  );
 		self.create_child_setting( option, new_option_choice, function( new_option_choice ) {
 			option.choices.push( new_option_choice );
 		});
