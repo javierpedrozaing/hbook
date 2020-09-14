@@ -1,9 +1,11 @@
-function OptionsAndFees( brand_new, type, id, name, amount, amount_children, apply_to_type, accom, all_accom ) {
+function OptionsAndFees( brand_new, type, id, name, amount, amount_children, apply_to_type, accom, all_accom, temporada) {
 	HbSetting.call(this, brand_new, type, id, name);
 	Accom.call( this, accom, all_accom );
 	this.amount = ko.observable( amount );
 	this.amount_children = ko.observable( amount_children );
 	this.apply_to_type = ko.observable( apply_to_type );
+	this.temporada = ko.observable( temporada );
+	
 	var self = this;
 	this.amount_text = ko.computed( function() {
 		amount = self.amount();
@@ -50,6 +52,15 @@ function OptionsAndFees( brand_new, type, id, name, amount, amount_children, app
 			}
 		}
 	});
+
+	this.apply_temporada_text = ko.computed( function() {
+		for ( var i = 0; i < hb_temporadas.length; i++ ) {
+			if ( hb_temporadas[i]['option_value'] == self.temporada() ) {
+				return hb_temporadas[i]['option_text'];
+			}
+		}
+	});
+
 	this.is_valid = function( setting ) {
 		if ( setting ) {
 			return hb_is_valid_price( setting.amount() );

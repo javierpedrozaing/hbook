@@ -1,11 +1,10 @@
-function HbSetting( brand_new, type, id, name, price_season ) {		
+function HbSetting( brand_new, type, id, name ) {		
 	this.brand_new = brand_new;
 	this.saving = ko.observable( false );
 	this.deleting = ko.observable( false );
 	this.adding_child = ko.observable( false );
 	this.type = type;
-	this.id = id;
-	this.price_season = price_season ;
+	this.id = id;	
 	if ( name ) {
 		this.name = ko.observable( name );
 	} else {
@@ -254,8 +253,13 @@ function HbSettings() {
 			}
 		}
 		setting.saving( true );
+		
 		ajax_update_db( 'update', setting, function() {			
-			self.price_season= setting.price_season;			
+			self.price_season= setting.price_season;
+			self.priceSeason1= setting.priceSeason1;
+			self.priceSeason2= setting.priceSeason2;
+			self.priceSeason3= setting.priceSeason3;
+			
 			setting.saving( false );
 			saved_setting = null;
 			saved_js = null;
@@ -287,7 +291,7 @@ function HbSettings() {
 	}
 
 	function ajax_update_db( action, object, callback_function_ok, callback_function_error ) {
-		
+		debugger;
 		jQuery.ajax({
 			url: ajaxurl,
 			type: 'POST',
@@ -298,6 +302,7 @@ function HbSettings() {
 				'nonce': jQuery( '#hb_nonce_update_db' ).val(),
 				'object': object,
 			},
+			
 			success: function( ajax_return ) {
 				if ( jQuery.isNumeric( ajax_return ) ) {
 					callback_function_ok( ajax_return );

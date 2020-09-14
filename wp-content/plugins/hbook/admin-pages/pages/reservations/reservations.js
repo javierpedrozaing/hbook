@@ -120,7 +120,7 @@ jQuery( document ).ready( function( $ ) {
 			if ( $( this ).hasClass( 'hb-option-accom-' + accom_id ) ) {
 				if ( $( this ).hasClass( 'hb-quantity-option' ) ) {
 					if ( $( this ).find( 'input' ).val() < 0 ) {
-						$( this ).find( 'input' ).val( 0 );
+		 				$( this ).find( 'input' ).val( 0 );
 					}
 					options_price += parseFloat( $( this ).find( 'input' ).data( 'price' ) * $( this ).find( 'input' ).val() );
 				} else if ( $( this ).hasClass( 'hb-multiple-option' ) && $( this ).find( 'input:checked' ).length ) {

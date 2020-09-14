@@ -44,13 +44,22 @@ class HbAdminPageOptions extends HbAdminPage {
 			),
 			'hb_temporadas' => array(
 				array(
-					'option_value' => 'temporada-alta',
-					'option_text' => esc_html__( 'Temporada Alta', 'hbook-admin' )
+					'option_value' => 'Selecciona temporada',
+					'option_text' => esc_html__( 'Selecciona temporada', 'hbook-admin' )
 				),
 				array(
-					'option_value' => 'temporada-baja',
+					'option_value' => 'temporada_1',
 					'option_text' => esc_html__( 'Temporada Baja', 'hbook-admin' )
 				),
+				array(
+					'option_value' => 'temporada_2',
+					'option_text' => esc_html__( 'Temporada Media', 'hbook-admin' )
+				),
+				array(
+					'option_value' => 'temporada_3',
+					'option_text' => esc_html__( 'Temporada Alta', 'hbook-admin' )
+				),
+				
 			),
 			'hb_price_precision' => get_option('hb_price_precision' ),
 		);
@@ -117,7 +126,7 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-accom" data-bind="text: accom_list"></div>
 
-				<div class="hb-table-data hb-table-data-accom" data-bind="text: hb_temporadas[0]['option_text']"></div>
+				<div class="hb-table-data" data-bind="html: apply_temporada_text"></div>
 			
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option' ); ?></div>
 
@@ -195,8 +204,29 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<!-- APPLY SELECT TEMPORADA -->
 				<div class="hb-table-data">
-				<?php $this->display_temporadas( $this->seasons ); ?>				
+				<select
+						data-bind="
+							options: hb_temporadas,
+							optionsValue: 'option_value',
+							optionsText: function( item ) {
+								return hb_decode_entities( item.option_text );
+							},
+							value: temporada
+						"
+				></select>			
+
+				<div data-bind="visible: showPriceSeason1">
+					<input type="text" name="temporada_1" placeholder="Precio temporada Baja" data-bind="value: price_season_1">	
 				</div>
+				<div data-bind="visible: showPriceSeason2">
+					<input type="text" name="temporada_2" placeholder="Precio temporada Media" data-bind="value: price_season_2">	
+				</div>
+				<div data-bind="visible: showPriceSeason3">
+					<input type="text" name="temporada_3" placeholder="Precio temporada Alta" data-bind="value: price_season_3">	
+				</div>
+				
+				</div>
+				
 				<!-- END SELECT TEMPORADA -->
 
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_on_edit_action( 'option' ); ?></div>

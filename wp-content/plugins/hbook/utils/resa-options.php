@@ -558,7 +558,7 @@ class HbOptionsForm {
 				$checked = '';
 				if ( isset( $chosen_options[ $option['id'] ] ) ) {
 					$checked = 'checked';
-				}
+				} 
 				$output_options_single .= '
 					<div class="hb-single-option' . $option_classes . '">
 						<span class="hb-checkbox-wrapper">

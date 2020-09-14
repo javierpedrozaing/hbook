@@ -6,18 +6,16 @@ function date_to_str( date ) {
 	}
 }
 
-function Season( brand_new, id, name, dates, price_season ) {
+function Season( brand_new, id, name, dates ) {
 	
-	HbSetting.call( this, brand_new, 'season', id, name, price_season );
-	this.dates = ko.observableArray( dates );
-	this.price_season = ko.observable(price_season);
+	HbSetting.call( this, brand_new, 'season', id, name );
+	this.dates = ko.observableArray( dates );	
 		
 	var self = this;
 
 	this.revert = function( season ) {		
 		if ( season ) {			
-			self.name( season.name );			
-			self.price_season( season.price_season );
+			self.name( season.name );						
 		}
 	}
 
@@ -94,9 +92,8 @@ function SeasonsViewModel() {
 		for ( var j = 0; j < seasons[i].dates.length; j++ ) {
 			observable_dates.push( new SeasonDates( false, seasons[i].dates[j].id, seasons[i].dates[j].season_id, seasons[i].dates[j].start_date, seasons[i].dates[j].end_date, seasons[i].dates[j].days) );
 		}
-		console.log("price season => " + seasons[i].price_season);
-		console.log("name season => " + seasons[i].name);
-		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates, seasons[i].price_season ) );
+		
+		observable_seasons.push( new Season( false, seasons[i].id, seasons[i].name, observable_dates ) );
 
 	}
 
@@ -106,7 +103,7 @@ function SeasonsViewModel() {
 
 	this.create_season = function() {
 		
-		var new_season = new Season( true, 0, hb_text.new_season_name, [], hb_text.price_season );
+		var new_season = new Season( true, 0, hb_text.new_season_name, []);
 		
 		self.create_setting( new_season, function( new_season ) {			
 			//this.price_season = new_season.price_season;

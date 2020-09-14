@@ -72,7 +72,7 @@ class HbAdminPage {
 				$fields_options .= '<option value="' . $tmp_label['price_season'] . '">' . $tmp_label['name']. '</option>';
 			}
 		?>
-			<select class="hb-form-field-select" data-bind="value: hb_temporadas">
+			<select class="hb-form-field-select" data-bind="value: temporada">
 				<?php echo( $fields_options ); ?>
 			</select>		
 		
