@@ -248,22 +248,22 @@ function HbSettings() {
 	this.save_setting = function( setting ) {
 		debugger;
 
-		switch (setting.temporada()) {
-			case 'temporada_1':				
-				setting.price_season_2(0);
-				setting.price_season_3(0);
- 				break;
-			case 'temporada_2':
-			setting.price_season_1(0);
-			setting.price_season_3(0);
-				break;
-			case 'temporada_3':
-			setting.price_season_1(0);
-			setting.price_season_2(0);
-				break;
-			default:
-				break;
-		}
+		// switch (setting.temporada()) {
+		// 	case 'temporada_1':				
+		// 		setting.price_season_2(0);
+		// 		setting.price_season_3(0);
+ 		// 		break;
+		// 	case 'temporada_2':
+		// 	setting.price_season_1(0);
+		// 	setting.price_season_3(0);
+		// 		break;
+		// 	case 'temporada_3':
+		// 	setting.price_season_1(0);
+		// 	setting.price_season_2(0);
+		// 		break;
+		// 	default:
+		// 		break;
+		// }
 
 		if ( typeof setting.is_valid == 'function' ) {
 			if ( ! setting.is_valid( setting ) ) {

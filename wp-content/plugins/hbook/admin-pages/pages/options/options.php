@@ -93,7 +93,7 @@ class HbAdminPageOptions extends HbAdminPage {
 				<div class="hb-table-head-data"><?php esc_html_e( 'Type', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'Amount', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data hb-table-data-accom"><?php esc_html_e( 'Accommodation', 'hbook-admin' ); ?></div>
-				<div class="hb-table-head-data hb-table-data-accom"><?php esc_html_e( 'Temporadas', 'hbook-admin' ); ?></div>
+				<div class="hb-table-head-data hb-table-data-accom"><?php esc_html_e( 'Temporada (Price)', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data hb-table-head-data-action"><?php esc_html_e( 'Actions', 'hbook-admin' ); ?></div>
 			</div>
 
@@ -126,7 +126,8 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<div class="hb-table-data hb-table-data-accom" data-bind="text: accom_list"></div>
 
-				<div class="hb-table-data" data-bind="html: apply_temporada_text"></div>
+				<div class="hb-table-data" data-bind="text: precio_temporada"></div>
+				
 			
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option' ); ?></div>
 
@@ -214,14 +215,8 @@ class HbAdminPageOptions extends HbAdminPage {
 				></select>			 -->
 				<?php $this->display_temporadas($this->seasons); ?>
 				<div data-bind="visible: showPriceSeason1">
-					<input type="text" name="temporada_1" placeholder="Precio temporada Baja" data-bind="value: price_season_1">	
-				</div>
-				<div data-bind="visible: showPriceSeason2">
-					<input type="text" name="temporada_2" placeholder="Precio temporada Media" data-bind="value: price_season_2">	
-				</div>
-				<div data-bind="visible: showPriceSeason3">
-					<input type="text" name="temporada_3" placeholder="Precio temporada Alta" data-bind="value: price_season_3">	
-				</div>
+					<input type="text" name="price_season" placeholder="Precio temporada" data-bind="value: price_season">	
+				</div>			
 				
 				</div>
 				

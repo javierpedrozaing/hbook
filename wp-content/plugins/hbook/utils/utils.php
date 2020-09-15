@@ -1352,15 +1352,15 @@ class HbUtils {
 		$price_options = array();
 		foreach ( $options as $option_id => $option ) {
 			if ( $option['apply_to_type'] == 'quantity' || $option['apply_to_type'] == 'per-accom' ) {
-				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $extras_fees_rate  +  $option['price_season_1'] +  $option['price_season_2'] +  $option['price_season_3']);
+				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $extras_fees_rate  +  $option['price_season']);
 			} else if ( $option['apply_to_type'] == 'quantity-per-day' ) {
-				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $nb_nights * $extras_fees_rate +  $option['price_season_1'] +  $option['price_season_2'] +  $option['price_season_3']);
+				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $nb_nights * $extras_fees_rate +  $option['price_season']);
 			} else if ( $option['apply_to_type'] == 'per-person' ) {
-				$price_options[ $option_id ] = $this->round_price( ( $option['amount'] * $adults + $option['amount_children'] * $children) * $extras_fees_rate  +  $option['price_season_1'] +  $option['price_season_2'] +  $option['price_season_3'] );
+				$price_options[ $option_id ] = $this->round_price( ( $option['amount'] * $adults + $option['amount_children'] * $children) * $extras_fees_rate  +  $option['price_season'] );
 			} else if ( $option['apply_to_type'] == 'per-accom-per-day' ) {
-				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $nb_nights * $extras_fees_rate +  $option['price_season_1'] +  $option['price_season_2'] +  $option['price_season_3'] );
+				$price_options[ $option_id ] = $this->round_price( $option['amount'] * $nb_nights * $extras_fees_rate +  $option['price_season'] );
 			} else if ( $option['apply_to_type'] == 'per-person-per-day' ) {
-				$price_options[ $option_id ] = $this->round_price( ( $option['amount'] * $adults + $option['amount_children'] * $children ) * $nb_nights * $extras_fees_rate  +  $option['price_season_1'] +  $option['price_season_2'] +  $option['price_season_3'] );
+				$price_options[ $option_id ] = $this->round_price( ( $option['amount'] * $adults + $option['amount_children'] * $children ) * $nb_nights * $extras_fees_rate  +  $option['price_season'] );
 			}
 		}
 

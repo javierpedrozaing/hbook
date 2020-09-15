@@ -1,45 +1,21 @@
-function Option( brand_new, id, name, amount, amount_children, apply_to_type, choice_type, choices, accom, all_accom, quantity_max_option, quantity_max, quantity_max_child,  price_season_1, price_season_2, price_season_3, temporada) {
-	OptionsAndFees.call( this, brand_new, 'option', id, name, amount, amount_children, apply_to_type, accom, all_accom, price_season_1, price_season_2, price_season_3, temporada);
+function Option( brand_new, id, name, amount, amount_children, apply_to_type, choice_type, choices, accom, all_accom, quantity_max_option, quantity_max, quantity_max_child,  price_season, temporada) {
+	OptionsAndFees.call( this, brand_new, 'option', id, name, amount, amount_children, apply_to_type, accom, all_accom, price_season, temporada);
 	this.choice_type = ko.observable( choice_type );
 	this.choices = ko.observableArray( choices );
 	this.quantity_max_option = ko.observable( quantity_max_option );
 	this.quantity_max = ko.observable( quantity_max );
 	this.quantity_max_child = ko.observable( quantity_max_child );	
-	this.showPriceSeason1 = ko.observable(false);
-	this.showPriceSeason2 = ko.observable(false);
-	this.showPriceSeason3 = ko.observable(false);	
+	this.showPriceSeason1 = ko.observable(true);
+	// this.showPriceSeason2 = ko.observable(false);
+	// this.showPriceSeason3 = ko.observable(false);	
 	this.temporada = ko.observable(temporada);	
-	this.price_season_1 = ko.observable(price_season_1);
-	this.price_season_2 = ko.observable(price_season_2);
-	this.price_season_3 = ko.observable(price_season_3);
+	this.price_season = ko.observable(price_season);	
 
 
 	var self = this;
 
-	this.apply_temporada_text = ko.computed( function() {
-		let price = "";
-		for ( var i = 0; i < hb_temporadas.length; i++ ) {
-			if ( hb_temporadas[i]['option_value'] == self.temporada() ) {
-				if (self.temporada() == 'temporada_1') {
-					price = self.price_season_1()	
-				} else if (self.temporada() == 'temporada_2') {
-					price = self.price_season_2()	
-				} else if (self.temporada() == 'temporada_3') {
-					price = self.price_season_3()	
-				}
-				return hb_temporadas[i]['option_text'] + " (" +  (price) + "€ )";
-			}
-		}
-	});
-	
 	this.precio_temporada =  ko.computed( function() {
-		if ( self.temporada() == 'temporada_1' ) {
-			return this.price_season_1;
-		} else if (  self.temporada() == 'temporada_2'  ) {
-			return this.price_season_2;
-		} else if ( self.temporada() == 'temporada_3' ){
-			return this.price_season_3;
-		}
+		return self.temporada() + " (" + self.price_season() + " €)";
 	});
 
 	this.choice_type_text = ko.computed( function() {
@@ -61,34 +37,35 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 		}
 	}, this);
 
-
-	this.temporada.subscribe( function( new_value ) {	
-		this.choice_type( 'single' );			
-		switch (new_value) {
-			case 'temporada_1':
-				this.showPriceSeason1(true);
-				this.showPriceSeason2(false);
-				this.showPriceSeason3(false);
-				break;
-			case 'temporada_2':
-				this.showPriceSeason1(false);
-				this.showPriceSeason3(false);
-				this.showPriceSeason2(true);
-				break;
-			case 'temporada_3':
-				this.showPriceSeason1(false);
-				this.showPriceSeason2(false);
-				this.showPriceSeason3(true);
-				break;
-		
-			default:
-				break;
-		}
-		for ( var i = 0; i < self.choices().length; i++ ) {
-			self.choices()[ i ].temporada( new_value );
-		}
 	
-	}, this);
+
+	// this.temporada.subscribe( function( new_value ) {	
+	// 	this.choice_type( 'single' );			
+	// 	switch (new_value) {
+	// 		case 'temporada_1':
+	// 			this.showPriceSeason1(true);
+	// 			this.showPriceSeason2(false);
+	// 			this.showPriceSeason3(false);
+	// 			break;
+	// 		case 'temporada_2':
+	// 			this.showPriceSeason1(false);
+	// 			this.showPriceSeason3(false);
+	// 			this.showPriceSeason2(true);
+	// 			break;
+	// 		case 'temporada_3':
+	// 			this.showPriceSeason1(false);
+	// 			this.showPriceSeason2(false);
+	// 			this.showPriceSeason3(true);
+	// 			break;
+		
+	// 		default:
+	// 			break;
+	// 	}
+	// 	for ( var i = 0; i < self.choices().length; i++ ) {
+	// 		self.choices()[ i ].temporada( new_value );
+	// 	}
+	
+	// }, this);
 
 	
 	this.revert = function( option ) {		
@@ -103,17 +80,15 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 			self.quantity_max_option( option.quantity_max_option );
 			self.quantity_max( option.quantity_max );
 			self.quantity_max_child( option.quantity_max_child );
-			self.price_season_1(option.price_season_1);
-			self.price_season_2(option.price_season_2);
-			self.price_season_3(option.price_season_3);
+			self.price_season(option.price_season);			
 			self.temporada( option.temporada );
 		}
 	}
 
 }
 
-function OptionChoice( brand_new, id, option_id, name, amount, amount_children, apply_to_type, price_season_1, price_season_2, price_season_3, temporada ) {
-	OptionsAndFees.call( this, brand_new, 'option_choice', id, name, amount, amount_children, apply_to_type, price_season_1, price_season_2, price_season_3, temporada );
+function OptionChoice( brand_new, id, option_id, name, amount, amount_children, apply_to_type, price_season, temporada ) {
+	OptionsAndFees.call( this, brand_new, 'option_choice', id, name, amount, amount_children, apply_to_type, price_season, temporada );
 	this.option_id = option_id;
 
 	var self = this;
@@ -146,9 +121,7 @@ function OptionsViewModel() {
 					options[i].choices[j].amount,
 					options[i].choices[j].amount_children,
 					options[i].apply_to_type,					
-					options[i].price_season_1,
-					options[i].price_season_2,
-					options[i].price_season_3,
+					options[i].price_season,					
 					options[i].temporada,
 				)
 			);
@@ -168,9 +141,7 @@ function OptionsViewModel() {
 				options[i].quantity_max_option,
 				options[i].quantity_max,
 				options[i].quantity_max_child,						
-				options[i].price_season_1,
-				options[i].price_season_2,
-				options[i].price_season_3,				
+				options[i].price_season,					
 				options[i].temporada,
 			)
 
@@ -181,14 +152,14 @@ function OptionsViewModel() {
 
 	this.options = ko.observableArray( observable_options );
 	this.create_option = function() {
-		var new_option = new Option( true, 0, hb_text.new_option, '0', '0', 'per-person', 'single', [], '', true, 'no', 0, 0, '' , '', '', '' );
+		var new_option = new Option( true, 0, hb_text.new_option, '0', '0', 'per-person', 'single', [], '', true, 'no', 0, 0, '' ,  '' );
 		self.create_setting( new_option, function( new_option ) {
 			self.options.push( new_option );
 		});
 	}
 
 	this.create_option_choice = function( option ) {
-		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person', '', '', '', ''  );
+		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person',  '', ''  );
 		self.create_child_setting( option, new_option_choice, function( new_option_choice ) {
 			option.choices.push( new_option_choice );
 		});
