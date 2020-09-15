@@ -1,5 +1,5 @@
-function Option( brand_new, id, name, amount, amount_children, apply_to_type, choice_type, choices, accom, all_accom, quantity_max_option, quantity_max, quantity_max_child, temporada, price_season_1, price_season_2, price_season_3) {
-	OptionsAndFees.call( this, brand_new, 'option', id, name, amount, amount_children, apply_to_type, accom, all_accom, temporada, price_season_1, price_season_2, price_season_3);
+function Option( brand_new, id, name, amount, amount_children, apply_to_type, choice_type, choices, accom, all_accom, quantity_max_option, quantity_max, quantity_max_child,  price_season_1, price_season_2, price_season_3, temporada) {
+	OptionsAndFees.call( this, brand_new, 'option', id, name, amount, amount_children, apply_to_type, accom, all_accom, price_season_1, price_season_2, price_season_3, temporada);
 	this.choice_type = ko.observable( choice_type );
 	this.choices = ko.observableArray( choices );
 	this.quantity_max_option = ko.observable( quantity_max_option );
@@ -8,7 +8,7 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 	this.showPriceSeason1 = ko.observable(false);
 	this.showPriceSeason2 = ko.observable(false);
 	this.showPriceSeason3 = ko.observable(false);	
-	this.temporada = ko.observable(temporada);
+	this.temporada = ko.observable(temporada);	
 	this.price_season_1 = ko.observable(price_season_1);
 	this.price_season_2 = ko.observable(price_season_2);
 	this.price_season_3 = ko.observable(price_season_3);
@@ -22,6 +22,10 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 			if ( hb_temporadas[i]['option_value'] == self.temporada() ) {
 				if (self.temporada() == 'temporada_1') {
 					price = self.price_season_1()	
+				} else if (self.temporada() == 'temporada_2') {
+					price = self.price_season_2()	
+				} else if (self.temporada() == 'temporada_3') {
+					price = self.price_season_3()	
 				}
 				return hb_temporadas[i]['option_text'] + " (" +  (price) + "€ )";
 			}
@@ -58,7 +62,8 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 	}, this);
 
 
-	this.temporada.subscribe( function( new_value ) {				
+	this.temporada.subscribe( function( new_value ) {	
+		this.choice_type( 'single' );			
 		switch (new_value) {
 			case 'temporada_1':
 				this.showPriceSeason1(true);
@@ -82,16 +87,16 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 		for ( var i = 0; i < self.choices().length; i++ ) {
 			self.choices()[ i ].temporada( new_value );
 		}
+	
 	}, this);
 
 	
-	this.revert = function( option ) {
+	this.revert = function( option ) {		
 		if ( option ) {
 			self.name( option.name );
 			self.amount( option.amount );
 			self.amount_children( option.amount_children );
-			self.apply_to_type( option.apply_to_type );
-			self.temporada( option.temporada );
+			self.apply_to_type( option.apply_to_type );			
 			self.choice_type( option.choice_type );
 			self.accom( option.accom );
 			self.all_accom( option.all_accom );
@@ -101,13 +106,14 @@ function Option( brand_new, id, name, amount, amount_children, apply_to_type, ch
 			self.price_season_1(option.price_season_1);
 			self.price_season_2(option.price_season_2);
 			self.price_season_3(option.price_season_3);
+			self.temporada( option.temporada );
 		}
 	}
 
 }
 
-function OptionChoice( brand_new, id, option_id, name, amount, amount_children, apply_to_type, temporada, price_season_1, price_season_2, price_season_3 ) {
-	OptionsAndFees.call( this, brand_new, 'option_choice', id, name, amount, amount_children, apply_to_type, temporada, price_season_1, price_season_2, price_season_3 );
+function OptionChoice( brand_new, id, option_id, name, amount, amount_children, apply_to_type, price_season_1, price_season_2, price_season_3, temporada ) {
+	OptionsAndFees.call( this, brand_new, 'option_choice', id, name, amount, amount_children, apply_to_type, price_season_1, price_season_2, price_season_3, temporada );
 	this.option_id = option_id;
 
 	var self = this;
@@ -116,7 +122,7 @@ function OptionChoice( brand_new, id, option_id, name, amount, amount_children, 
 		if ( option_choice ) {
 			self.name( option_choice.name );
 			self.amount( option_choice.amount );
-			self.amount_children( option_choice.amount_children );
+			self.amount_children( option_choice.amount_children );			
 		}
 	}
 
@@ -127,6 +133,7 @@ function OptionsViewModel() {
 	var self = this;
 
 	observable_options = [];
+	
 	for ( var i = 0; i < options.length; i++ ) {
 		var observable_option_choices = [];
 		for ( var j = 0; j < options[i].choices.length; j++ ) {
@@ -138,11 +145,11 @@ function OptionsViewModel() {
 					options[i].choices[j].name,
 					options[i].choices[j].amount,
 					options[i].choices[j].amount_children,
-					options[i].apply_to_type,
+					options[i].apply_to_type,					
+					options[i].price_season_1,
+					options[i].price_season_2,
+					options[i].price_season_3,
 					options[i].temporada,
-					options[i].price_season1,
-					options[i].price_season2,
-					options[i].price_season3
 				)
 			);
 		}
@@ -153,35 +160,35 @@ function OptionsViewModel() {
 				options[i].name,
 				options[i].amount,
 				options[i].amount_children,
-				options[i].apply_to_type,
-				options[i].choice_type,
+				options[i].apply_to_type,				
+				options[i].choice_type,									
 				observable_option_choices,
 				options[i].accom,
 				options[i].all_accom,
 				options[i].quantity_max_option,
 				options[i].quantity_max,
-				options[i].quantity_max_child,
+				options[i].quantity_max_child,						
+				options[i].price_season_1,
+				options[i].price_season_2,
+				options[i].price_season_3,				
 				options[i].temporada,
-				options[i].price_season1,
-				options[i].price_season2,
-				options[i].price_season3
 			)
+
 		);
 	}
 
 	ko.utils.extend( this, new HbSettings() );
 
 	this.options = ko.observableArray( observable_options );
-
 	this.create_option = function() {
-		var new_option = new Option( true, 0, hb_text.new_option, '0', '0', 'per-person', 'single', [], '', true, 'no', 0, 0, 'temporada_1', '', '', '' );
+		var new_option = new Option( true, 0, hb_text.new_option, '0', '0', 'per-person', 'single', [], '', true, 'no', 0, 0, '' , '', '', '' );
 		self.create_setting( new_option, function( new_option ) {
 			self.options.push( new_option );
 		});
 	}
 
 	this.create_option_choice = function( option ) {
-		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person', '', '', ''  );
+		var new_option_choice = new OptionChoice( true, 0, option.id, hb_text.new_option_choice, '0', '0', 'per-person', '', '', '', ''  );
 		self.create_child_setting( option, new_option_choice, function( new_option_choice ) {
 			option.choices.push( new_option_choice );
 		});

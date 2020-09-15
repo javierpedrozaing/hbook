@@ -38,7 +38,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 
 			<div class="hb-table-head hb-clearfix">
 				<div class="hb-table-head-data"><?php esc_html_e( 'Season name', 'hbook-admin' ); ?></div>
-				<div class="hb-table-head-data"><?php esc_html_e( 'Price season', 'hbook-admin' ); ?></div>
+				
 				<div class="hb-table-head-data"><?php esc_html_e( 'Start date', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'End date', 'hbook-admin' ); ?></div>
 				<div class="hb-table-head-data"><?php esc_html_e( 'Days', 'hbook-admin' ); ?></div>
@@ -82,8 +82,7 @@ class HbAdminPageSeasons extends HbAdminPage {
 
 			<script id="child_edit_tmpl" type="text/html">
 				<div class="hb-season-dates-row hb-clearfix">
-					<div class="hb-table-data"></div>
-					<div class="hb-table-data"></div>
+					<div class="hb-table-data"></div>					
 					<div class="hb-table-data"><input data-bind="value: start_date" class="hb-season-date hb-season-date-start" type="text" /></div>
 					<div class="hb-table-data"><input data-bind="value: end_date" class="hb-season-date hb-season-date-end" type="text" /></div>
 					<div class="hb-table-data"><?php $this->display_select_days( 'days' ); ?></div>

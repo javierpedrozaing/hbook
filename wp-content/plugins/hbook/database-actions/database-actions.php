@@ -217,7 +217,7 @@ class HbDataBaseActions {
 				break;
 
 			case 'option':
-				$default_columns = array( 'name', 'amount', 'amount_children', 'apply_to_type', 'choice_type', 'quantity_max_option', 'quantity_max', 'quantity_max_child',  'price_season_1', 'price_season_2', 'price_season_3' );
+				$default_columns = array( 'name', 'amount', 'amount_children', 'apply_to_type', 'choice_type', 'quantity_max_option', 'quantity_max', 'quantity_max_child',  'price_season_1', 'price_season_2', 'price_season_3', 'temporada' );
 				$boolean_columns = array( 'all_accom' );
 				break;
 
@@ -918,7 +918,7 @@ class HbDataBaseActions {
 	public function get_all_options() {
 		return $this->db->get_results(
 			"
-			SELECT id, name, amount, amount_children, choice_type, apply_to_type, all_accom, GROUP_CONCAT( accom_id ) as accom, quantity_max_option, quantity_max, quantity_max_child, price_season_1, price_season_2, price_season_3
+			SELECT id, name, amount, amount_children, choice_type, apply_to_type, all_accom, GROUP_CONCAT( accom_id ) as accom, quantity_max_option, quantity_max, quantity_max_child, price_season_1, price_season_2, price_season_3, temporada
 			FROM $this->options_table
 			LEFT JOIN $this->options_accom_table
 			ON $this->options_table.id = $this->options_accom_table.option_id

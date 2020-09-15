@@ -1578,7 +1578,7 @@ msgstr "Cantidad por día"
 
 #: admin-pages/pages/options/options.php:54 utils/utils.php:2890
 msgid "Extra services"
-msgstr "Servicios supplementos"
+msgstr "Servicios suplementarios"
 
 #: admin-pages/pages/options/options.php:55
 #: admin-pages/pages/options/options.php:86
@@ -4025,7 +4025,7 @@ msgstr "Email:"
 
 #: utils/resa-options.php:33
 msgid "Extra services:"
-msgstr "Servicios supplementos:"
+msgstr "Servicios suplementarios:"
 
 #: utils/resa-options.php:127
 msgid "Options total price:"

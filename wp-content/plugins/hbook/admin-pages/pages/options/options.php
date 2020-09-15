@@ -131,7 +131,7 @@ class HbAdminPageOptions extends HbAdminPage {
 				<div class="hb-table-data hb-table-data-action"><?php $this->display_admin_action( 'option' ); ?></div>
 
 			</div>
-			<div data-bind="template: { name: $parent.child_template_to_use, if: option.choice_type() == 'multiple' && option.apply_to_type() != 'quantity' && option.apply_to_type() != 'quantity-per-day', foreach: choices, beforeRemove: $parent.hide_setting }"></div>
+			<!--<div data-bind="template: { name: $parent.child_template_to_use, if: option.choice_type() == 'multiple' && option.apply_to_type() != 'quantity' && option.apply_to_type() != 'quantity-per-day', foreach: choices, beforeRemove: $parent.hide_setting }"></div>-->
 		</script>
 
 		<script id="edit_tmpl" type="text/html">
@@ -204,17 +204,15 @@ class HbAdminPageOptions extends HbAdminPage {
 
 				<!-- APPLY SELECT TEMPORADA -->
 				<div class="hb-table-data">
-				<select
+				<!-- <select
 						data-bind="
 							options: hb_temporadas,
 							optionsValue: 'option_value',
-							optionsText: function( item ) {
-								return hb_decode_entities( item.option_text );
-							},
+							optionsText: 'option_text',
 							value: temporada
 						"
-				></select>			
-
+				></select>			 -->
+				<?php $this->display_temporadas($this->seasons); ?>
 				<div data-bind="visible: showPriceSeason1">
 					<input type="text" name="temporada_1" placeholder="Precio temporada Baja" data-bind="value: price_season_1">	
 				</div>

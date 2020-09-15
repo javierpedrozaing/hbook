@@ -179,7 +179,7 @@ function HbSettings() {
 		saved_js = null;
 	};
 
-	this.template_to_use = function( setting ) {
+	this.template_to_use = function( setting ) {		
 		return self.selected_setting() === setting ? 'edit_tmpl' : 'text_tmpl';
 	};
 
@@ -246,7 +246,25 @@ function HbSettings() {
 	}
 
 	this.save_setting = function( setting ) {
-		
+		debugger;
+
+		switch (setting.temporada()) {
+			case 'temporada_1':				
+				setting.price_season_2(0);
+				setting.price_season_3(0);
+ 				break;
+			case 'temporada_2':
+			setting.price_season_1(0);
+			setting.price_season_3(0);
+				break;
+			case 'temporada_3':
+			setting.price_season_1(0);
+			setting.price_season_2(0);
+				break;
+			default:
+				break;
+		}
+
 		if ( typeof setting.is_valid == 'function' ) {
 			if ( ! setting.is_valid( setting ) ) {
 				return;
@@ -254,11 +272,10 @@ function HbSettings() {
 		}
 		setting.saving( true );
 		
-		ajax_update_db( 'update', setting, function() {			
-			self.price_season= setting.price_season;
+		ajax_update_db( 'update', setting, function() {								
 			self.priceSeason1= setting.priceSeason1;
 			self.priceSeason2= setting.priceSeason2;
-			self.priceSeason3= setting.priceSeason3;
+			self.priceSeason3= setting.priceSeason3;			
 			
 			setting.saving( false );
 			saved_setting = null;

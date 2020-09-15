@@ -1,10 +1,9 @@
-function OptionsAndFees( brand_new, type, id, name, amount, amount_children, apply_to_type, accom, all_accom, temporada) {
+function OptionsAndFees( brand_new, type, id, name, amount, amount_children, apply_to_type, accom, all_accom, price_season_1, price_season_2, price_season_3, temporada) {	                      
 	HbSetting.call(this, brand_new, type, id, name);
 	Accom.call( this, accom, all_accom );
 	this.amount = ko.observable( amount );
 	this.amount_children = ko.observable( amount_children );
-	this.apply_to_type = ko.observable( apply_to_type );
-	this.temporada = ko.observable( temporada );
+	this.apply_to_type = ko.observable( apply_to_type );	
 	
 	var self = this; 
 	this.amount_text = ko.computed( function() {
